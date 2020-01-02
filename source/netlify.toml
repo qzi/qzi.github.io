@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://leonvision.netlify.com/*"
+  to = "https://i.leonvision.online/:splat"
+  status = 301
+  force = true
