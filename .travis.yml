@@ -1,45 +1,29 @@
 language: node_js
-
 node_js:
-  - "node"
-
+- node
 branches:
   only:
-    - hexo
-
+  - hexo
 before_install:
-  - npm install hexo-cli -g
-  - npm i -g firebase-tools
-  - git config --global push.default matching
-  - git config --global user.name "leon"
-  - git config --global user.email "i@leonvision.online"
-  - sed -i'' "/^ *repo/s~github\.com~${ACCESS_TOKEN}@github.com~" _config.yml
-
+- npm install hexo-cli -g
+- npm i -g firebase-tools
+- git config --global push.default matching
+- git config --global user.name "leon"
+- git config --global user.email "i@leonvision.online"
+- sed -i'' "/^ *repo/s~github\.com~${GITHUB_TOKEN}@github.com~" _config.yml
 install:
-  - npm install
-
+- npm install
 script:
-  # - git submodule init      # 用于更新主题
-  # - git submodule update
-  - hexo clean
-  - hexo d -g
-  
-
+- hexo clean
+- hexo d -g
 cache:
   directories:
-    - node_modules
-
-
-# after_success:
-#   - firebase login --reauth
-#   - firebase deploy --non-interactive --token ${FIREBASE_TOKEN}
-
-before_deploy:
-  - firebase logout
-
+  - node_modules
+env:
+  global:
+  - GIT_PAGE_REF: github.com/qzi/qzi.github.io.git
+  - secure: I3EIHvysnL50yQPdu5jRZfX3+A+3TlDlcTgd9GZQ7HbKjIdhx8cYU1bZUUv3sAXJnAS9nU3QFy3Q/bccshrFdh6cEww+qcJ0MuvUahqe99yRkaevaXTw9uCm/p+lUORUQcg6mfhc30l8bb469a/ldLBXao6HHTsVRYVBm5g3VcFpxU0/zaufSxgwek7e5PlGB0YWUC93MBiOPpEin4ikVVoFWDP1KsEbmubRrW/LpysUZIiXy13qdQvtKRAoQ78UTmt2o8FFcHvWRUMleTyi63iJqVB7OSOXGnjPnp2fdIhVyXs50VPvY5UUOw1qyhPkw/D1HUUpsorE/xvDNsJFy4/anUHppjKYTBA/RbVRZp/tTH1cLn0wpHq+L/RsKh/G/G7q/2htEDcay+/fYxGYClCDZeMGvOrJUkXz996miwHWojYlGwrcyRvvOmRZz5jISlB4KAlaJHWWaVzG1xCFTeektVeSrOM8hMZ9c0JVi/8zwYNecsw/zBJmrWBSzdAyxnxIEmfmmLQXArtLUvq3FGs/L02qE0ZlaFisNRJ1r9DvLZ1Hats2a88kaU2B+LJQR4crMZuWneuoW1m+2du1HpP0oy4i/a/uRdyVgBvqnE+u2EH16VhAYk5Wwu/+giMWi3wMMDMJnEHt5EodL4kKwglVhjNdKsyH7sgOcXELbIY=
 deploy:
   provider: firebase
   token:
-    secure: ${FIREBASE_TOKEN}
-  on:
-    branch: hexo
+    secure: Pg3LGAEHWBTcjMxfl3bbBA2jhiBSzBIsgHrbtOkvmw41ZEZc7A/XLNKRV3Gmf4vjcXAtU1tDrLtUhAk1s6YcbKhFT+TFICrfvbq1HBKhRFMvykcuhV71XmdQk2lBqWXXaUFDM0kRzvbb0gB+tHm+sHRcALl3MWWPa80Ae8WjG+PwMPniUt5DkZ1DPvXIRVKxBoHMP2bn6U21wn+3wMo6bRO16oNb8C1FlJCIwqzAZBds9dk4mvNWs1XJ1R946epPZUwynIQnWX3JZHQtDPMY66hRKDJlggbTSgcD1DRLdICS6LUJsKH0Ch/51PH4FY/NlZSN+a4vGHoVVJ9iccgwUga46rAx/vT9nTfU45u2dWYfypfamwsCuuzPSSO9Os9MTSmHk/CcsA3r2piCr/jCmITHY1KbnkJ+9ZTfL5lnoToSYNabdH9xSkvE0VJoWOY3nEd8iu3mRW1jB3HfSaGVuuwwzcTWxsQAVDrshnqUqoozadh80HrpMGsD0uCIGU03LvuD0hZZce4Vv/2e4X8Q0izY6L44Ga2zgUwMxd97tYdFpGMjjFEvjMYDs8pR1twgOMn1kyYwEZbHHwbDRHzn9I+z8X3hpbb8qyOSl9yCMI3femTCMpBoz9VAd2HWSjQsPAb0OTHzsmuHtFN1DKbNyzactUbnFAv0E9RESP7cJIk=
