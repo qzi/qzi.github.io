@@ -5,7 +5,7 @@ node_js:
 
 branches:
   only:
-    - master
+    - hexo
 
 before_install:
   - npm install hexo-cli -g
@@ -26,3 +26,8 @@ script:
 cache:
   directories:
     - node_modules
+
+
+
+after_success:
+  - firebase deploy --non-interactive --token ${FIREBASE_TOKEN}
