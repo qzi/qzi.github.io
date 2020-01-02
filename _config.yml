@@ -126,12 +126,12 @@ sitemap:
     rel: false
 
 ## table of content
-toc:
-  maxdepth: 3
-  class: toc
-  slugify: transliteration
-  decodeEntities: false
-  anchor:
-    position: after
-    symbol: '#'
-    style: header-anchor
+# toc:
+#   maxdepth: 3
+#   class: toc
+#   slugify: transliteration
+#   decodeEntities: false
+#   anchor:
+#     position: after
+#     symbol: '#'
+#     style: header-anchor
