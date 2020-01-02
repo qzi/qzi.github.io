@@ -10,8 +10,8 @@ branches:
 before_install:
   - npm install hexo-cli -g
   - git config --global push.default matching
-  - git config --global user.name "erguotou"
-  - git config --global user.email "erguotou525@gmail.com"
+  - git config --global user.name "leon"
+  - git config --global user.email "i@leonvision.online"
   - sed -i'' "/^ *repo/s~github\.com~${ACCESS_TOKEN}@github.com~" _config.yml
 
 install:
@@ -21,12 +21,12 @@ script:
   # - git submodule init      # 用于更新主题
   # - git submodule update
   - hexo clean
-  - hexo d -g
+  - hexo g
+  - hexo d
 
 cache:
   directories:
     - node_modules
-
 
 
 after_success:
