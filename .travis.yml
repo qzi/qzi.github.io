@@ -38,6 +38,5 @@ deploy:
   provider: firebase
   token:
     secure: ${FIREBASE_TOKEN}
-  message: "Firebase deployment is sucessfully"
-  on
+  on:
     branch: hexo
