@@ -30,5 +30,12 @@ cache:
     - node_modules
 
 
-after_success:
-  - firebase deploy --non-interactive --token ${FIREBASE_TOKEN}
+# after_success:
+#   - firebase login --reauth
+#   - firebase deploy --non-interactive --token ${FIREBASE_TOKEN}
+
+deploy:
+  provider: firebase
+  token:
+    secure: ${FIREBASE_TOKEN}
+  message: "Firebase deployment is sucessfully"
