@@ -27,6 +27,7 @@ deploy:
   provider: firebase
   token:
     secure: Pg3LGAEHWBTcjMxfl3bbBA2jhiBSzBIsgHrbtOkvmw41ZEZc7A/XLNKRV3Gmf4vjcXAtU1tDrLtUhAk1s6YcbKhFT+TFICrfvbq1HBKhRFMvykcuhV71XmdQk2lBqWXXaUFDM0kRzvbb0gB+tHm+sHRcALl3MWWPa80Ae8WjG+PwMPniUt5DkZ1DPvXIRVKxBoHMP2bn6U21wn+3wMo6bRO16oNb8C1FlJCIwqzAZBds9dk4mvNWs1XJ1R946epPZUwynIQnWX3JZHQtDPMY66hRKDJlggbTSgcD1DRLdICS6LUJsKH0Ch/51PH4FY/NlZSN+a4vGHoVVJ9iccgwUga46rAx/vT9nTfU45u2dWYfypfamwsCuuzPSSO9Os9MTSmHk/CcsA3r2piCr/jCmITHY1KbnkJ+9ZTfL5lnoToSYNabdH9xSkvE0VJoWOY3nEd8iu3mRW1jB3HfSaGVuuwwzcTWxsQAVDrshnqUqoozadh80HrpMGsD0uCIGU03LvuD0hZZce4Vv/2e4X8Q0izY6L44Ga2zgUwMxd97tYdFpGMjjFEvjMYDs8pR1twgOMn1kyYwEZbHHwbDRHzn9I+z8X3hpbb8qyOSl9yCMI3femTCMpBoz9VAd2HWSjQsPAb0OTHzsmuHtFN1DKbNyzactUbnFAv0E9RESP7cJIk=
+  project: Hexo-blog
   on:
     branches:   
       only:     
