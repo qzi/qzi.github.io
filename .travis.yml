@@ -6,7 +6,6 @@ node_js:
 branches:
   only:
     - hexo
-    - master
 
 before_install:
   - npm install hexo-cli -g
@@ -40,3 +39,5 @@ deploy:
   token:
     secure: ${FIREBASE_TOKEN}
   message: "Firebase deployment is sucessfully"
+  on
+    branch: hexo
