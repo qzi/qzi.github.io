@@ -6,6 +6,7 @@ node_js:
 branches:
   only:
     - hexo
+    - master
 
 before_install:
   - npm install hexo-cli -g
