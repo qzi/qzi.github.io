@@ -34,7 +34,7 @@ cache:
 #   - firebase login --reauth
 #   - firebase deploy --non-interactive --token ${FIREBASE_TOKEN}
 
-before_deploy：
+before_deploy:
   - firebase logout
 
 deploy:
