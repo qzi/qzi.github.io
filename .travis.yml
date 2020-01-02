@@ -22,7 +22,6 @@ script:
   # - git submodule update
   - hexo clean
   - hexo g
-  - hexo d
 
 cache:
   directories:
