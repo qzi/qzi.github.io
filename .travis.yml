@@ -22,8 +22,8 @@ script:
   # - git submodule init      # 用于更新主题
   # - git submodule update
   - hexo clean
-  - hexo g
-  - hexo d
+  - hexo d -g
+  
 
 cache:
   directories:
