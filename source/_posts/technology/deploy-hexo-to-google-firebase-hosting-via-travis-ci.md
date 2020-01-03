@@ -13,7 +13,7 @@ tags:
 | BaaS | Firebase Hosting |
 | Web App | Hexo |
 
-## Google proxy
+## Google Proxy
 建议使用简单粗暴的方式直接上 Proxifier, 代理 `node` 这个程序的通信代理到你本地的HTTPS代理上就行了。   
 我从log里面看到在操作的过程中其实node会去request `www.googleapis.com:443`，所以你也可以单独代理这个地址还有google全家桶的地址。
 
@@ -91,7 +91,7 @@ deploy:
 
 ### Encrypt github token and firebase cli token
 
-**firebase Token***
+**Firebase Token**
 运行一下代码获取firebase免交互的Login Token
 
     $firebase login:ci
