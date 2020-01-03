@@ -9,14 +9,12 @@ hexo.extend.helper.register('next_url', function(path, text, options = {}) {
   const { config } = this;
   var data = url.parse(path);
   var siteHost = url.parse(config.url).hostname || config.url;
-  // console.log("siteHost : " + siteHost + "text : " + text);
+
   var theme = hexo.theme.config;
   var exturl = '';
   var tag = 'a';
   var attrs = { href: this.url_for(path) };
-  // console.log(path);
-  // console.log('theme.exturl : ' + theme.exturl + 'data.protocol :' + data.protocol + 'data.hostname : ' + data.hostname);
-  // console.log(attrs);
+
   // If `exturl` enabled, set spanned links only on external links.
   if (theme.exturl && data.protocol && data.hostname !== siteHost) {
     tag = 'span';
@@ -27,7 +25,7 @@ hexo.extend.helper.register('next_url', function(path, text, options = {}) {
       'data-url': encoded
     };
   }
-  
+
   for (let key in options) {
 
     /**
@@ -58,8 +56,6 @@ hexo.extend.helper.register('next_url', function(path, text, options = {}) {
       attrs.rel = null;
     }
   }
-  // var returnResult = htmlTag(tag, attrs, decodeURI(text), false);
-  // console.log(returnResult);
-  // return returnResult;
+
   return htmlTag(tag, attrs, decodeURI(text), false);
 });

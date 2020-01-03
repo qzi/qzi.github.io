@@ -1,6 +1,7 @@
 ---
 title: Deploy Hexo to Google Firebase Hosting via Travis CI
 categories: technology
+abbrlink: 16478
 date: 2020-01-04 01:15:32
 tags:
 ---
@@ -10,14 +11,14 @@ tags:
 | --- | --- |
 | continuous integration | Travis CI |
 | BaaS | Firebase Hosting |
-| Web App | Nodejs |
+| Web App | Hexo |
 
 ## Google proxy
 建议使用简单粗暴的方式直接上 Proxifier, 代理 `node` 这个程序的通信代理到你本地的HTTPS代理上就行了。   
 我从log里面看到在操作的过程中其实node会去request `www.googleapis.com:443`，所以你也可以单独代理这个地址还有google全家桶的地址。
 
 ## Firebase init
-首先按照Firebase CLI   
+首先安装Firebase CLI   
     
     npm install -g firebase-tools
 
