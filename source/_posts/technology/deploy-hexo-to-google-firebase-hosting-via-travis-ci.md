@@ -9,7 +9,7 @@ tags:
 
 | 类型 | 套件 |
 | --- | --- |
-| continuous integration | Travis CI |
+| Continuous Integration | Travis CI |
 | BaaS | Firebase Hosting |
 | Web App | Hexo |
 
@@ -103,8 +103,9 @@ deploy:
 **Github**  
 到 https://github.com/settings/tokens 申请一个 Github access token，密文只会出现一次需要保存起来，授权上全选Repo就行了
 
-#加密并直接更新进 .travis.yml 的环境变量, GITHUB_TOKEN为引用的Key
-$travis encrypt -r [github user]/[github page project] "GITHUB_TOKEN=[github access token]" --add
+#加密并直接更新进 .travis.yml 的环境变量, GITHUB_TOKEN为引用的Key  
+  
+    $travis encrypt -r [github user]/[github page project] "GITHUB_TOKEN=[github access token]" --add
 
 
 
