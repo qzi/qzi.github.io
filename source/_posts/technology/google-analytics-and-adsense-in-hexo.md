@@ -12,8 +12,8 @@ _This is the guideline to setup the Google Analuytics and Adsense in Hexo with T
 
 | Component       | version |
 | --------------- | ------- |
-| Hexo            | 4.1.1   |
-| hexo-theme-next | 7.6.0   |
+| hexo            | 4.2   |
+| hexo-theme-next | 7.7   |
 
 
 ## Google Analytics
