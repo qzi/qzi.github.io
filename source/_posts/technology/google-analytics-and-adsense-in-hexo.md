@@ -20,7 +20,7 @@ _This is the guideline to setup the Google Analuytics and Adsense in Hexo with T
 _Google Analysis_  
 https://analytics.google.com/analytics/web/#/  
 
-**Setup**  
+#### Setup Google Analytics  
 1. Register and activate the account of google analytics
 2. Steps forward as the guideline of GA, copy and paste the scirpt to hexo(look into the following steps)  
 3. Uncomment the reference of `header.swig` in `_config.yml` of the theme, hexo-next  
@@ -35,6 +35,19 @@ https://analytics.google.com/analytics/web/#/
 
     <!-- Google AdSense end -->
     ```
+
+#### Create a filter for another view of the property for WeChat(微信)
+
+1. Login your google analytics 
+
+2. Navigate to #admin => #Account => #property => #View and create a new view，named as "My WeChat View"
+
+3. Create a new custom filter for "My WeChat View"
+
+   ![wechat filter](google-analytics-and-adsense-in-hexo/image-20200105031608398.png)
+
+Now you can monitor the traffic from WeChat in Google Analytics.
+
 
 ## Google Adsense
 _Google adsense_  
@@ -63,14 +76,11 @@ https://www.google.com/adsense
     {# google adsense end #}
 
     ```
- 
+
 ## Google search Console
 You can submit the sitemap.xml and RSS feed as the source of your site map  
 **to be continues**  
 
-
-## Baidu Tongji
-**to be continues**  
 
 
 ## Reference
@@ -84,4 +94,3 @@ _谷歌广告类型的说明_
 https://darylliu.github.io/archives/6a1f6623.html  
 
 
-  

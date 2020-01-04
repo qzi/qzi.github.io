@@ -3,7 +3,7 @@ title: Deploy Hexo to Google Firebase Hosting via Travis CI
 categories: technology
 abbrlink: 16478
 date: 2020-01-04 01:15:32
-tags:
+tags: blog
 ---
 
 
@@ -95,21 +95,22 @@ deploy:
 运行一下代码获取firebase免交互的Login Token
 
     $firebase login:ci
-    
+
 利用github的public key对firebase token进行加密,并添加到.travis.yml的deploy.token.secure  
     
     $travis encrypt -r [github user]/[github page project] [firebase token] --add deploy.token
-    
+
 **Github**  
 到 https://github.com/settings/tokens 申请一个 Github access token，密文只会出现一次需要保存起来，授权上全选Repo就行了
 
 #加密并直接更新进 .travis.yml 的环境变量, GITHUB_TOKEN为引用的Key  
-  
+
     $travis encrypt -r [github user]/[github page project] "GITHUB_TOKEN=[github access token]" --add
 
 
 
 ## Reference
+
 _travis ci for firebase_
 https://docs.travis-ci.com/user/deployment-v2/providers/firebase/
 _guideline_
