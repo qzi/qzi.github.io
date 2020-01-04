@@ -30,7 +30,6 @@ $ npm i --save hexo-asset-link
 **Markdown Syntax support**
 
 ```Markdown
-![Rest Client](./my-favorite-extensions-for-visual-studio-code/rest-client.jpg)
 ![Rest Client](my-favorite-extensions-for-visual-studio-code/rest-client.jpg)
 ```
 
