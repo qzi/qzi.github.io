@@ -91,19 +91,20 @@ deploy:
 
 ### Encrypt github token and firebase cli token
 
+因为其实你的Github已经对Travis进行授权，所以如果用github public key 对字符串进行加密，Travis其实可以用private key对密文进行解密，但是因为其他人没有这个调用private key的权限，所以即便你在.travis.yml里面的密文放在github上让人看到也是安全的。
+
 **Firebase Token**
 运行一下代码获取firebase免交互的Login Token
 
     $firebase login:ci
 
 利用github的public key对firebase token进行加密,并添加到.travis.yml的deploy.token.secure  
-    
     $travis encrypt -r [github user]/[github page project] [firebase token] --add deploy.token
 
 **Github**  
 到 https://github.com/settings/tokens 申请一个 Github access token，密文只会出现一次需要保存起来，授权上全选Repo就行了
 
-#加密并直接更新进 .travis.yml 的环境变量, GITHUB_TOKEN为引用的Key  
+加密并直接更新进 .travis.yml 的环境变量, GITHUB_TOKEN为引用的Key  
 
     $travis encrypt -r [github user]/[github page project] "GITHUB_TOKEN=[github access token]" --add
 
