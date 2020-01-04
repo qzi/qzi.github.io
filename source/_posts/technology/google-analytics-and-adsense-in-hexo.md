@@ -20,23 +20,23 @@ _This is the guideline to setup the Google Analuytics and Adsense in Hexo with T
 _Google Analysis_  
 https://analytics.google.com/analytics/web/#/  
 
-#### Setup Google Analytics  
+### Setup Google Analytics  
 1. Register and activate the account of google analytics
 2. Steps forward as the guideline of GA, copy and paste the scirpt to hexo(look into the following steps)  
 3. Uncomment the reference of `header.swig` in `_config.yml` of the theme, hexo-next  
-    ```
-    header: source/_data/header.swig
-    ```
+```yaml
+header: source/_data/header.swig
+```
 4. Create the {HEXO_ROOT}/source/_data/post-body-end.swig
-    ```
-    <!-- Google AdSense start -->
+```javascript
+<!-- Google AdSense start -->
 
-    <script data-ad-client="ca-pub-key" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-key" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-    <!-- Google AdSense end -->
-    ```
+<!-- Google AdSense end -->
+```
 
-#### Create a filter for another view of the property for WeChat(微信)
+### Create a filter for another view of the property for WeChat(微信)
 
 1. Login your google analytics 
 
@@ -59,7 +59,7 @@ https://www.google.com/adsense
 ![In-Article](./google-analytics-and-adsense-in-hexo/in-article-units.png)
 3. Uncomment the reference of `post-body-end.swig` in `_config.yml` of the theme, hexo-next  
 4. Create the {HEXO_ROOT}/source/_data/post-body-end.swig
-    ```
+    ```javascript
 
     {# google adsense body #}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
