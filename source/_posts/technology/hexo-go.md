@@ -6,9 +6,6 @@ abbrlink: 13433
 date: 2019-12-04 07:37:08
 ---
 
-<!-- toc -->
-
-
 # Hexo initial
 
 $ hexo init # Initial the project  
@@ -111,19 +108,19 @@ https://en.gravatar.com/emails/
 **Install**
     
     $ npm install hexo-generator-search --save
-    
+
 **Config it in {root}/_config**
 
     search:
       path: search.xml
       field: post
       content: true
-      
+
 **Enable the serach in the _config.yml of theme-next**
     
     local_search:
       enable: true
-      
+
 [hexo-generator-search](https://www.npmjs.com/package/hexo-generator-search)
 
 
@@ -134,9 +131,10 @@ Enable in {theme/to/next}/_config.yml
     google_analytics:
       tracking_id: UA-number
       localhost_ignored: false
-      
-      
-      
+
+
+​      
+​      
 # RSS Feed
 
 **Installation**
@@ -148,8 +146,9 @@ In {ROOT}/themes/theme_next/_config.yml
 
     social:
       RSS: /atom.xml || rss
-      
-      
+
+
+​      
 # Categories & Tags
 
 Only posts support the use of categories and tags. Categories apply to posts in order, resulting in a hierarchy of classifications and sub-classifications. Tags are all defined on the same hierarchical level so the order in which they appear is not important.
@@ -177,10 +176,9 @@ https://hexo.io/docs/front-matter.html
       archives: /archives/ || archive
 
 
-# Image Reference
+# Enhance Image Reference
 
 **Installation**  
-    
     $ npm i --save hexo-asset-link
 
 **Markdown Syntax**
