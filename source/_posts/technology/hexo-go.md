@@ -190,6 +190,17 @@ https://hexo.io/docs/front-matter.html
 _Image to Hexo_  
 https://liolok.github.io/zh-CN/How-to-Add-Image-to-Hexo-Blog-Post/
 
+
+
+# Force to refresh the browser
+Presss `Shift + Command + R` to force to refresh the browser(Chrome) to test the result in Mac 
+
+
+
+
+
+
+
 # Reference:
 _Hexo backup_
 https://blog.itswincer.com/posts/7efd2818/
