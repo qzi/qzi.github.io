@@ -2,7 +2,7 @@
 title: Learning P/E Ratio and BABA IPO in HK
 categories: finance
 tags: finance
-abbrlink: 50975
+permalink: technology/learning-p-e-ratio-and-baba-ipo-in-hk
 date: 2019-12-27 23:47:32
 ---
 
