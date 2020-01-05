@@ -132,8 +132,7 @@ Enable in {theme/to/next}/_config.yml
       localhost_ignored: false
 
 
-​      
-​      
+
 # RSS Feed
 
 **Installation**
@@ -188,6 +187,17 @@ https://hexo.io/docs/front-matter.html
 **Reference**  
 _Image to Hexo_  
 https://liolok.github.io/zh-CN/How-to-Add-Image-to-Hexo-Blog-Post/
+
+
+
+# Mermaid Surpport for Diagram
+
+**Installation**
+
+`$npm install hexo-filter-mermaid-diagrams`
+
+_reference the homepage for more further steps_
+https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
 
 
 
