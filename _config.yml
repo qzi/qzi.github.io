@@ -17,7 +17,7 @@ timezone: 'Asia/Shanghai'
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://leonvision.online
 root: /
-permalink: :category/:title/
+permalink: :title/
 permalink_defaults:
 # permalink_defaults: :category/:year/:month/:day/:post_title/
 pretty_urls:
