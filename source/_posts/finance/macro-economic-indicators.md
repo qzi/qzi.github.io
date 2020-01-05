@@ -4,7 +4,6 @@ categories: finance
 tags:
   - finance
   - macro-economic
-abbrlink: 33392
 date: 2019-12-07 03:44:48
 ---
 
@@ -41,7 +40,7 @@ https://wiki.mbalib.com/wiki/ISM指数
 _ISM Report_  
 https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1  
 
-  
+
 ## ADP National Enployment Reports
 
 Rating : 3 stars  
@@ -56,7 +55,7 @@ ADP National Enployment Reports 是在非农数据公布的前两天公布的，
 **Reference**  
 _ADP National Enployment Reports_  
 https://www.adpemploymentreport.com  
-  
+
 
 ## NFP
 NFP : Nonfarm Payroll  
@@ -70,7 +69,7 @@ Agency：美国劳工部劳动统计局
 **Reference**  
 _Nonfarm payrolls_   
 https://en.wikipedia.org/wiki/Nonfarm_payrolls   
-  
+
 
 ## ISM Non-Manufacturing PMI
 ISM非制造业PMI : ISM Non-Manufacturing PMI

@@ -4,7 +4,6 @@ categories: technology
 tags:
   - hexo
   - blog
-abbrlink: 40836
 date: 2019-12-16 18:39:22
 ---
 

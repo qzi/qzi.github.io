@@ -20,18 +20,20 @@ tags: blog
 ## Firebase init
 首先安装Firebase CLI   
     
-    npm install -g firebase-tools
+```bash
+$npm install -g firebase-tools
+```
 
 登录firebase，此处开始会弹出一个网页，需要用代理登陆 Google 账号并授权  
-```
-firebase login
+```bash
+$firebase login
 ```
 切换到你的Hexo项目的根目录，初始化firebase配置，选择Hosting  
-```
+```bash
 $firebase init
 ```
 Firebase会生成一个firebase.json并进行配置hexo项目存放静态文件的public目录     
-```
+```json
 {
   "hosting": {
     "public": "public",
@@ -44,15 +46,15 @@ Firebase会生成一个firebase.json并进行配置hexo项目存放静态文件�
 }
 ```
 部署到firebase成功后它会给到你访问的地址  
-```
-firebase deploy
+```bash
+$firebase deploy
 ```
 
 
 ## Travis CI integration
 到 https://travis-ci.org/ 初始化账号 用github账号直接登陆，并在Hexo项目的根目录新建一个.travis.yml，内容参考如下：
 
-```
+```yaml
 language: node_js
 node_js:
 - node
@@ -96,7 +98,9 @@ deploy:
 **Firebase Token**
 运行一下代码获取firebase免交互的Login Token
 
-    $firebase login:ci
+```bash
+$firebase login:ci
+```
 
 利用github的public key对firebase token进行加密,并添加到.travis.yml的deploy.token.secure  
     $travis encrypt -r [github user]/[github page project] [firebase token] --add deploy.token
@@ -106,7 +110,9 @@ deploy:
 
 加密并直接更新进 .travis.yml 的环境变量, GITHUB_TOKEN为引用的Key  
 
-    $travis encrypt -r [github user]/[github page project] "GITHUB_TOKEN=[github access token]" --add
+```bash
+$travis encrypt -r [github user]/[github page project] "GITHUB_TOKEN=[github access token]" --add
+```
 
 
 

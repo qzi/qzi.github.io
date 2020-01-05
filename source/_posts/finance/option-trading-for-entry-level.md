@@ -2,7 +2,6 @@
 title: Option Trading Guide for Entry Level
 tags: option-trading
 categories: finance
-abbrlink: 45088
 date: 2019-12-07 04:55:04
 ---
 

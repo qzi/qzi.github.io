@@ -2,7 +2,6 @@
 title: Hexo with Github Page
 tags: blog
 categories: technology
-abbrlink: 13433
 date: 2019-12-04 07:37:08
 ---
 

@@ -2,7 +2,6 @@
 title: Custom domain email forwarding
 categories: technology
 tags: blog
-abbrlink: 10900
 date: 2020-01-02 03:12:04
 ---
 

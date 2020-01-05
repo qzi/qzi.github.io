@@ -2,7 +2,6 @@
 title: My Favorite Extensions for Visual Studio Code
 categories: technology
 tags: vscode
-abbrlink: 35028
 date: 2019-12-16 01:31:56
 ---
 
@@ -13,6 +12,7 @@ Rest Client for Vsocde record all the request in plain text
 * Define the variables in the context to resue both
 * Code hinting for the key prarameters
   
+
 **Installation**
 1. Open Visual Studio Code, press F1, type ext install then search for rest-client.
 2. Create a new file called rest-test.http and cover the sample as below, replace the value with your own.
