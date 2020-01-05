@@ -41,4 +41,4 @@ Telegram: leon_qiu
 Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
 Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)   
 微信投资学习群 ：  
-![image-20200105081221809](index/image-20200105081221809.png)
+![image-20200105081221809](index/wechat_qrcode.png)

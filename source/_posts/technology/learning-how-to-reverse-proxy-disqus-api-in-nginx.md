@@ -4,7 +4,6 @@ categories: technology
 tags:
   - nginx
   - hexo
-abbrlink: 17289
 date: 2019-12-10 10:45:05
 ---
 
@@ -140,8 +139,8 @@ ince,Cache-Control,Content-Type,Authorization';
 | Symbole          | Remark           |
 | ---------------- | ---------------- |
 | proxy_set_header | 改变HTTP的请求头 |
-| Host | destination Host name | 
-| X-Real-IP | 请求的真实IP | 
+| Host | destination Host name |
+| X-Real-IP | 请求的真实IP |
 | X-Forwarded-For | 请求是由谁发起的 |
 | Referer | 发起请求方的URI |
 | Origin | 发起请求方的domain |
@@ -179,14 +178,14 @@ We can google more variable in Nginx for diefferent Scenario.
 
 
 ## Http Response Code
-| Code | Remark | 
-| --- | --- | 
-| 301 | 永久转发 |  
-| 302 | 临时转发 |  
-| 400 | 服务器不理解请求的语法 |  
-| 404 | 服务器无法找到请求的页面 |  
-| 500 | 服务器内部错误，无法处理请求 |  
-| 200 | 服务器已成功处理了请求并返回了页面 |  
+| Code | Remark |
+| --- | --- |
+| 301 | 永久转发 |
+| 302 | 临时转发 |
+| 400 | 服务器不理解请求的语法 |
+| 404 | 服务器无法找到请求的页面 |
+| 500 | 服务器内部错误，无法处理请求 |
+| 200 | 服务器已成功处理了请求并返回了页面 |
 
 -------
 虽然反向Disqus API代理成功，但是博主碰到github page的又一个限制Header不允许多个origin，还需要进一步调整成品，博主困了，未完待续 (To be continue)  

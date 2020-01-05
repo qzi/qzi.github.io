@@ -2,7 +2,6 @@
 title: 中文等宽字体（Monospace Chinese Font Family）
 categories: technology
 tags: blog
-abbrlink: 1194
 date: 2019-12-26 00:52:18
 ---
 
