@@ -6,7 +6,7 @@ abbrlink: 1194
 date: 2019-12-26 00:52:18
 ---
 
-​
+
 中文等宽字体，一个中文字符等宽两个英文字符，Mac下很多字体（ Menlo, Monaco, Courier New, Source Code Pro ）没有严格遵循或者说达不到这个标准, 它们不包括CJK的字库，有的时候用一些 markdown table formatter 会导致不整齐，其实并不是排列不整齐，而是字体的宽度不同  
 ​
 即使排列好，但是中英文宽度没有对齐，就会不整齐  
@@ -20,7 +20,7 @@ date: 2019-12-26 00:52:18
 SARASA GOTHIC, a CJK programming font based on Iosevka and Source Han Sans.  
 
 **Installation**  
-下载 sarasa-gothic-ttf form https://github.com/be5invis/Sarasa-Gothic  
+Download sarasa-gothic-ttf from https://github.com/be5invis/Sarasa-Gothic  
 安装 Sarasa Mono SC，regular/light/bold/italy 即可  
 在你需要用到这个字体的编辑器里面设置字体为 Sarasa Mono SC， Size 最好的16以上  
 
