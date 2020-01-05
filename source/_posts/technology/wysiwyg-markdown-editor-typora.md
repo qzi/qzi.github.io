@@ -11,6 +11,10 @@ permalink: wysiwyg-markdown-editor-typora
 Typora homepage
 https://www.typora.io/
 
+![image-20200105101055431](wysiwyg-markdown-editor-typora/image-20200105101055431.png)
+
+
+
 ## Asset Management with Hexo
 Hexo如果启用了 `post_asset_folder: true` 每次使用 scaffold创建一个新的文章的时候都会同时创建一个同名的目录用来放asset，所以Typora最好根据这个行为习惯进行调整，Navigate to #Typora => #Preference
 
