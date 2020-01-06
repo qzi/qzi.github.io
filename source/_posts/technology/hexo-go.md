@@ -192,12 +192,8 @@ https://liolok.github.io/zh-CN/How-to-Add-Image-to-Hexo-Blog-Post/
 
 # Mermaid Surpport for Diagram
 
-**Installation**
-
-`$npm install hexo-filter-mermaid-diagrams`
-
-_reference the homepage for more further steps_
-https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
+Hexo Next already supported the mermaid nested.
+https://github.com/theme-next/theme-next.org/blob/source/source/docs/tag-plugins/mermaid.md
 
 
 
