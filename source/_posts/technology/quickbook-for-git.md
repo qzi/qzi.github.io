@@ -17,12 +17,26 @@ Git 最重要的三个 Phases 的理解对理解当前文件处于哪个工作�
 
 ![image-20200106083920065](quickbook-for-git/image-20200106083920065.png)
 
-
-```mermaid
+{% mermaid graph TD %}
 graph LR
 A[Working Area - unstaged] --> | git add | B[Staging Area - staged]
 B --> | git commit | C[ Repo - commited ]
+{% endmermaid %}
+
+```mermaid
+graph LR
+    A --- B
+    B-->C[fa:fa-ban forbidden]
+    B-->D(fa:fa-spinner);
 ```
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 
 ## Quick Book of Git
 

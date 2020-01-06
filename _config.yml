@@ -134,7 +134,7 @@ sitemap:
 # default v7.1.2
 # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
   #startOnload: true  // default true
-mermaid: 
-  enable: true  
-  version: "7.1.2"
-  options: 
+# mermaid:
+#   enable: true
+#   version: "7.1.2"
+#   options: true

@@ -184,7 +184,7 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   #GitHub: https://github.com/yourname || github
-  E-Mail: mailto:i@leonvision.online || envelope
+  Email: mailto:i@leonvision.online || envelope
   Telegram: https://t.me/leon_qiu || telegram
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
@@ -823,7 +823,7 @@ pdf:
 
 # Mermaid tag 
 mermaid:
-  enable: false
+  enable: true
   # Available themes: default | dark | forest | neutral
   theme: forest
 

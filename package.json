@@ -32,6 +32,8 @@
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
-    "hexo-util": "git+https://github.com/hexojs/hexo-util.git"
+    "hexo-util": "git+https://github.com/hexojs/hexo-util.git",
+    "mermaid": "^8.4.4",
+    "yarn": "^1.21.1"
   }
 }
