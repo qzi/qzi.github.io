@@ -70,4 +70,20 @@
   </div>
 {%- endif %}
 
+console.log("test");
+
+{# My Mermaid body #}
+{% if theme.mermaid.enable %}
+  console.log("test");
+  <script src='https://unpkg.com/mermaid@{{ theme.mermaid.version }}/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({{ JSON.stringify(theme.mermaid.options) }});
+    }
+  </script>
+
+{# mermaid end #}
+
+{% endif %}
+
 {{- next_inject('footer') }}

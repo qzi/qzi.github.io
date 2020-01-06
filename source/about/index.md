@@ -32,8 +32,8 @@ _关于女人_
 
 
 Any case you contact me via :  
-Email : i@leonvision.online  
-Telegram: leon_qiu  
+[Email](mailto:i@leonvision.online) : i@leonvision.online  
+[Telegram](https://t.me/leon_qiu): leon_qiu  
 
 
 **学习型的投资者可以加入我的 Financial Group 进行交流讨论**    

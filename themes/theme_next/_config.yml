@@ -590,7 +590,7 @@ comments:
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname: leonvision
   count: true
   #post_meta_order: 0
@@ -1032,6 +1032,7 @@ vendors:
 css: css
 js: js
 images: images
+
 
 
 

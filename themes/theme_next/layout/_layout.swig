@@ -45,6 +45,22 @@
   {{ partial('_scripts/index.swig', {}, {cache: theme.cache.enable}) }}
   {{ partial('_third-party/index.swig', {}, {cache: theme.cache.enable}) }}
 
+
+{# My Mermaid body #}
+    console.log("test mermaid");
+
+{% if theme.mermaid.enable %}
+  <script src='https://unpkg.com/mermaid@{{ theme.mermaid.version }}/dist/mermaid.min.js'></script>
+  <script>
+    console.log("test mermaid");
+    if (window.mermaid) {
+      mermaid.initialize({{ JSON.stringify(theme.mermaid.options) }});
+    }
+  </script>
+{% endif%}
+
+{# mermaid end #}
+
   {%- if theme.pjax %}
     <div id="pjax">
   {%- endif %}

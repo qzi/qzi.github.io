@@ -15,6 +15,18 @@ Git 最重要的三个 Phases 的理解对理解当前文件处于哪个工作�
 
 下面的 Flowchart 结合常用命令可以清晰地理解
 
+​```mermaid
+sequenceDiagram
+Observable->>Subscriber:A;
+Subscriber->>Observable:B;
+Observable->>OnSubscribe:C;
+OnSubscribe->>Subscriber:D;
+OnSubscribe->>Subscriber:E;
+OnSubscribe->>Subscriber:F;
+OnSubscribe->>Subscriber:G;
+OnSubscribe->>Subscriber:H;
+​```
+
 
 ```mermaid
 graph LR
