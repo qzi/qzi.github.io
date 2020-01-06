@@ -1,4 +1,0 @@
-{# mermaid body #}
-
-
-{# mermaid end #}

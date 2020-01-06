@@ -32,7 +32,7 @@ _关于女人_
 
 
 Any case you contact me via :  
-[Email](mailto:i@leonvision.online) : i@leonvision.online  
+[Email](mailto:i@leonvision.online): i@leonvision.online  
 [Telegram](https://t.me/leon_qiu): leon_qiu  
 
 
