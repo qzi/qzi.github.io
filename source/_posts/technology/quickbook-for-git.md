@@ -19,7 +19,6 @@ Git 最重要的三个 Phases 的理解对理解当前文件处于哪个工作�
 
 
 {% mermaid graph TD %}
-graph LR
 A[Working Area - unstaged] --> | git add | B[Staging Area - staged]
 B --> | git commit | C[ Repo - commited ]
 {% endmermaid %}
