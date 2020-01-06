@@ -23,6 +23,14 @@ A[Working Area - unstaged] --> | git add | B[Staging Area - staged]
 B --> | git commit | C[ Repo - commited ]
 {% endmermaid %}
 
+{% mermaid graph TD %}
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me thinksssss<br>ssssssssssssssssssssss<br>sssssssssssssssssssssssssss}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[Car]
+{% endmermaid %}
+
 ```mermaid
 graph LR
     A --- B

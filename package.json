@@ -17,7 +17,6 @@
     "hexo-asset-link": "^2.0.1",
     "hexo-deployer-git": "^2.1.0",
     "hexo-fbcomments": "^1.0.6",
-    "hexo-filter-mermaid-diagrams": "^1.0.5",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.6",
     "hexo-generator-category": "^1.0.0",
@@ -32,8 +31,6 @@
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
-    "hexo-util": "git+https://github.com/hexojs/hexo-util.git",
-    "mermaid": "^8.4.4",
-    "yarn": "^1.21.1"
+    "hexo-util": "git+https://github.com/hexojs/hexo-util.git"
   }
 }
