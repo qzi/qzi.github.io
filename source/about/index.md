@@ -35,9 +35,12 @@ Any case you can contact me via :
 [Telegram](https://t.me/leon_qiu): leon_qiu  
 
 
+
+
 **学习型的投资者可以加入我的 Financial Group 进行交流讨论**    
 
 Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
 Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)   
+理财微信公众号: 小海的练功房    
 微信投资学习群 ：  
 ![image-20200105081221809](index/wechat_qrcode.png)
