@@ -6,7 +6,7 @@ type: about
 
 这个博客兴趣广泛，技术，金融，摄影，时事 ...   
 
-* 技术 ： 本职渣渣, 优先分享我个人建站碰到的解决方案，包括获取信息的能力  
+* 技术 ： 本职渣渣, 优先分享我个人建站碰到的解决方案 
 * 金融 ： Plan B 吧, 实际上它更好地帮助了我认识这个世界的商业运行的规律  
 * 摄影 ： 对美的追求可以调节生活，包括诗歌与远方, 美的女孩 ... 
 * 时事 ： 祖国还没统一，放心不下  
@@ -30,8 +30,7 @@ _关于女人_
 
 这个博客不准备讨好任何人，默认它的观看者是有自由获取信息的能力，独立思考的能力，会点中文，会点英语 ... 
 
-
-Any case you contact me via :  
+Any case you can contact me via :  
 [Email](mailto:i@leonvision.online): i@leonvision.online  
 [Telegram](https://t.me/leon_qiu): leon_qiu  
 
