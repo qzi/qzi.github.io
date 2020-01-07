@@ -8,7 +8,7 @@ tags: git
 
 ## 	Git Phases
 
-Git 最重要的三个 Phases 的理解对理解当前文件处于哪个工作区十分关键，
+Git 最重要的三个 Phases 的理解对了解当前文件处于哪个工作区十分关键
 
 1. `git add`  会使当前工作区的更改的文件状态从 unstaged 变成 staged
 2. `git commit ` 会使当前工作区的更改的文件状态从 staged 变成 committed
