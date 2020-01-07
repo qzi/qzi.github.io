@@ -1,5 +1,5 @@
 ---
-title: ' 使用 Twitter 进行高级搜索 '
+title: ' Twitter 高级搜索 '
 categories: technology
 permalink: technology/twitter-as-search-engine
 date: 2020-01-08 05:59:04
@@ -12,6 +12,8 @@ tags: search
 
 ## 搜索特定账号的内容
 
+在 PressTV 里面搜索 `recognizing U.S. military`
+
 ```bash
  recognizing U.S. military from:PressTV
 ```
@@ -21,6 +23,8 @@ tags: search
 
 
 ## 由特定时间进行搜索
+
+在 PressTV 里面搜索 2020年1月6号到1月8号的关于`recognizing U.S. military`的信息
 
 ```
  recognizing U.S. military from:PressTV since:2020-01-06 until:2020-01-08
