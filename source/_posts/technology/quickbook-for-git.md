@@ -15,11 +15,12 @@ Git 最重要的三个 Phases 的理解对了解当前文件处于哪个工作�
 
 下面的 Flowchart 结合常用命令可以清晰地理解
 
+```mermaid
+graph TD;
+A[Working Area - unstaged] --> | git add | B[Staging Area - staged];
+B --> | git commit | C[ Repo - commited ];
+```
 
-{% mermaid graph TD %}
-A[Working Area - unstaged] --> | git add | B[Staging Area - staged]
-B --> | git commit | C[ Repo - commited ]
-{% endmermaid %}
 
 
 ## Quick Book of Git

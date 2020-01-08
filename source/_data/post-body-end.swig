@@ -13,6 +13,7 @@
 
 {# google adsense end #}
 
+{# baidu push body #}
 <script>
 (function(){
     var bp = document.createElement('script');
@@ -28,3 +29,4 @@
 })();
 </script>
 
+{# baidu push end #}

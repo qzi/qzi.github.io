@@ -14,4 +14,3 @@ if (document.querySelectorAll('pre.mermaid').length) {
 }
 </script>
 {%- endif %}
-

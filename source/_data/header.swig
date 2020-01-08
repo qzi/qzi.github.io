@@ -4,7 +4,7 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-
+{#
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/7.6.1/firebase-app.js"></script>
 
@@ -15,6 +15,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
 
-
+#}
 
 

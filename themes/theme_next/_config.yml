@@ -822,10 +822,17 @@ pdf:
   height: 500px
 
 # Mermaid tag 
+# mermaid:
+#   enable: true
+#   # Available themes: default | dark | forest | neutral
+#   theme: neutral
+
 mermaid:
-  enable: true
-  # Available themes: default | dark | forest | neutral
+  enable: false
+#   # Available themes: default | dark | forest | neutral
   theme: neutral
+
+
 
 
 # ---------------------------------------------------------------
@@ -1036,6 +1043,21 @@ images: images
 
 
 
+# mermaid chart
+# https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
+# https://mermaid-js.github.io/mermaid/#/usage
+## mermaid url https://github.com/knsv/mermaid
+# cdn https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js
+mermaidjs: 
+  enable: true
+  cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js
+  # Available themes: default | dark | forest | neutral
+  theme: neutral
+  # version: "7.1.2"
+  # options:
+    # startOnload: true
+  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    #startOnload: true  // default true
 
 
 

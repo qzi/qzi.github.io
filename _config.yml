@@ -138,3 +138,15 @@ sitemap:
 #   enable: true
 #   version: "7.1.2"
 #   options: true
+
+
+# mermaid chart
+# https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
+## mermaid url https://github.com/knsv/mermaid
+mermaidjs: 
+  enable: true  
+  version: "7.1.2"
+  options:
+    startOnload: true
+  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    #startOnload: true  // default true
