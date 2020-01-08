@@ -12,10 +12,10 @@ tags: search
 
 ## 搜索特定账号的内容
 
-在 PressTV 里面搜索 `recognizing U.S. military`
+在  PressTV  里面搜索 `recognizing all U.S. military as ‘terrorist entity’`
 
 ```bash
- recognizing U.S. military from:PressTV
+recognizing all U.S. military as ‘terrorist entity’ from:PressTV
 ```
 
 ![image-20200108060823925](twitter-as-search-engine/image-20200108060823925.png)
