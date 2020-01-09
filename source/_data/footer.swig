@@ -1,8 +1,8 @@
 
 {# custom mermaid body #}
 
-{%- if theme.mermaidjs.enable %}
-  {%- set mermaid_uri = theme.mermaidjs.cdn or '//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js' %}
+{%- if config.mermaid.enable %}
+  {%- set mermaid_uri = config.mermaid.cdn or '//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js' %}
 
   <script{{ pjax }}>
 
@@ -43,7 +43,7 @@
     .done(() => {
       console.log("start to load the mermaid script");
       mermaid.initialize({
-            theme: '{{theme.mermaidjs.theme}}',
+            theme: '{{config.mermaid.theme}}',
             logLevel: 3,
             flowchart: { curve: 'basis' },
             gantt: { axisFormat: '%m/%d/%Y' },
