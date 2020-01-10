@@ -11,22 +11,21 @@ date: 2019-12-16 01:31:56
 
 GitLens 可以在你的代码编辑区看到当前行的git log里面的修改情况，体验非常惊艳，开箱即用不用什么配置
 
-```latex
-Introduction from official website:
+> Introduction from official website:
+>
+> GitLens supercharges the Git capabilities built into Visual Studio Code. It helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
+>
+> Official website: 
+> https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 
-GitLens supercharges the Git capabilities built into Visual Studio Code. It helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
 
-Official website: 
-https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
-```
+
 
 **Installation**
 
 Open Visual Studio Code, press F1, type `Extensions: install` then search for rest-client.
 
 _screenshot :_
-
-![Current Line Blame](https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images/docs/current-line-blame.png)
 
 ![image-20200110084853409](my-favorite-extensions-for-visual-studio-code/image-20200110084853409.png)
 
