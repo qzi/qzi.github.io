@@ -26,9 +26,9 @@ Open Visual Studio Code, press F1, type `Extensions: install` then search for re
 
 _screenshot :_
 
+![Current Line Blame](https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images/docs/current-line-blame.png)
+
 ![image-20200110084853409](my-favorite-extensions-for-visual-studio-code/image-20200110084853409.png)
-
-
 
 
 
@@ -67,10 +67,16 @@ GET  https://{{Host}}/3.0/threads/listPosts.json Http/1.1
 **Screeshot**  
 ![Rest Client](./my-favorite-extensions-for-visual-studio-code/rest-client.jpg)
 
+
+
 ## To be continue
 
-**Reference**  
+
+
+## Reference
 _Testing your API with REST Client_  
 https://res.cloudinary.com/practicaldev/image/fetch/s--F1ngOkbZ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://techwatching.dev/posts/images/restclient_swapi_2.png  
 _REST Client_  
 https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+_Gitlens_
+https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
