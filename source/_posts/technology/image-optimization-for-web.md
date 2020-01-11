@@ -10,7 +10,7 @@ tags: blog
 
 使用 Google 的 [Page speed](https://developers.google.com/speed/pagespeed/insights/) 对页面进行加载测试，发现图片的加载对页面的加载的拖延非常严重，如下截图：
 
-![telegram-cloud-photo-size-5-6109458483570125152-x](image-optimization-for-web/telegram-cloud-photo-size-5-6109458483570125152-x.jpg)
+![photo-size-5-6109458483570125152-x](image-optimization-for-web/photo-size-5-6109458483570125152-x.jpg)
 
 
 
