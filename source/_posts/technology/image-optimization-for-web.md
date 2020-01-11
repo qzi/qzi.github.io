@@ -1,5 +1,5 @@
 ---
-title: image optimization for web
+title: 网络图片优化
 categories: technology
 date: 2020-01-11 08:39:19
 tags: blog
