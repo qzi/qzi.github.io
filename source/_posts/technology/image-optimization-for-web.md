@@ -1,7 +1,6 @@
 ---
 title: image optimization for web
 categories: technology
-permalink: technology/image-optimization-for-web
 date: 2020-01-11 08:39:19
 tags: blog
 ---
