@@ -9,7 +9,7 @@ tags: blog
 
 使用 Google 的 [Page speed](https://developers.google.com/speed/pagespeed/insights/) 对页面进行加载测试，发现图片的加载对页面的加载的拖延非常严重，如下截图：
 
-![photo-size-5-6109458483570125152-x](image-optimization-for-web/photo-6109458483570125152.jpg)
+![photo-6109458483570125152](image-optimization-for-web/photo-6109458483570125152.jpg)
 
 
 
