@@ -55,5 +55,7 @@ lazyload: true
 
 现有发现的问题是在safari上加载 300k 的 mermaid.min.js 显得特别慢
 
+image test
 
+![image-20200112073131424](image-optimization-for-web/image-20200112073131424.png)
 

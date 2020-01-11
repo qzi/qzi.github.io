@@ -16,7 +16,6 @@
     "hexo": "^4.2.0",
     "hexo-asset-link": "^2.0.1",
     "hexo-deployer-git": "^2.1.0",
-    "hexo-fbcomments": "^1.0.6",
     "hexo-filter-mermaid-diagrams": "^1.0.5",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.6",
