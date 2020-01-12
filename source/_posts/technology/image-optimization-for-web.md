@@ -40,6 +40,13 @@ Homepage : https://github.com/ApoorvSaxena/lozad.js
 
 Demo : https://apoorv.pro/lozad.js/demo/
 
+其原理在于把 img src 设置成 data-src，利用 IntersectionObserver API 来观察元素是否可见，进行动态加载
+
+```html
+<img data-src="/technology/image-optimaize-for-web/image-20200112173701314.png" alt="image-20200112173701314" src="/technology/image-optimaize-for-web/image-20200112173701314.png" data-loaded="true">
+```
+
+
 对于Hexo-next的主题来说，已经内置了对lazyload的支持，直接在[theme_next]/_config.yml 找以下选项开启就行了
 
 ```yaml
