@@ -15,7 +15,11 @@ tags: blog
 
 ## ImageOptim
 
-此时需要对页面的图片进行优化，此处使用 [ImageOptim](https://imageoptim.com/mac) 进行图片压缩，导航到你的markdown索引的图片文件夹，并把里面的图片直接拖入 ImageOptim 就好了，同时压缩完会直接替换，直接commit新的优化的图片即可，原文件会被拉入垃圾箱可恢复，压缩可以在 ImageOptim 的 Preference 里面进行更大的压缩比设置
+此时需要对页面的图片进行优化，此处使用 [ImageOptim](https://imageoptim.com/mac) 进行图片压缩
+
+![imageoptim_gif](image-optimization-for-web/imageoptim_gif.gif)
+
+导航到你的markdown索引的图片文件夹，并把里面的图片直接拖入 ImageOptim 就好了，同时压缩完会直接替换，直接commit新的优化的图片即可，原文件会被拉入垃圾箱可恢复，压缩可以在 ImageOptim 的 Preference 里面进行更大的压缩比设置
 
 ![image-20200112173701314](image-optimization-for-web/image-20200112173701314.png)
 
@@ -59,4 +63,11 @@ lazyload: true
 
 ![image-20200112164800586](image-optimization-for-web/image-20200112164800586.png)
 
-现有发现的问题是在safari上加载 300k 的 mermaid.min.js 显得特别慢
+## Reference
+
+_imageoptim_
+https://imageoptim.com
+_IntersectionObserver API 使用教程_
+http://www.ruanyifeng.com/blog/2016/11/intersectionobserver_api.html
+_IntersectionObserver API_
+https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
