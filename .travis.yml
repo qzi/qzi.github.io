@@ -10,7 +10,7 @@ before_install:
 - git config --global push.default matching
 - git config --global user.name "leon"
 - git config --global user.email "i@leonvision.online"
-- sed -i'' "/^ *repo/s~github\.com~${GITHUB_TOKEN}@github.com~" _config.yml
+# - sed -i'' "/^ *repo/s~github\.com~${GITHUB_TOKEN}@github.com~" _config.yml
 install:
 - npm install
 script:
@@ -21,7 +21,7 @@ cache:
   - node_modules
 env:
   global:
-  - GIT_PAGE_REF: github.com/qzi/qzi.github.io.git
+  # - GIT_PAGE_REF: github.com/qzi/qzi.github.io.git
   #- secure: w4ue6bIjVPsRIsXyjWyFnDC8cTpA1wsQPc6gggoVSLzuWn89vLjKApsYBU7RzxxS+skIkI6mOqhqzdA2BLzrl8/8XeTK4Vjc/qQQoCPJeo477TqrsHgjDJy94fq0TL6d0zsjOhV9q6TCxWYiMBBn/0QiJRz0DZeEgLqKjt9ZJyCDNvu/A9KF7zR8y6Gu7cmHhvrKlwXNmkhQFii8e+DBb1KdNG2JVzpoDHlQ8HRHeTgkRcXvx8qgYeRgKkBI3kukfRArGUe6hN2X6GcqBsUbBT3K375DlMKPC56a/NTxTA8drCDYG7hSE/PpykcGdb73QPazga5qSHaudsdrQZmhXLEtMKUT8UEsEQkyp7l7rr2IkZN7+uvpDjb0i/asVinOSJZ42XZYmKfkmNBE3/D6IPXiqt+cSc1mnKJ/7sAGrA1asIY11imWEtQDzs+rwFh2C7oH1JKPhhyCF7cWdcLRA0HxVGHHdmp1PgiPRvwcgEkW6KIdl5M98yRPDtvd8aF1EAQUNkC6i/5Ugi2tCAgkozu+Wljdlvn9ZzwPXCllgBfxXiwSwx0ivwxho63U5OWCPi4QWp847FvJQ98Oq6IYoZ5dfd3Qb9bla17tKVt3yDw7cbfKLYxCjbNZAhJnStdaK6fnu/8tb4ffwCOoed7e6TsHmd0CYT6ODJvU5+xZFrE=
   - secure: I3EIHvysnL50yQPdu5jRZfX3+A+3TlDlcTgd9GZQ7HbKjIdhx8cYU1bZUUv3sAXJnAS9nU3QFy3Q/bccshrFdh6cEww+qcJ0MuvUahqe99yRkaevaXTw9uCm/p+lUORUQcg6mfhc30l8bb469a/ldLBXao6HHTsVRYVBm5g3VcFpxU0/zaufSxgwek7e5PlGB0YWUC93MBiOPpEin4ikVVoFWDP1KsEbmubRrW/LpysUZIiXy13qdQvtKRAoQ78UTmt2o8FFcHvWRUMleTyi63iJqVB7OSOXGnjPnp2fdIhVyXs50VPvY5UUOw1qyhPkw/D1HUUpsorE/xvDNsJFy4/anUHppjKYTBA/RbVRZp/tTH1cLn0wpHq+L/RsKh/G/G7q/2htEDcay+/fYxGYClCDZeMGvOrJUkXz996miwHWojYlGwrcyRvvOmRZz5jISlB4KAlaJHWWaVzG1xCFTeektVeSrOM8hMZ9c0JVi/8zwYNecsw/zBJmrWBSzdAyxnxIEmfmmLQXArtLUvq3FGs/L02qE0ZlaFisNRJ1r9DvLZ1Hats2a88kaU2B+LJQR4crMZuWneuoW1m+2du1HpP0oy4i/a/uRdyVgBvqnE+u2EH16VhAYk5Wwu/+giMWi3wMMDMJnEHt5EodL4kKwglVhjNdKsyH7sgOcXELbIY=
 deploy:
