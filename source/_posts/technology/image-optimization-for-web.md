@@ -1,14 +1,13 @@
 ---
 title: ' 网络图片优化 '
 categories: technology
-permalink: technology/
+permalink: technology/image-optimaize-for-web
 date: 2020-01-12 07:44:19
-tags:
+tags: blog
 ---
 
 使用 Google 的 [Page speed](https://developers.google.com/speed/pagespeed/insights/) 对页面进行加载测试，发现图片的加载对页面的加载的拖延非常严重，如下截图：
 
-![image-20200112075113738](test-artitle/image-20200112075113738.png)
 
 
 
@@ -16,7 +15,6 @@ tags:
 
 此时需要对页面的图片进行优化，此处使用 [ImageOptim](https://imageoptim.com/mac) 进行图片压缩，导航到你的markdown索引的图片文件夹，并把里面的图片直接拖入 ImageOptim 就好了，同时压缩完会直接替换，直接commit新的优化的图片即可，原文件会被拉入垃圾箱可恢复，压缩可以在 ImageOptim 的 Preference 里面进行更大的压缩比设置
 
-![image-20200112075156628](test-artitle/image-20200112075156628.png)
 
 
 
@@ -49,8 +47,6 @@ lazyload: true
 ```
 
 之后在进行 Google pagespeed 的测试就行了，实测效果不错
-
-![image-20200112075236601](test-artitle/image-20200112075236601.png)
 
 
 
