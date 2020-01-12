@@ -121,19 +121,36 @@ $travis encrypt -r [github user]/[github page project] "GITHUB_TOKEN=[github acc
 $firebase login:ci
 ```
 
-利用github的public key对firebase token进行加密,并添加到.travis.yml的deploy.token.secure  
+利用github的 public key 对 firebase token 进行加密,并添加到`.travis.yml`的 deploy.token.secure  
 
 ```bash
 $travis encrypt -r [github user]/[github page project] [firebase token] --add deploy.token
 ```
 
+最终在 CI Pipleline 运行脚本的前需要把你在本地进行 Firebase login 后的 Session 进行 `firebase logout`
 
 
-<u>因为的测试次数有限，第一次是成功了，但是 Firebase 第一次的加密使用是成功的，第二次却失败了（以后继续测试我还会像这次一样回来修改增补文章），然后我使用直接在 travis-ci.org/[github user]/[github user repo]/settings设置环境变量的方法，就是不暴露在 Github 的`.travis.yml`里面感觉似乎更安全</u>
+
+_因为的测试次数有限，第一次是成功了，但是 Firebase 第一次的加密使用是成功的，第二次却失败了（以后继续测试我还会像这次一样回来修改增补文章），然后我使用直接在 travis-ci.org/[github user]/[github user repo]/settings设置环境变量的方法，就是不暴露在 Github 的`.travis.yml`里面感觉似乎更安全_
 
 ![image-20200113050017995](deploy-hexo-to-google-firebase-hosting-via-travis-ci/image-20200113050017995.png)
 
-最终在 CI Pipleline 运行脚本的前需要把你在本地进行 Firebase login 后的 Session 进行 `firebase logout`
+这种方式跟直接加在`.travis.yml`的区别就是在 run script 的时候环境变量的变量来源不同
+
+- Setting environment variables from repository settings
+- Setting environment variables from .travis.yml
+
+```bash
+#Snippet of running script
+Setting environment variables from repository settings
+$ export FIREBASE_TOKEN= ****
+$ export FIREBASE_PROJECT=**
+
+Setting environment variables from .travis.yml
+$ export GITHUB_TOKEN=[secure]
+```
+
+
 
 
 
