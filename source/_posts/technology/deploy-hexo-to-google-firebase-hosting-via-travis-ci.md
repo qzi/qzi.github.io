@@ -91,6 +91,8 @@ deploy:
     # branches: master
 ```
 
+
+
 ### Encrypt github token and firebase cli token
 
 因为其实你的 Github 已经对 Travis 进行授权，所以如果用 github public key 对字符串进行加密，Travis其实可以用 private key 对密文进行解密，但是因为其他人没有这个调用 private key 的权限，所以即便你在 .travis.yml 里面的密文放在 github 上让人看到也是安全的。
@@ -106,6 +108,8 @@ $firebase login:ci
 ```bash
 $travis encrypt -r [github user]/[github page project] [firebase token] --add deploy.token
 ```
+
+
 **Github**  
 到 https://github.com/settings/tokens 申请一个 Github access token，密文只会出现一次需要保存起来，授权上全选Repo就行了
 
@@ -115,11 +119,19 @@ $travis encrypt -r [github user]/[github page project] [firebase token] --add de
 $travis encrypt -r [github user]/[github page project] "GITHUB_TOKEN=[github access token]" --add
 ```
 
-需要注意的是以上的加密方式是针对 travis-ci.org 的，而另外会有一个关联的企业服务的网站叫travis-ci.com,它的加密方式需要再参数上加`--pro`,加密前需用pro的账号登陆
+
+
+ travis-ci.org 的，而另外会有一个关联的企业服务的网站叫travis-ci.com,它的加密方式需要再参数上加`--pro`,加密前需用pro的账号登陆
 
 ```bash
 travis login --pro
 ```
+
+其他命令雷同，只是在参数上加上 `--pro`即可
+
+Travis-ci.org 只能显示github 上public的项目，而Travis-ci.com 可以看到private的项目，而且有邮件通知 ... 不过我还是选择了 org, 暂时够用就好了
+
+
 
 
 

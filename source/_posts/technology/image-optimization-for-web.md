@@ -48,6 +48,6 @@ lazyload: true
 
 之后在进行 Google pagespeed 的测试就行了，实测效果不错
 
-
+![image-20200112164800586](image-optimization-for-web/image-20200112164800586.png)
 
 现有发现的问题是在safari上加载 300k 的 mermaid.min.js 显得特别慢
