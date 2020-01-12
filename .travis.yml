@@ -6,7 +6,7 @@ branches:
   - hexo
 before_install:
 - npm install hexo-cli -g
-- npm i -g firebase-tools
+# - npm i -g firebase-tools
 - git config --global push.default matching
 - git config --global user.name "leon"
 - git config --global user.email "i@leonvision.online"
@@ -28,8 +28,8 @@ deploy:
   skip_cleanup: true
   provider: firebase
   token:
-    secure: HiiBkpFcXBPam0jyqTx77qiCB6yRJbXQseDtA/mS4vxztVIB2RC1ljdrZ9ykTtvBck7BLrThZ1oaYLo/HgxmddwYrNnemyMK4jXTCjG6cQU7peI+qstChYtITkKp3O4JaNYIAdHa8AqRqVyR7fRFxpwCVMc9yg/UY7NxsbGlmpi7Y+o8Y4MzteSJcvoG4g1CzexyYDG8AWIoqlyuDoKxS5yt1zzJExJ1SziPNzNarYzerM3HdX8ABpuzjZBQzexOGF7X4p3ABR90trkIOiNOBUe/pqaJG9V8BXDOEQQDo82R9FIraKlyGVzWJakMMDyUbt9f8+cX5t21N65t/YRG/1RohFuCEmCm52XJpM5OG1PPHAJd7XNDGy15QT4muYYwzh2Ct/rL5fVQCl+nNM98tEwD2Kb+VXuWblSi7rROtPHYqDBoaFpX4t4LtMm9Dc1BRF94SpUtdNH2yzLXpZY/UOSflpuHBR/Kv5Q4/rWdsdxJ7+fJ5Ucaqb2s+xAPeyIC20X+ewAeAkyEvwAt+TzRw9x90Rx6k3Mh05MEr0aHwvDKu4SUoV4yIXVN2NOXHq5qlL/RiNObb7KLPQPqtEPdz7PPYOICQcyWr0SUHHqj9E2n3iuM3IUYyq2sfEXBHhsGA7f1ehYHsR0VbTmHg6Lj6qdf6AHj2ckrGHiU0g1/6dE=
-  project: hexo-blog-60813
+    secure: $FIREBASE_TOKEN
+  project: $FIREBASE_PROJECT
   on:
     all_branches: true
     # branches: master
