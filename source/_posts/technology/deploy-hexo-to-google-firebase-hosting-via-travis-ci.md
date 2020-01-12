@@ -67,7 +67,6 @@ branches:
   - hexo
 before_install:
 - npm install hexo-cli -g
-- npm i -g firebase-tools
 - git config --global push.default matching
 - git config --global user.name "your name"
 - git config --global user.email "your email"
@@ -82,7 +81,6 @@ cache:
   - node_modules
 env:
   global:
-  - GIT_PAGE_REF: github.com/[github page project].git
   - secure: [Encrypted GITHUB_TOKEN]
 deploy:
   provider: firebase
