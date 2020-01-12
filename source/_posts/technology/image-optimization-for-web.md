@@ -6,7 +6,9 @@ date: 2020-01-12 07:44:19
 tags: blog
 ---
 
-使用 Google 的 [Page speed](https://developers.google.com/speed/pagespeed/insights/) 对页面进行加载测试，发现图片的加载对页面的加载的拖延非常严重，如下截图：
+使用 Google 的 [Page speed](https://developers.google.com/speed/pagespeed/insights/) 对页面进行加载测试，发现图片的加载对页面的加载的拖延非常严重
+
+![photo_2020-01-12 17.39.11](image-optimization-for-web/photo_2020-01-12%2017.39.11-8822013.jpeg)
 
 
 
@@ -15,7 +17,7 @@ tags: blog
 
 此时需要对页面的图片进行优化，此处使用 [ImageOptim](https://imageoptim.com/mac) 进行图片压缩，导航到你的markdown索引的图片文件夹，并把里面的图片直接拖入 ImageOptim 就好了，同时压缩完会直接替换，直接commit新的优化的图片即可，原文件会被拉入垃圾箱可恢复，压缩可以在 ImageOptim 的 Preference 里面进行更大的压缩比设置
 
-
+![image-20200112173701314](image-optimization-for-web/image-20200112173701314.png)
 
 
 我通常是使用Mac的默认截图方式截图直接粘贴，默认是PNG，如果是这种方式，其实设置压缩比在50%都清晰可见
