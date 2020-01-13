@@ -1,5 +1,5 @@
 ---
-title: ' 博客图片加载优化 - Hexo '
+title: ' 博客图片加载优化 - Hexo篇 '
 categories: technology
 permalink: technology/image-optimaize-for-web
 date: 2020-01-12 07:44:19

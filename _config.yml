@@ -113,12 +113,12 @@ deploy:
   branch: master
 
 
-## Enable the search function
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
+# ## Enable the search function
+# search:
+#   path: search.xml
+#   field: post
+#   format: html
+#   limit: 10000
 
 ## SiteMap
 sitemap:

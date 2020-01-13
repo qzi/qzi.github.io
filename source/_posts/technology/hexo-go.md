@@ -1,15 +1,16 @@
 ---
-title: Hexo with Github Page
+title: Hexo with NexT on Github Page
 tags: blog
 categories: technology
 date: 2019-12-04 07:37:08
+permalink: technology/hexo-go
 ---
 
 # Hexo initial
 
 $ hexo init # Initial the project  
 $ npm install # download the independencies  
-$ tree ./ -L 1 # 查看目录树而已  
+$ tree ./ -L 1 #  Just review the file tree  
 $ hexo g # Generate the html  
 $ hexo s # Start the server  
 
@@ -53,7 +54,9 @@ custom_file_path:
 
 more detail in [google-analytics-and-adsense-in-hexo](https://i.leonvision.online/technology/2019/12/16/google-analytics-and-adsense-in-hexo/)   
 
-# Add comment system
+
+
+# Comment System
 
 ## Disqus
 Disqus can allow the anonymous, but it can not use in China.
@@ -64,39 +67,19 @@ DisqusJS can help us to go through the whole world
 https://theme-next.org/docs/third-party-services/comments
 
 
-## Facebook comment(failed)
-Apply the facebook app id and note that the private plicy is a concern of your data
 
-[developers.facebook](http://developers.facebook.com)
+# Hexo Editor - Typora
+Typora is a what you see is what you get system.
 
-Set up the fb comment like the link below:
-[set up the app id after registed account](https://www.webascender.com/blog/add-facebook-comments-website/)
-
-[get code form the styled comments](https://developers.facebook.com/docs/plugins/comments/)
-
-[Hexo Next 加入 FB 留言版](https://hsiangfeng.github.io/hexo/20190518/3303379172/)
-
-[chinese privacy policy template](https://github.com/lyrasoft/chinese-privacy-policy-template)
-
-[隱私權政策制定指南](https://developer.mozilla.org/zh-TW/docs/Archive/Mozilla/Marketplace/Publishing/Privacy_policies#Mozilla_Marketplace_.E7.9A.84.E9.9A.B1.E7.A7.81.E6.AC.8A.E8.A6.81.E6.B1.82)
-
-[The Complete Guide for Facebook Developers: How to add a Privacy Policy to your Apps](http://wp4fb.com/how-to-add-a-privacy-policy-to-your-apps/#comment-15347)
-
-[my privacy policy](http://x.xiniubaba.com/x.php/BfWn64/764)
-
-
-# Hexo editor
-Hexo editor is a what you see is what you get system.
-    
-    git clone https://github.com/tajpure/hexo-editor.git
-    cd hexo-editor
-    npm install --production
-    npm start
+_Here is my another tutorial_
+https://leonvision.online/technology/wysiwyg-markdown-editor-typora/
 
 or use evernote for China to edit the markdown
 
 
+
 # Global Avatar
+
 Add the url into the Avatar section in the _config
 Refer to the link as below:
 https://en.gravatar.com/emails/
@@ -104,23 +87,11 @@ https://en.gravatar.com/emails/
 
 # Search
 
-**Install**
-    
-    $ npm install hexo-generator-search --save
+**Enable the local serach in the _config.yml of theme-next**
 
-**Config it in {root}/_config**
-
-    search:
-      path: search.xml
-      field: post
-      content: true
-
-**Enable the serach in the _config.yml of theme-next**
-    
     local_search:
       enable: true
 
-[hexo-generator-search](https://www.npmjs.com/package/hexo-generator-search)
 
 
 # Google Analysis
@@ -130,6 +101,8 @@ Enable in {theme/to/next}/_config.yml
     google_analytics:
       tracking_id: UA-number
       localhost_ignored: false
+
+and also using the google tag manager to integrate the google analysis is better choice.
 
 
 
@@ -174,6 +147,7 @@ https://hexo.io/docs/front-matter.html
       archives: /archives/ || archive
 
 
+
 # Enhance Image Reference
 
 **Installation**  
@@ -195,14 +169,16 @@ https://liolok.github.io/zh-CN/How-to-Add-Image-to-Hexo-Blog-Post/
 Hexo Next already supported the mermaid nested.
 https://github.com/theme-next/theme-next.org/blob/source/source/docs/tag-plugins/mermaid.md
 
+Next use its own tag system to convert the diagram. so we need to fixed it aligning the common markdown practice.
+
+`npm install hexo-filter-mermaid-diagrams save`
+
+This filter will convert the indicator ````mermaid`  to `<pre class="mermaid">`, and then mermaid.js will filter  the elememet and redender them.
+
 
 
 # Force to refresh the browser
 Presss `Shift + Command + R` to force to refresh the browser(Chrome) to test the result in Mac 
-
-
-
-
 
 
 
