@@ -1,5 +1,5 @@
 ---
-title: ' 网络图片优化 '
+title: ' 网络图片加载优化 '
 categories: technology
 permalink: technology/image-optimaize-for-web
 date: 2020-01-12 07:44:19
@@ -37,13 +37,13 @@ tags: blog
 
 
 
-
-
 ## Lazyload for Hexo-Next
 
 Homepage : https://github.com/ApoorvSaxena/lozad.js
 
 Demo : https://apoorv.pro/lozad.js/demo/
+
+### 原理
 
 其原理在于把 img src 设置成 data-src，利用 IntersectionObserver API 来观察元素是否可见，进行动态加载
 
@@ -59,7 +59,9 @@ if (filters.lazyload) {
 }
 ```
 
+From: https://github.com/theme-next/hexo-theme-next/blob/master/scripts/filters/post.js#L14
 
+### 实施
 
 对于Hexo-next的主题来说，已经内置了对lazyload的支持，直接在[theme_next]/_config.yml 找以下选项开启就行了
 
