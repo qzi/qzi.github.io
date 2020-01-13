@@ -51,6 +51,15 @@ Demo : https://apoorv.pro/lozad.js/demo/
 <img data-src="/technology/image-optimaize-for-web/image-20200112173701314.png" alt="image-20200112173701314" src="/technology/image-optimaize-for-web/image-20200112173701314.png" data-loaded="true">
 ```
 
+Hexo 中的根据如上原理启用 Lazyload 的关键代码如下：
+
+```javascript
+if (filters.lazyload) {
+  data.content = data.content.replace(/(<img[^>]*) src=/img, '$1 data-src=');
+}
+```
+
+
 
 对于Hexo-next的主题来说，已经内置了对lazyload的支持，直接在[theme_next]/_config.yml 找以下选项开启就行了
 
@@ -65,7 +74,6 @@ lazyload: true
 ![image-20200112164800586](image-optimization-for-web/image-20200112164800586.png)
 
 ## Reference
-
 _imageoptim_
 https://imageoptim.com
 _IntersectionObserver API 使用教程_
