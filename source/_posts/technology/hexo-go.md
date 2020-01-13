@@ -6,14 +6,25 @@ date: 2019-12-04 07:37:08
 permalink: technology/hexo-go
 ---
 
-# Hexo initial
+
+
+Hexo is flexible blog system and Next comes with bundle of extensions to make it easier to use hexo blog.
+
+
+| Component       | Version |
+| --------------- | ------- |
+| hexo            | 4.2     |
+| Hexo-theme-next | 7.7     |
+
+
+
+# Hexo Initial
 
 $ hexo init # Initial the project  
 $ npm install # download the independencies  
 $ tree ./ -L 1 #  Just review the file tree  
 $ hexo g # Generate the html  
 $ hexo s # Start the server  
-
 $ code _config.yml
 
     deploy:
@@ -22,13 +33,18 @@ $ code _config.yml
         branch: master
 
 
-# Custom domain name
+
+# Custom Domain Name
+
 add a new file "CNAME" under the folder /public/
 add your domain name as the content
 
     $ echo "domain name" > ./public/CNAME
 
-# Custom theme
+
+
+# Custom Theme
+
 $ git clone https://github.com/theme-next/hexo-theme-next.git themes/theme_next
 change the content in the _config.yml
 
@@ -39,7 +55,9 @@ $ hexo clean # clean public/
 Link to the homepage : [https://theme-next.org](https://theme-next.org)
 
 
-# Add Google Adsense
+
+# Google Adsense
+
 * Add a file source/_data/header.swig.
 * past the <script>..</script> from google adsense on it
 * uncomment the line in themes/theme_next/_config.yml
@@ -66,6 +84,10 @@ Disqus can allow the anonymous, but it can not use in China.
 DisqusJS can help us to go through the whole world  
 https://theme-next.org/docs/third-party-services/comments
 
+## Valine
+
+To be continue
+
 
 
 # Hexo Editor - Typora
@@ -83,6 +105,7 @@ or use evernote for China to edit the markdown
 Add the url into the Avatar section in the _config
 Refer to the link as below:
 https://en.gravatar.com/emails/
+
 
 
 # Search
@@ -179,6 +202,8 @@ This filter will convert the indicator ````mermaid`  to `<pre class="mermaid">`,
 
 # Force to refresh the browser
 Presss `Shift + Command + R` to force to refresh the browser(Chrome) to test the result in Mac 
+
+Presss `Option + Command + R` to force to refresh the browser(Safari) to test the result in Mac 
 
 
 
