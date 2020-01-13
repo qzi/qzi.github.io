@@ -1,5 +1,5 @@
 ---
-title: ' 网络图片加载优化 '
+title: ' 博客图片加载优化 - Hexo '
 categories: technology
 permalink: technology/image-optimaize-for-web
 date: 2020-01-12 07:44:19
@@ -15,7 +15,7 @@ tags: blog
 
 ## ImageOptim
 
-此时需要对页面的图片进行优化，此处使用 [ImageOptim](https://imageoptim.com/mac) 进行图片压缩
+首先需要对页面的图片进行优化，此处使用 [ImageOptim](https://imageoptim.com/mac) 进行图片压缩
 
 ![imageoptim_gif](image-optimization-for-web/imageoptim_gif.gif)
 
