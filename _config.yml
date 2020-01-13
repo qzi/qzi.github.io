@@ -134,7 +134,8 @@ sitemap:
 # cdn https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js
 mermaid: 
   enable: true
-  cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js
+  cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.min.js
+  # cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js
   # Available themes: default | dark | forest | neutral
   theme: neutral
   # version: "7.1.2"
