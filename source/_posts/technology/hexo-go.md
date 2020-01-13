@@ -14,11 +14,11 @@ Hexo is flexible blog system and Next comes with bundle of extensions to make it
 | Component       | Version |
 | --------------- | ------- |
 | hexo            | 4.2     |
-| Hexo-theme-next | 7.7     |
+| hexo-theme-next | 7.7     |
 
 
 
-# Hexo Initial
+# Hexo Init
 
 $ hexo init # Initial the project  
 $ npm install # download the independencies  
@@ -27,10 +27,12 @@ $ hexo g # Generate the html
 $ hexo s # Start the server  
 $ code _config.yml
 
-    deploy:
-        type: git
-        repo:  # 这里的网址填你自己的仓库地址
-        branch: master
+```yaml
+deploy:
+    type: git
+    repo:  # your github repo
+    branch: master
+```
 
 
 

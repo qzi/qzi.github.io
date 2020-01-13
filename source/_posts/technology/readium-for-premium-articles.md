@@ -3,6 +3,7 @@ title: Readium for Premium Articles ( 读书人的事，能算偷么？）
 categories: technology
 date: 2019-12-21 19:41:53
 tags:
+permalink: technology/readium-for-premium-articles
 ---
 
 ## Readium  
