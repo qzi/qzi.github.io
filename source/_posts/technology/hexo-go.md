@@ -200,7 +200,7 @@ This filter will convert the indicator ````mermaid`  to `<pre class="mermaid">`,
 
 
 
-# Force to refresh the browser
+# Force to Refresh the Browser
 Presss `Shift + Command + R` to force to refresh the browser(Chrome) to test the result in Mac 
 
 Presss `Option + Command + R` to force to refresh the browser(Safari) to test the result in Mac 
