@@ -4,6 +4,10 @@
 {%- if config.mermaid.enable %}
   {%- set mermaid_uri = config.mermaid.cdn or '//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js' %}
 
+  {# Jquery Body #}
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  {# Jquery End #}
+
   <script{{ pjax }}>
 
     jQuery.getExternalScript =  function(url, callback, condition) {

@@ -625,8 +625,8 @@ valine:
   enable: true
   appid: BnlxSmDeyGYvxfkTqGcQTdAa-MdYXbMMI
   appkey: DxggU2hzw6wWyv8tetFybuSM
-  notify: false # Mail notifier
-  verify: false # Verification code
+  notify: true # Mail notifier
+  verify: true # Verification code
   placeholder: Just go go # Comment box placeholder
   avatar: mm # Gravatar style
   guest_info: nick,mail,link # Custom comment header
