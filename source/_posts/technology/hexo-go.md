@@ -41,7 +41,9 @@ deploy:
 add a new file "CNAME" under the folder /public/
 add your domain name as the content
 
-    $ echo "domain name" > ./public/CNAME
+```bash
+$ echo "domain name" > ./public/CNAME
+```
 
 
 
@@ -50,7 +52,9 @@ add your domain name as the content
 $ git clone https://github.com/theme-next/hexo-theme-next.git themes/theme_next
 change the content in the _config.yml
 
-    theme: theme_next
+```yaml
+theme: theme_next
+```
 
 $ hexo clean # clean public/
 
@@ -63,7 +67,7 @@ Link to the homepage : [https://theme-next.org](https://theme-next.org)
 * Add a file source/_data/header.swig.
 * past the <script>..</script> from google adsense on it
 * uncomment the line in themes/theme_next/_config.yml
-```
+```yaml
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
@@ -88,9 +92,14 @@ https://theme-next.org/docs/third-party-services/comments
 
 ## Valine
 
-To be continue
+This is good enough to approach it.
 
 https://juejin.im/post/5d790e706fb9a06af8250665
+
+**delete the comment on valine**
+
+登录Leancloud`>选择你创建的`应用`>`存储`>选择Class`Comment
+
 
 
 
@@ -137,13 +146,17 @@ and also using the google tag manager to integrate the google analysis is better
 
 **Installation**
 
-    npm install hexo-generator-feed --save
+```bash
+npm install hexo-generator-feed --save
+```
 
 **Configuration**
 In {ROOT}/themes/theme_next/_config.yml
 
-    social:
-      RSS: /atom.xml || rss
+```yaml
+social:
+  RSS: /atom.xml || rss
+```
 
 
 ​      
@@ -153,25 +166,29 @@ Only posts support the use of categories and tags. Categories apply to posts in 
 
 **Example**
 
-    categories:
-    - Sports
-    - Baseball
-    tags:
-    - Injury
-    - Fight
-    - Shocking
+```yaml
+categories:
+- Sports
+- Baseball
+tags:
+- Injury
+- Fight
+- Shocking
+```
 
 https://hexo.io/docs/front-matter.html
 
 **Configuration**
 
-    # External url should start with http:// or https://
-    menu:
-      home: / || home
-      about: /about/ || user
-      tags: /tags/ || tags
-      categories: /categories/ || th
-      archives: /archives/ || archive
+```yaml
+# External url should start with http:// or https://
+menu:
+  home: / || home
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+```
 
 
 

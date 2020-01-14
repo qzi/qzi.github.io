@@ -28,7 +28,8 @@
       options = $.extend( options || {}, {
         dataType: "script",
         cache: true,
-        url: url
+        url: url,
+        type: 'GET'
       });
     
       // Use $.ajax() since it is more flexible than $.getScript
@@ -52,21 +53,20 @@
     });
   }
 
-  {#
-    if (document.querySelectorAll('pre.mermaid').length) {
+  // if (document.querySelectorAll('pre.mermaid').length) {
 
-      $.getExternalScript('{{ mermaid_uri }}', () => {
-        console.log("start to load the mermaid script");
-        mermaid.initialize({
-              theme: 'forest',
-              logLevel: 3,
-              flowchart: { curve: 'basis' },
-              gantt: { axisFormat: '%m/%d/%Y' },
-              sequence: { actorMargin: 50 }
-        });
-      }, window.mermaid);
-    }
-  #}
+  //   $.getExternalScript('{{ mermaid_uri }}', () => {
+  //     console.log("start to load the mermaid script");
+  //     mermaid.initialize({
+  //           theme: 'forest',
+  //           logLevel: 3,
+  //           flowchart: { curve: 'basis' },
+  //           gantt: { axisFormat: '%m/%d/%Y' },
+  //           sequence: { actorMargin: 50 }
+  //     });
+  //   }, window.mermaid);
+  // }
+  
   </script> 
 
 {%- endif %}
