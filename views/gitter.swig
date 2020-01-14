@@ -1,8 +1,3 @@
-<script>
-  // ((window.gitter = {}).chat = {}).options = {
-  //   room: 'leon-vision/finance'
-  // }});
-</script>
 
 <script>
   ((window.gitter = {}).chat = {}).options = {
