@@ -12,7 +12,7 @@ IB（Interactive Broker) 的投资品种，融资成本，交易费率，出入�
 
 **Preparation**
 
-* 自带通用加速代理
+* 自备通用加速代理
 * 监听 localhost 一个 https tunnel 端口，自己定义，此文是port: 1087
 
 如果你看到这里已经感觉已经办不来了，那就可以直接关闭此文去玩游戏了  
@@ -34,7 +34,7 @@ The Java Launching stub file is located inside of your application bundle in the
 # http://informagen.com/JarBundler/StubFile.html
 ```
 
-**大概理解就行不用深究，所以思路就是让这个 JavaApplicationStub 通过我们前面准备好的代理把请求通过 1087 端口转发出去**
+> 大概理解就行不用深究，所以思路就是让这个 JavaApplicationStub 通过我们前面准备好的代理把请求通过 1087 端口转发出去
 
 
 
