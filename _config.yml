@@ -1,57 +1,34 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
-# Site
 title: Leon Vision
 subtitle: 'Keep simple, keep hungry'
 description: 'Technology, Finance, Photograhpy'
 keywords: leon vision
 author: Leon Qiu
-language: 
-- en
-- zh-cn
-timezone: 'Asia/Shanghai'
-
-# URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://leonvision.online
+language:
+  - en
+  - zh-cn
+timezone: Asia/Shanghai
+url: 'https://leonvision.online'
 root: /
-permalink: :title/
-permalink_defaults:
-# permalink_defaults: :category/:year/:month/:day/:post_title/
+permalink: ':title/'
+permalink_defaults: null
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing index.html from permalinks
-
-# Directory
+  trailing_index: true
 source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
-
-# default_category 预设布局，默认值 post ;
-# auto_spacing 中英文之间加入空格，默认 false；
-# titlecase 把标题转换为title case 默认值 false；
-# external_link 新标签中打开链接 ，默认值 true；
-# filename_case 把文件名转换为(1)小写或(2)大写。默认值0；
-# render_drafts 显示草稿，默认值false；
-# post_asset_folder 启动Asset文件夹，默认值false；
-# relative_link 把链接改为与根目录的相对路径位置，默认值false；
-# future 显示未来的文章，默认值true；
-# highlight 代码块设置
-# Writing
-new_post_name: :title.md # File name of new posts
+i18n_dir: ':lang'
+skip_render: null
+new_post_name: ':title.md'
 default_layout: post
-titlecase: true # Transform title into titlecase # auto_spacing 中英文之间加入空格，默认 false；
+titlecase: true
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  enable: true
+  field: site
   exclude: ''
-filename_case: 1 # filename_case 把文件名转换为(1)小写或(2)大写。默认值0；
+filename_case: 1
 render_drafts: false
 post_asset_folder: true
 relative_link: false
@@ -61,85 +38,32 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace: ''
-
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
   per_page: 10
-  order_by: -date
-
-# Category & Tag
+  order_by: '-date'
 default_category: uncategorized
-category_map:
-tag_map:
-
-# Metadata elements
-## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+category_map: null
+tag_map: null
 meta_generator: true
-
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
-time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
+time_format: 'HH:mm:ss'
 use_date_for_updated: false
-
-# Pagination
-## Set per_page to 0 to disable pagination
 per_page: 10
 pagination_dir: page
-
-# Include / Exclude file(s)
-## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
-
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
+include: null
+exclude: null
+ignore: null
 theme: theme_next
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: 'git'
-  repo: https://github.com/qzi/qzi.github.io.git
+  type: git
+  repo: 'https://github.com/qzi/qzi.github.io.git'
   branch: master
-
-
-# ## Enable the search function
-# search:
-#   path: search.xml
-#   field: post
-#   format: html
-#   limit: 10000
-
-## SiteMap
 sitemap:
-    path: sitemap.xml
-    template: #./sitemap_template.xml
-    rel: false
-
-
-# mermaid chart
-# https://github.com/webappdevelp/hexo-filter-mermaid-diagrams
-# https://mermaid-js.github.io/mermaid/#/usage
-## mermaid url https://github.com/knsv/mermaid
-# cdn https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js
-mermaid: 
+  path: sitemap.xml
+  template: null
+  rel: false
+mermaid:
   enable: true
-  # cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.min.js
   cdn: //cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js
-  # Available themes: default | dark | forest | neutral
   theme: neutral
-  # version: "7.1.2"
-  # options:
-    # startOnload: true
-  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
-    #startOnload: true  // default true

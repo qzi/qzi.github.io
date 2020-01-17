@@ -176,9 +176,15 @@ tags:
 - Shocking
 ```
 
+The classification records in the front-matter of the the source of markdown file
+https://raw.githubusercontent.com/qzi/qzi.github.io/hexo/source/_posts/technology/hexo-go.md
+
+Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes when written in YAML or three semicolons when written in JSON.
 https://hexo.io/docs/front-matter.html
 
 **Configuration**
+
+Configuration in the [hexo_project]/[themes]/[next]/_config.yml
 
 ```yaml
 # External url should start with http:// or https://
