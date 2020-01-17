@@ -26,13 +26,12 @@ IB（Interactive Broker) 的投资品种，融资成本，交易费率，出入�
 因为我用Mac，所以我优先介绍 Mac 上的 TWS 的成功实践
 在 Mac 上 IB TWS 是用 Java 写的 Application,  打包在 JavaApplicationStub 里面
 
-```yaml
-# Intruduction to Java Application Stub
-
-The Java Launching stub file is located inside of your application bundle in the subdirectory "Contents/MacOS/". The default name for this file is "JavaApplicationStub". It is used by the Mac OS X system read the applications plist and then launch the Java VM with the appropriate properties such as the classpath and main class name.
-
-# http://informagen.com/JarBundler/StubFile.html
-```
+>Intruduction to Java Application Stub
+>
+>The Java Launching stub file is located inside of your application bundle in the subdirectory "Contents/MacOS/". The default name for this file is "JavaApplicationStub". It is used by the Mac OS X system read the applications plist and then launch the Java VM with the appropriate properties such as the classpath and main class name.
+>
+>http://informagen.com/JarBundler/StubFile.html
+>
 
 > 大概理解就行不用深究，所以思路就是让这个 JavaApplicationStub 通过我们前面准备好的代理把请求通过 1087 端口转发出去
 
