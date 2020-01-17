@@ -24,9 +24,9 @@ IB（Interactive Broker) 的投资品种，融资成本，交易费率，出入�
 
 
 
-## TWS Proxy
+## IB TWS Proxy
 
-## Principle
+### Principle
 因为我用Mac，所以我优先介绍 Mac 上的 TWS 的成功实践
 在 Mac 上 IB TWS 是用 Java 写的 Application,  打包在 JavaApplicationStub 里面
 
@@ -41,7 +41,7 @@ IB（Interactive Broker) 的投资品种，融资成本，交易费率，出入�
 
 
 
-## TWS Proxy
+### TWS Proxy Configuration
 使用 Proxifier 进行代理
 https://www.proxifier.com/download/
 
@@ -60,6 +60,8 @@ https://www.proxifier.com/download/
 接下来就可以通过代理使用 TWS 了，登陆的Log可以看下面的`Proxifier TWS Log`，你可以看到 TWS 通过哪个端口去访问了哪个地址，这个的作用是如果你不想通过 Proxifier 去代理，那就手动把出现的所有访问网站全给代理了就行了
 
 而对于非Mac系统，例如windows，可以先用 Proxifier 全局代理后看看具体是哪个 TWS instance 去访问网络就把Application替换成那个就好了
+
+另外一点需要说说的就是，不要代理上瘾，如果升级完最新版本没啥访问障碍就不要用代理了^_^
 
 
 
