@@ -1,7 +1,7 @@
 ---
 title: ' IB TWS Proxy ( 盈透TWS代理 ) '
-categories: technology
-permalink: technology/ib-tws-proxy
+categories: finance
+permalink: finance/ib-tws-proxy
 date: 2020-01-17 13:41:02
 tags: ib
 ---
