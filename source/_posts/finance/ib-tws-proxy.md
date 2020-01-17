@@ -57,9 +57,13 @@ https://www.proxifier.com/download/
 
 ![image-20200117134959350](ib-tws-proxy/image-20200117134959350.png)
 
-接下来就可以通过代理使用 TWS 了，登陆的Log可以看下面的`Proxifier TWS Log`，你可以看到 TWS 通过哪个端口去访问了哪个地址，这个的作用是如果你不想通过 Proxifier 去代理，那就手动把出现的所有访问网站全给代理了就行了
+接下来就可以通过代理使用 TWS 了，
 
-而对于非Mac系统，例如windows，可以先用 Proxifier 全局代理后看看具体是哪个 TWS instance 去访问网络就把Application替换成那个就好了
+## Note
+
+TWS 登陆的 Log 可以看下面的 `Proxifier TWS Log`，你可以看到 TWS 通过哪个端口去访问了哪个地址，这个的作用是如果你不想通过 Proxifier 去代理，那就手动把出现的所有访问网站全给代理了就行了
+
+而对于非 Mac 系统，例如 Windows，可以先用 Proxifier 全局代理后看看具体是哪个 TWS instance 去访问网络就把 Application 替换成那个就好了
 
 另外一点需要说说的就是，不要代理上瘾，如果升级完最新版本没啥访问障碍就不要用代理了^_^
 
