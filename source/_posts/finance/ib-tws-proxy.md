@@ -53,9 +53,11 @@ https://www.proxifier.com/download/
 
 **Step 2**
 
-增加一条 Rule for TWS，制定 Applications -> JavaApplicationStub 的请求转发到 Proxy HTTPS 127.0.0.1:1087 就搞定了
+* 增加条 Rule for TWS，指定 Applications -> JavaApplicationStub 的请求转发到 Proxy HTTPS 127.0.0.1:1087 
+* 增加条 Rule for TWS，指定 Applications -> java 的请求转发到 Proxy HTTPS 127.0.0.1:1087 
 
 ![image-20200117134959350](ib-tws-proxy/image-20200117134959350.png)
+![image-20200117183231020](ib-tws-proxy/image-20200117183231020.png)
 
 接下来就可以通过代理使用 TWS 了，
 
