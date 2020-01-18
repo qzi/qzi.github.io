@@ -59,11 +59,15 @@ https://www.proxifier.com/download/
 ![image-20200117134959350](ib-tws-proxy/image-20200117134959350.png)
 ![image-20200117183231020](ib-tws-proxy/image-20200117183231020.png)
 
-接下来就可以通过代理使用 TWS 了，
+接下来就可以通过代理使用 TWS 了，如果不用代理正常访问是正常的就不如直接访问，因为数据传输快点
+
+以上方式`Target Host`里面是`Any`，这是针对所有的 Java Application 的，不过系统里面Java程序很少无所谓了，如果想再精确些可以继续往下看
+
+
 
 ## Note
 
-TWS 登陆的 Log 可以看下面的 `Proxifier TWS Log`，你可以看到 TWS 通过哪个端口去访问了哪个地址，这个的作用是如果你不想通过 Proxifier 去代理，那就手动把出现的所有访问网站全给代理了就行了
+TWS 登陆的 Log 可以看下面的 `Proxifier TWS Log`，你可以看到 TWS 通过哪个端口去访问了哪个地址，如果你不想通过 Proxifier 去代理或者用其他代理，那就手动把出现的所有访问网站全给代理了就行了
 
 ```bash
 amazonaws.com
