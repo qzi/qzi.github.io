@@ -11,6 +11,8 @@ permalink: technology/hexo-go
 Hexo is flexible blog system and Next comes with bundle of extensions to make it easier to use hexo blog.
 
 
+
+
 | Component       | Version |
 | --------------- | ------- |
 | hexo            | 4.2     |
@@ -211,6 +213,8 @@ menu:
 **Reference**  
 _Image to Hexo_  
 https://liolok.github.io/zh-CN/How-to-Add-Image-to-Hexo-Blog-Post/
+
+
 
 # Post Excerpt 
 
