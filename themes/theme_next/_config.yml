@@ -1037,10 +1037,12 @@ js: js
 images: images
 
 
-
-
-
-
+# # excerpt
+# excerpt:
+#   depth: 1
+#   excerpt_excludes: []
+#   more_excludes: []
+#   hideWholePostExcerpts: true
 
 
 
