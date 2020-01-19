@@ -4,6 +4,7 @@ categories: technology
 tags: blog
 date: 2019-12-26 00:52:18
 permalink: technology/monospace-chinese-font-family
+excerpt: ' 中文等宽字体，一个中文字符等宽两个英文字符，Mac下很多字体（ Menlo, Monaco, Courier New, Source Code Pro ）没有严格遵循或者说达不到这个标准, 它们不包括CJK的字库，有的时候用一些 markdown table formatter 会导致不整齐，其实并不是排列不整齐，而是字体的宽度不同 '
 ---
 
 

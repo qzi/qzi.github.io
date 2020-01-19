@@ -4,6 +4,7 @@ categories: technology
 permalink: technology/image-optimaize-for-web
 date: 2020-01-12 07:44:19
 tags: blog
+excerpt: ' 博客的图片加载是影响博客加载的速度的一个重要因素，本文旨在进行前端图片的加载优化的方法，改善 Page Speed '
 ---
 
 使用 Google 的 [Page speed](https://developers.google.com/speed/pagespeed/insights/) 对页面进行加载测试，发现图片的加载对页面的加载的拖延非常严重
