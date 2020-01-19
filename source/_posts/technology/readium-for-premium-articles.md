@@ -2,8 +2,8 @@
 title: Readium for Premium Articles ( 读书人的事，能算偷么？）
 categories: technology
 date: 2019-12-21 19:41:53
-tags:
 permalink: technology/readium-for-premium-articles
+excerpt: ' 孔乙己便涨红了脸，额上的青筋条条绽出，争辩道，“窃书不能算偷……窃书！……读书人的事，能算偷么？” 接连便是难懂的话，什么“君子固穷”，什么“者乎”之类，引得众人都哄笑起来：店内外充满了快活的空气。 '
 ---
 
 ## Readium  

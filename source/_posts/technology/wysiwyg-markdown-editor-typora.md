@@ -4,6 +4,7 @@ categories: technology
 date: 2020-01-05 04:03:29
 tags: markdown
 permalink: technology/wysiwyg-markdown-editor-typora
+excerpt: ' 在 Hexo Next 的tg群里听到有人提到 Typora，刚好对在用的 Editor（VSCdoe - Markdown all in one，Evernote)都不太满意，实验了一下后发现这个 WYSIWYG（所见即所得）的 Markdown Editor 还挺好用，最优秀的地方就是对图片的处理已经比较完善，使用非常简单，官网文档已经足够，本文结合 Hexo 只是做些完善而已 '
 ---
 
 在 Hexo Next 的tg群里听到有人提到 Typora，刚好对在用的 Editor（VSCdoe - Markdown all in one，Evernote)都不太满意，实验了一下后发现这个 WYSIWYG（所见即所得）的 Markdown Editor 还挺好用，最优秀的地方就是对图片的处理已经比较完善，使用非常简单，官网文档已经足够，本文结合 Hexo 只是做些完善而已
