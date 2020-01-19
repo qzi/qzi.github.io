@@ -14,15 +14,19 @@ date: 2019-12-07 03:44:48
 
 -----------------------------
 
-| Date               | Indicator                                                                      |
-| ------------------ | ------------------------------------------------------------------------------ |
+| Date               | Indicator                                                    |
+| ------------------ | ------------------------------------------------------------ |
 | 每个月第一个工作日 | ISM - Manufacturing Index - Institute of Supply Management Manufacturing Index |
-| 每个月第一个星期三 | ADP -  National Enployment Reports                                             |
-| 每个月第一个周五   | NFP - Nonfarm Payroll                                                          |
-| TBC                | ISM Non-Manufacturing PMI                                                      |
+| 每个月第一个星期三 | ADP -  National Enployment Reports                           |
+| 每个月第一个周五   | NFP - Nonfarm Payroll                                        |
+| 每个月第一周       | ISM Non-Manufacturing PMI                                    |
+| 每个月15号左右     | US Retail Sale                                               |
 
 -----------------------------
+
+
 ## ISM Manufacturing Index
+
 ISM Manufacturing Index : Institute of Supply Management Manufacturing Index  
 Rating ：4 stars  
 Publish Date：在相应月份结束后第一个工作日上午10点整（EST - 5:00)  
@@ -41,6 +45,8 @@ _ISM Report_
 https://www.instituteforsupplymanagement.org/ISMReport/MfgROB.cfm?SSO=1  
 
 
+
+
 ## ADP National Enployment Reports
 
 Rating : 3 stars  
@@ -57,6 +63,8 @@ _ADP National Enployment Reports_
 https://www.adpemploymentreport.com  
 
 
+
+
 ## NFP
 NFP : Nonfarm Payroll  
 Rating : 5 stars  
@@ -71,8 +79,24 @@ _Nonfarm payrolls_
 https://en.wikipedia.org/wiki/Nonfarm_payrolls   
 
 
+
+## US Retail Sale
+
+US Retail Sale : 美国核心零售销售月率 
+Rating :  4 stars  
+Publish Date : 每个月15号前后公布上个月数据
+Agency: 美国商务部
+
+核心零售销售额是根据美国各种类型和规模的零售商店（不含汽车销售商店）抽样调查中所获得的零售商所售出的所有消费品销售额变动而作出的月度衡量。 它是消费开支的重要指标，并与消费者信心指数有关，被认为是美国经济的速度指标。
+如果该指标比预期更高，则应认为美元强势/看涨，而如果该指标比预期更低，则应认为美元弱势/看跌。
+
+
+
 ## ISM Non-Manufacturing PMI
-ISM非制造业PMI : ISM Non-Manufacturing PMI
+ISM Non-Manufacturing PMI ：ISM非制造业PMI 
+Rating :  3 stars  
+Agency: Institute for supply management  
+Publish Date : 每个月第一周
 
 供应管理研究所（ISM）非制造业指数（也称为ISM服务业）所跟踪的是上月发生的非制造业活动的数量。 
 任何超过50的指数表示扩大，小于50的表示缩小。 
@@ -84,7 +108,6 @@ ISM非制造业PMI : ISM Non-Manufacturing PMI
 ISM每月将调查问卷发给17个行业的370多个采购经纪人，包括法律服务、娱乐、不动产、交通、保险、运输、银行以及宾馆。每个行业被调查公司所占的比例取决于该部门对GDP的贡献率。被调查者要求回答他们对以下所列出的对象的真实感受（高涨、冷清还是没变）
 
 
-## US Retail Sale
 
 To be continues
 
@@ -92,3 +115,6 @@ To be continues
 **学习型的投资者可以加入我的 Financial Group 进行交流讨论**     
 Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
 Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
+理财微信公众号: 小海的练功房
+
+
