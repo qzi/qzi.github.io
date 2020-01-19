@@ -255,7 +255,7 @@ Next use its own tag system to convert the diagram. so we need to fixed it align
 
 `npm install hexo-filter-mermaid-diagrams save`
 
-This filter will convert the indicator ````mermaid`  to `<pre class="mermaid">`, and then mermaid.js will filter  the elememet and redender them.
+This filter will convert the indicator `'''mermaid`  to `<pre class="mermaid">`, and then mermaid.js will filter  the elememet and redender them.
 
 
 
