@@ -4,6 +4,9 @@ date: 2020-01-25 02:17:42
 tags: coronavirus
 categories: miscellaneous
 permalink: miscellaneous/2019-ncov-abc
+excerpt: '作为一个普通百姓，我们能做的就是尽量不要引起多余的恐慌，同时尽自己所能帮助前线的医护和患者，捐点钱和物资，相信国家的力量
+
+而自身层面，锻炼身体增强免疫力，勤洗手，按时作息，避免发烧感冒，出门佩戴口罩'
 ---
 
 
