@@ -2,7 +2,8 @@
 title: 2019新型冠状病毒(2019-nCoV)-ABC
 date: 2020-01-25 02:17:42
 tags: coronavirus
-categories: miscellaneous/2019-ncov-abc
+categories: miscellaneous
+permalink: miscellaneous/2019-ncov-abc
 ---
 
 

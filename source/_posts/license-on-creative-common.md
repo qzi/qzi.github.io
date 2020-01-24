@@ -2,7 +2,6 @@
 title: License on the Creative Common
 tags: license
 categories: license
-abbrlink: 57543
 date: 2019-12-06 05:13:57
 ---
 
