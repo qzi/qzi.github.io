@@ -27,7 +27,7 @@ excerpt: '作为一个普通百姓，我们能做的就是尽量不要引起多�
 | 保持室内通风                                                 |
 | 咳嗽和打喷嚏时用衣袖或者手肘部遮挡，用手更易二次传播         |
 | 烹饪时彻底煮熟肉类和蛋类                                     |
-| 跟人接触交谈时保持安全距离，一米                             |
+| 跟人接触交谈时保持安全距离，4英尺                            |
 | 在无保护时避免接触野生动物和家禽家畜                         |
 | 禁食野生动物                                                 |
 
@@ -157,14 +157,11 @@ http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml
 
   
 
-## 有关冠状病毒的科普
-来自李永乐老师的有关冠状病毒的科普视频（Youtube)，比较长，有兴趣可以看看
+## 有关冠状病毒的更多科普
+来自李永乐老师的有关冠状病毒的科普视频（YouTube)，比较长，有兴趣可以看看
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E46_veB0DPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 _后续持续更新..._
-
 
 
 ## Reference
