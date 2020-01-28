@@ -138,6 +138,9 @@ KN95是中国国家标准GB2626-2006对防颗粒物口罩的分类，KN类的口
 _新型冠状病毒 - 疫情实时追踪 - 腾讯新闻_
 https://news.qq.com/zt2020/page/feiyan.htm
 
+_新型冠状病毒感染的肺炎疫情最新情况公告-卫健委
+http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml
+
 
 
 ## 辟谣
