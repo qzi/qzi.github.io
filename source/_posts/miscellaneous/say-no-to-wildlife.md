@@ -1,5 +1,5 @@
 ---
-title: ' 跟野生动物买卖说：“不！” '
+title: ' 跟野生动物买卖说：“不!” '
 date: 2020-01-28 16:22:53
 tags: coronavirus
 categories: miscellaneous
@@ -33,8 +33,6 @@ excerpt: ' 了解常见野生动物买卖的危害，跟野生动物买卖说‘
 ## 常见野生动物的病毒危害
 
 ![刺猬](say-no-to-wildlife/%E5%88%BA%E7%8C%AC.jpeg)
-
-
 
 ![土拨鼠](say-no-to-wildlife/%E5%9C%9F%E6%8B%A8%E9%BC%A0.jpeg)
 

@@ -15,9 +15,13 @@ CC BY-NC-SA(署名-非商业性使用-相同方式共享 )
 CC BY-NC-ND(署名-非商业性使用-禁止演绎)  
 关于以上协议的解释详见  https://creativecommons.org/licenses/ 
 
+
+
 ##  License of this Blog （此博客的授权证书）
 This blog(Https://leonvision.online) licensed on CC BY-NC-ND 4.0 （此博客授权在 CC BY-NC-ND 4.0）  
 License_url : https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+
 
 ##  CC BY-NC-ND 4.0 的摘录
 
@@ -39,6 +43,8 @@ You do not have to comply with the license for elements of the material in the p
 No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.  
 
 
+
+
 ## Enable the Copyright in Hexo
 
 Enable the post footprint in the {next}/_config.yml
@@ -48,6 +54,7 @@ Enable the post footprint in the {next}/_config.yml
     sidebar: true
     post: true
     language: deed.en
+
 
 
 ## Markdown 版本的 CC BY-NC-ND 4.0

@@ -11,8 +11,6 @@ permalink: technology/hexo-go
 Hexo is flexible blog system and Next comes with bundle of extensions to make it easier to use hexo blog.
 
 
-
-
 | Component       | Version |
 | --------------- | ------- |
 | hexo            | 4.2     |
@@ -259,7 +257,17 @@ This filter will convert the indicator `'''mermaid`  to `<pre class="mermaid">`,
 
 
 
+# Embed Video
+
+Just copy the code of the html in YouTube and add YouTube video in Hexo-markdown
+```html
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E46_veB0DPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```
+
+
+
 # Force to Refresh the Browser
+
 Presss `Shift + Command + R` to force to refresh the browser(Chrome) to test the result in Mac 
 
 Presss `Option + Command + R` to force to refresh the browser(Safari) to test the result in Mac 
