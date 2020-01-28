@@ -157,6 +157,12 @@ http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml
 
   
 
+## 有关冠状病毒的科普
+来自李永乐老师的有关冠状病毒的科普视频，比较长，有兴趣可以看看
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E46_veB0DPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 _后续持续更新..._
 
 
