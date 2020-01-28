@@ -68,3 +68,5 @@ _SARS事件_
 https://zh.wikipedia.org/wiki/SARS%E4%BA%8B%E4%BB%B6
 _中国政府宣布暂时禁止买卖野生动物_
 http://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20200126-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%AE%A3%E5%B8%83%E6%9A%82%E6%97%B6%E7%A6%81%E6%AD%A2%E4%B9%B0%E5%8D%96%E9%87%8E%E7%94%9F%E5%8A%A8%E7%89%A9
+_中华人民共和国野生动物保护法_
+http://gkml.samr.gov.cn/nsjg/fgs/201906/t20190625_302768.html
