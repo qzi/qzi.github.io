@@ -162,14 +162,14 @@ http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml
 
 从一些新闻反馈上收到大部分的捐赠物资其实不符合医院的使用标准，并且处理这些物品也给医院造成困扰，所以需要补充一下 **武汉大学中南医院** 目前急需医疗物资标准为例：
 
+
+
 **医用防护口罩：** 
 
 国内标准：符合中国GB19083-2010标准，代表产品：3M的9132和1860，稳健医疗的医用防护口罩等
-
-海外标准：美国NIOSH认证，N95；
-
+海外标准：
+美国NIOSH认证，N95；
 欧标FFP2或FFP3不带呼吸阀，代表产品3M 9322+；
-
 欧盟：EN149
 
  
@@ -177,7 +177,6 @@ http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml
 **外科口罩：** 
 
 国内标准：符合中国YY0469-2011标准；代表产品：稳健医疗的医用外科口罩；新乡华西卫材医用外科口罩
-
 海外标准：ASTM F2100-Ⅱ标准，level2或level3
 
  
@@ -185,9 +184,8 @@ http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml
 **防护服：** 
 
 国内标准：符合中国GB19083-2009标准
-
-海外标准：同等参考美国ASTM F1671-97A;
-
+海外标准：
+同等参考美国ASTM F1671-97A;
 欧标EN14126相关防血液以及生化细菌穿透实验
 
 
@@ -197,8 +195,6 @@ http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml
 来自李永乐老师的有关冠状病毒的科普视频（YouTube)，比较长，有兴趣可以看看
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E46_veB0DPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 
 后续持续更新..._
 
