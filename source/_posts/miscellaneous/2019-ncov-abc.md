@@ -15,7 +15,7 @@ excerpt: '作为一个普通百姓，我们能做的就是尽量不要引起多�
 
 作为一个普通百姓，我们能做的就是尽量不要引起多余的恐慌，同时尽自己所能帮助前线的医护和患者，捐点钱和物资，相信国家的力量
 
-而自身层面，增强免疫力和搞好环境卫生是重中之中
+而自身层面，增强免疫力和搞好环境卫生是重中之重
 
 | 自身能做的事项                                               |
 | ------------------------------------------------------------ |
@@ -168,6 +168,7 @@ http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml
 
 国内标准：符合中国GB19083-2010标准，代表产品：3M的9132和1860，稳健医疗的医用防护口罩等
 海外标准：
+
 美国NIOSH认证，N95；
 欧标FFP2或FFP3不带呼吸阀，代表产品3M 9322+；
 欧盟：EN149
@@ -184,8 +185,7 @@ http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml
 **防护服：** 
 
 国内标准：符合中国GB19083-2009标准
-海外标准：
-同等参考美国ASTM F1671-97A;
+海外标准：同等参考美国ASTM F1671-97A;
 欧标EN14126相关防血液以及生化细菌穿透实验
 
 
@@ -195,6 +195,7 @@ http://www.nhc.gov.cn/xcs/yqfkdt/gzbd_index.shtml
 来自李永乐老师的有关冠状病毒的科普视频（YouTube)，比较长，有兴趣可以看看
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E46_veB0DPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 后续持续更新..._
 
