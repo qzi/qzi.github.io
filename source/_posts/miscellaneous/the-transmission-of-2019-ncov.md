@@ -72,7 +72,7 @@ WHO 有 Fecal–oral Route 传播链的相应说明，可以看到排泄物（Ex
 > 
 >A **fomes** (pronounced [/ˈfoʊmiːz/](https://en.wikipedia.org/wiki/Help:IPA/English)) or **fomite** ([/ˈfoʊmaɪt/](https://en.wikipedia.org/wiki/Help:IPA/English)) is any inanimate object, that when contaminated with or exposed to infectious agents, such as pathogenic bacteria, viruses or fungi, can transfer disease to a new host.[[1\]](https://en.wikipedia.org/wiki/Fomite#cite_note-1)
 
-
+![F-diagram-01](the-transmission-of-2019-ncov/F-diagram-01.jpg)
 
 ### 防备措施
 
@@ -109,4 +109,7 @@ https://www.chp.gov.hk/files/pdf/nid_guideline_general_public_chi.pdf
 
 _確保隔氣彎管有足夠貯水 _
 https://www.chp.gov.hk/files/pdf/make_sure_the_trap_is_not_dry_chi.pdf
+
+_淘大花園爆發嚴重急性呼吸系統綜合症事件_
+https://www.info.gov.hk/info/sars/pdf/amoy_c.pdf
 
