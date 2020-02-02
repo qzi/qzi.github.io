@@ -86,7 +86,7 @@ WHO 有 Fecal–oral Route 传播链的相应说明，可以看到排泄物（Ex
 
 
 
-有关 接触传播 和 飞沫传播 前期的媒体已经给出足够指引并引起了重视，此处暂不多聊，有空在补充 ... 
+有关 接触传播 和 飞沫传播 前期的媒体已经给出足够指引并引起了重视，此处暂不多聊，有空再补充 ... 
 
 
 
@@ -106,4 +106,7 @@ https://www.msn.com/zh-tw/news/living/曾爆發百餘例社區感染-專家當�
 
 給公眾預防嚴重新型傳染性病原體呼吸系統病的健康指引 
 https://www.chp.gov.hk/files/pdf/nid_guideline_general_public_chi.pdf
+
+_確保隔氣彎管有足夠貯水 _
+https://www.chp.gov.hk/files/pdf/make_sure_the_trap_is_not_dry_chi.pdf
 
