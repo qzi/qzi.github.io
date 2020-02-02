@@ -62,7 +62,7 @@ permalink: miscellaneous/the-transmission-of-2019-ncov
 
 ### Transmission of Disease from Excreta
 
-WHO 有 Fecal–oral Route 传播链的相应说明，可以看到排泄物（Excreta）通过水（water），手（Hands），软体动物（Arthropods），泥土（Soil）传播至食物（Food，milk and Vegetables），最终进入新宿口中导致感染
+WHO 有 Fecal–oral Route 传播链的相应说明，可以看到排泄物（Excreta）通过水（water），手（Hands），软体动物（Arthropods），泥土（Soil）传播至食物（Food，milk and Vegetables），最终进入新宿主（New Host）口中导致感染
 
 ![image-20200202235206734](the-transmission-of-2019-ncov/image-20200202235206734.png)
 
