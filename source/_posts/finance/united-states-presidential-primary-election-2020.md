@@ -76,8 +76,9 @@ Sen. for Senator
 
 
 
-
 ## 2020 Election Calendar
+
+![image-20200204073553256](united-states-presidential-primary-election-2020/image-20200204073553256.png)
 
 | Date        | State            | Democratic                                                   | Republican                                                   |
 | ----------- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
