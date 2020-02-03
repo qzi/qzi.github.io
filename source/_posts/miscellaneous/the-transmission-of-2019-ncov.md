@@ -38,7 +38,7 @@ permalink: miscellaneous/the-transmission-of-2019-ncov
 
 > **新增确诊病例鄂尔多斯市达拉特旗白某，男，40岁，达拉特旗人，居于确诊病例宋某楼上，无本市外出史，未接触过发热病人，未到过农贸市场，无野生动物接触史。1月29日，患者自觉胸闷、恶心发热症状，31日自驾到达拉特旗人民医院就诊。2月1日，经专家会商，确定为新型冠状病毒感染的肺炎确诊病例。**
 
-而看到这个特殊病例的通报情况需要有所警惕，因为它并没有经历之前病患的传播路径，让我们来重温之前的传播方式
+而看到这个特殊病例的通报情况需要有所警惕，因为它可能并没有经历之前病患的传播路径，让我们来重温之前的传播方式
 
 > **病毒的传播方式**
 >
@@ -54,7 +54,7 @@ permalink: miscellaneous/the-transmission-of-2019-ncov
 >
 > Origin from : https://leonvision.online/miscellaneous/2019-ncov-abc/
 
-并且跟另一个确诊病例生活在同一栋楼里面，所以需要警惕新型冠状病毒（2019-nCoV）有可能是可以通过粪-口相传（Fecal–oral route）
+并且跟另一个确诊病例生活在同一栋楼里面，所以需要警惕新型冠状病毒（2019-nCoV）**有可能**是可以通过粪-口相传（Fecal–oral route）
 
 > The **fecal–oral route** (also called the **oral–fecal route** or **orofecal route**) describes a particular [route of transmission](https://en.wikipedia.org/wiki/Transmission_(medicine)) of a disease wherein [pathogens](https://en.wikipedia.org/wiki/Pathogens) in [fecal](https://en.wikipedia.org/wiki/Feces) particles pass from one person to the mouth of another person. 
 >
@@ -80,7 +80,7 @@ WHO 有 Fecal–oral Route 传播链的相应说明，可以看到排泄物（Ex
 
 * 保持室内通风
 * 每星期用含氯或者75%酒精清洁剂清洗家居
-* 定期檢查洗手盆 / 鋅盆、浴缸 / 淋浴盆、馬桶和地台排水口 和 定期（约每个星期一次）把半公升清水注入每一个排水口（U型隔气口）
+* 定期检查洗手盆/锌盆、浴缸/淋浴盆、马桶和地台排水口，定期（约每个星期一次）把半公升清水注入每一个排水口（U型隔气口）
 * 多强身健体提升免疫力
 * 传播相应理念和实践给小区的户主们
 
