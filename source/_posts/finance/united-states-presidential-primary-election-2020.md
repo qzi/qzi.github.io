@@ -43,7 +43,7 @@ Caucus : 党团会议，“某个政党的地方成员举行会议，推举党�
 
 Primary : 党内初选
 
-
+_现在还没primary，作者困了，以后继续补充_
 
 ### The Democratic Nomination for President
 
