@@ -3,7 +3,7 @@ title: ' 从 2020 美国总统初选开始学习选举流程 '
 categories: finance
 permalink: finance/united-states-presidential-primary-election-2020
 date: 2020-02-04 05:38:48
-tags:
+tags: election
 ---
 
 美股其实是需要去管理时间窗口的，尤其是在大选年，所以了解美国候选人的动向和时间节点还是比较重要的，所以不如慢慢随着选举的展开学习一下美国的选择制度，侧重点在于流程上和候选人政策影响上
@@ -127,11 +127,7 @@ Sen. for Senator
 |             |                  |                                                              |                                                              |
 | March 27    | North Dakota     |                                                              | [Convention](https://www.270towin.com/2020-republican-nomination/north-dakota-convention) |
 |             |                  |                                                              |                                                              |
-| March 29    | Puerto Rico      | [Primary](https://www.270towin.com/2020-democratic-nomination/puerto-rico-primary) |                                                              |
-|             |                  |                                                              |                                                              |
-
-| Date           | State                                         | Democratic                                                   | Republican                                                   |
-| -------------- | --------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| March 29    | Puerto Rico      | [Primary](https://www.270towin.com/2020-democratic-nomination/puerto-rico-primary) |
 | April 4        | Alaska                                        | [Primary](https://www.270towin.com/2020-democratic-nomination/alaska-primary) |                                                              |
 |                | Hawaii                                        | [Primary](https://www.270towin.com/2020-democratic-nomination/hawaii-primary) |                                                              |
 |                | Louisiana                                     | [Primary](https://www.270towin.com/2020-democratic-nomination/louisiana-primary) | [Primary](https://www.270towin.com/2020-republican-nomination/louisiana-primary) |
