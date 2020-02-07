@@ -28,7 +28,7 @@ excerpt: '本文主要还是讨论如何在境外进行沪深A股的趋势投资
 
 ## SGX XINA50 Future（新加坡 A50 期货）
 
-新加坡 A50 期货是离岸市场以美金计价的最交易量最大的 A50 期货，跟踪的是FTSE China A50 Index，XINA50 是在非A股交易时段跟踪和预测A股大盘最重要的标的
+新加坡 A50 期货是离岸市场以美元计价的最交易量最大的 A50 期货，跟踪的是FTSE China A50 Index，XINA50 是在非A股交易时段跟踪和预测A股大盘最重要的标的
 
 **Trading hours (Singapore Time)**
 
@@ -59,7 +59,7 @@ AHSR : Xtrackers Harvest CSI 300 China A-Shares ETF,  跟踪在大陆的上市�
 >
 > ASHR was the first US-listed China ETF capable of accessing the coveted China A-share market directly. The fund is able to hold A-shares through the subadvisor, Harvest Global Investments, which has an RQFII license up to a specific quota. If the quota is reached, the fund will have to either get its quota increased, use derivatives to maintain exposure, or limit or halt creations, so monitoring is warranted. ASHR doesn't Fit our neutral "all-share" benchmark well, since it tracks an index specific to A-shares and misses out on companies solely listed in Hong Kong or the US. ASHR's focus on mainland A-shares also gives it a large-cap tilt and a heavy bias toward financials compared to our "all China" benchmark. Liquidity is good, though the RQFII quota can make creations difficult. An expensive fund to hold due to high fees and significant tracking challenges, ASHR's exposure nevertheless lands it on our Opportunities List for investors willing to watch this fund's performance carefully.
 
-AHSR 其实是通过RQFII 进行大陆股票的投资，其实流动不很好，期权的交易流动性也一般
+AHSR 其实是通过 RQFII 进行大陆股票的投资，其实流动不是很好，期权的交易流动性也一般
 
 但是依然不失指标意义，在2019-nCoV 春节疫情期间，大陆A股停止交易，AHSR提前磨合计价了A股春节开市后的大致波动
 
