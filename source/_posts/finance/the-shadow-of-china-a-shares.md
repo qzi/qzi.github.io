@@ -4,6 +4,7 @@ date: 2020-02-07 07:05:10
 tags: china-a-shares
 categories: finance
 permalink: finance/the-shadow-of-china-a-shares
+excerpt: '本文主要还是讨论如何在境外进行沪深A股的趋势投资和指标跟踪，之所以会有这个需求主要还是在于境外市场的衍生品品种丰富，还有非A股交易交易时段的波动的指标有指示意义'
 ---
 
 
