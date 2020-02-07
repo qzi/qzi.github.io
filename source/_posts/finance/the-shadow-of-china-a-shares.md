@@ -68,12 +68,9 @@ AHSR 其实是通过RQFII 进行大陆股票的投资，其实流动不很好，
 
 
 ## Reference
-_China A-Shares Definition_
-https://www.investopedia.com/terms/a/a-shares.asp
+[_China A-Shares Definition_](https://www.investopedia.com/terms/a/a-shares.asp)
 
-_SGX FTSE China A50 Index Futures_
-https://api2.sgx.com/sites/default/files/2018-06/SGX%20FTSE%20China%20A50%20Index%20Futures%20Factsheet%20%28Eng%29%20-%20Nov%202017_D2.pdf
+[_SGX FTSE China A50 Index Futures_](https://api2.sgx.com/sites/default/files/2018-06/SGX%20FTSE%20China%20A50%20Index%20Futures%20Factsheet%20%28Eng%29%20-%20Nov%202017_D2.pdf)
 
-_FXI_
-https://www.ishares.com/us/products/239536/ishares-china-largecap-etf
+[_FXI_](https://www.ishares.com/us/products/239536/ishares-china-largecap-etf)
 
