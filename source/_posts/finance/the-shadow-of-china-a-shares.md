@@ -1,5 +1,5 @@
 ---
-title: ' 沪深A股黑夜里面的影子  '
+title: ' 沪深A股黑夜里的影子  '
 date: 2020-02-07 07:05:10
 tags: china-a-shares
 categories: finance
@@ -18,7 +18,7 @@ excerpt: '本文主要还是讨论如何在境外进行沪深A股的趋势投资
 
 ## 为什么叫 A 股
 
-首先还是需要先了解一下为啥叫 A 股，这是一直让我很困惑的问题--为啥没有中文名呢？ 其实是因为沪深股市分为A股，B股等等，而A股是用人民币计价的，B股是其他货币计价供境外投资交易的
+首先还是需要先了解一下为啥叫 A 股，这是一直让我很困惑的问题--为啥没有中文名呢？ 其实是因为沪深股市分为A股，B股等等，而A股是用人民币计价的，B股是其他货币计价供境外投资交易的, A股代称大陆的人民币计价的股票市场
 
 >China A-shares are different from B-shares. A-shares are only quoted in RMB, while B-shares are quoted in foreign currencies, such as the U.S. dollar, and are more widely available to foreign investors.
 >Origin from : https://www.investopedia.com/terms/a/a-shares.asp
