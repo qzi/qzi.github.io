@@ -59,7 +59,7 @@ ASHR : Xtrackers Harvest CSI 300 China A-Shares ETF,  跟踪在大陆的上市�
 >
 > ASHR was the first US-listed China ETF capable of accessing the coveted China A-share market directly. The fund is able to hold A-shares through the subadvisor, Harvest Global Investments, which has an RQFII license up to a specific quota. If the quota is reached, the fund will have to either get its quota increased, use derivatives to maintain exposure, or limit or halt creations, so monitoring is warranted. ASHR doesn't Fit our neutral "all-share" benchmark well, since it tracks an index specific to A-shares and misses out on companies solely listed in Hong Kong or the US. ASHR's focus on mainland A-shares also gives it a large-cap tilt and a heavy bias toward financials compared to our "all China" benchmark. Liquidity is good, though the RQFII quota can make creations difficult. An expensive fund to hold due to high fees and significant tracking challenges, ASHR's exposure nevertheless lands it on our Opportunities List for investors willing to watch this fund's performance carefully.
 
-ASHR 其实是通过 RQFII 进行大陆股票的投资，其实流动不是很好，期权的交易流动性也一般
+ASHR 其实是通过 RQFII 进行大陆股票的投资，其实流动性不是很好，期权的交易流动性也一般
 
 但是依然不失指标意义，在2019-nCoV 春节疫情期间，大陆A股停止交易，ASHR提前磨合计价了A股春节开市后的大致波动
 
@@ -69,7 +69,16 @@ ASHR 其实是通过 RQFII 进行大陆股票的投资，其实流动不是很�
 
 
 
+**学习型的投资者可以加入我的讨论组进行交流讨论**     
+
+Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
+Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
+微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码
+
+
+
 ## Reference
+
 [_China A-Shares Definition_](https://www.investopedia.com/terms/a/a-shares.asp)
 
 [_SGX FTSE China A50 Index Futures_](https://api2.sgx.com/sites/default/files/2018-06/SGX%20FTSE%20China%20A50%20Index%20Futures%20Factsheet%20%28Eng%29%20-%20Nov%202017_D2.pdf)
