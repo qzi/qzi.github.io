@@ -36,7 +36,6 @@ Any case you can contact me via :
 
 
 
-
 **学习型的投资者可以加入我的 Financial Group 进行交流讨论**    
 
 Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
