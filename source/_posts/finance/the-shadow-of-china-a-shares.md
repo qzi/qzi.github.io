@@ -69,9 +69,9 @@ ASHR 其实是通过 RQFII 进行大陆股票的投资，其实流动性不是�
 
 
 
-**学习型的投资者可以加入我的讨论组进行交流讨论**     
-
 ------
+> **学习型的投资者可以加入我的讨论组进行交流讨论**     
+>
 > Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
 > Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
 > 微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码
