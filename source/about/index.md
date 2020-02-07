@@ -43,5 +43,5 @@ Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joincha
 Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)   
 理财微信公众号: 小海的练功房    
 
-微信投资学习群 ： 
+微信投资学习群 （过期可以关注微信公众号: iLeonVision 发信息跟我要进群二维码）
 ![wechat_qrcode](index/wechat_qrcode.png)
