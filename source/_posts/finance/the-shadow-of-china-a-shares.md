@@ -41,7 +41,7 @@ T+1 session: 4.40pm – 4.45am (next day)
 
 ## HSI Future（香港恒生指数期货）
 
-HSI Future 是 Hong Kong Futures Exchange 进行交易的跟踪 Hang Seng Index 的期货合约, 是跟踪港股趋势的较好的标的
+HSI Future, Hang Seng Index Future 是 Hong Kong Futures Exchange 进行交易的跟踪 Hang Seng Index 的期货合约, 是跟踪港股趋势的较好的标的
 
 | Session                   | **Trading hours (Hongkong Time)**                            |
 | ------------------------- | ------------------------------------------------------------ |
