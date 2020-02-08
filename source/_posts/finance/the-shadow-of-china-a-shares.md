@@ -39,6 +39,19 @@ T+1 session: 4.40pm – 4.45am (next day)
 
 
 
+## HSI Future（香港恒生指数期货）
+
+HSI Future 是 Hong Kong Futures Exchange 进行交易的跟踪 Hang Seng Index 的期货合约, 是跟踪港股趋势的较好的标的
+
+| Session                   | **Trading hours (Hongkong Time)**                            |
+| ------------------------- | ------------------------------------------------------------ |
+| Pre-Market Opening Period | 8:45 am - 9:15 am & 12:30 pm - 1:00 pm                       |
+| Trading Hours             | 9:15 am - 12:00 noon, 1:00 pm - 4:30 pm <br />& 5:15 pm - 3:00 am in the early morning next day<br />(Expiring contract month closes at 4:00 pm on the Last Trading Day) |
+
+HSI 以港币计价，乘数 1：50，流动性非常好，银行股的权重略大
+
+
+
 ## FXI（中国大盘股ETF）
 
 FXI ： iShares China Large-Cap ETF,  跟踪在香港上市交易的50只最大的中国股票，是外部市场跟踪中国经济趋势的窗口，以美元计价
