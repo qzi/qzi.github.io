@@ -4,9 +4,7 @@ date: 2020-01-25 02:17:42
 tags: coronavirus
 categories: miscellaneous
 permalink: miscellaneous/2019-ncov-abc
-excerpt: '作为一个普通百姓，我们能做的就是尽量不要引起多余的恐慌，同时尽自己所能帮助前线的医护和患者，捐点钱和物资，相信国家的力量
-
-而自身层面，增强免疫力和搞好环境卫生是重中之重 '
+excerpt: ' 本文尝试普及新型冠状病毒（2019-nCoV）的基本情况，重点介绍了口罩的选择标准 '
 ---
 
 
