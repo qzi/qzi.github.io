@@ -5,8 +5,17 @@ tags:
   - finance
   - macro-economic
 date: 2019-12-07 03:44:48
+permalink: finance/macro-economic-indicators
+Excerpt: '趋势投资需要注意进行窗口管理，而主动地进行管理Calendar Effect来进行买卖时机的判断显得颇具预见性，并且增加了买卖的确定性'
 ---
 
+
+
+趋势投资需要注意进行窗口管理，而主动地管理US Calendar Effect来进行买卖时机的判断显得颇具预见性，并且增加了买卖的确定性
+
+
+
+# Monthly Report
 
 美国每个月初都会有周期性的数据密集发布，引起市场剧烈波动，这种周期性的数据发布机制有利于提高透明度，让市场有机会修正以进一步拟合经济现状，同时提升了趋势交易的流动性  
 
@@ -21,9 +30,6 @@ date: 2019-12-07 03:44:48
 | 每个月第一个周五   | NFP - Nonfarm Payroll                                        |
 | 每个月第一周       | ISM Non-Manufacturing PMI                                    |
 | 每个月15号左右     | US Retail Sale                                               |
-
------------------------------
-
 
 ## ISM Manufacturing Index
 
@@ -109,12 +115,49 @@ ISM每月将调查问卷发给17个行业的370多个采购经纪人，包括法
 
 
 
-To be continues
+Annually Report
+-------
+
+| Date       | Report                                        |
+| ---------- | --------------------------------------------- |
+| 每半年一次 | Federal Reserve System Monetary Policy Report |
 
 
-**学习型的投资者可以加入我的 Financial Group 进行交流讨论**     
-Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
-Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
-理财微信公众号: 小海的练功房
+
+## Federal Reserve System Monetary Policy Report
+
+Federal Reserve System Monetary Policy Report : 美联储货币政策报告
+Rating: 5 stars
+Agency: Federal Reserve
+Publish Date : 每半年一次
+
+美联储(FED)货币政策报告是由美联储每六个月向国会提交的一份书面报告：包括负责银行业，住房和城市管理的参议院委员会，以及负责金融服务的众议院委员会。
+
+该报告由三部分组成。第一部分包含对影响本国货币汇率的当前经济和金融发展的评估。它还提供了劳动力市场状况、GDP动态和GDP变化特征的描述，以及经济稳定性的评估和银行业发展的数据。
+
+该报告的第二部分包括对国家货币政策的描述：采取的措施、对这些措施的解释以及实施措施的效率。在该报告中，监管机构描述了短期利率的变化和量化宽松的措施，以及国家外汇储备状况和金融体系的平衡。美国货币政策是由FOMC（联邦公开市场委员会）制定，旨在保持物价稳定、经济增长、充分就业和国际贸易的稳定性。
+
+在第三部分中，美联储根据对当前事态发展的分析，对通货膨胀、失业率和经济增长情况提供了简要展望。
+
+美联储报告是公开的。根据报告内容，经济学家试图预测美联储近期的利率变化并评估美国通货膨胀和经济前景。这份报告的发表对美元报价的影响轻微，因为其中包含的数据是事先知道的，美联储提供的解读也是可以预测的。
 
 
+
+_To be continues_
+
+------
+
+> **学习型的投资者可以加入我的讨论组进行交流讨论**     
+>
+> Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
+> Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
+> 微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码
+
+------
+
+
+
+# Reference
+
+_monetary policy_
+https://www.federalreserve.gov/monetarypolicy.htm
