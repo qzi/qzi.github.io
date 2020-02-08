@@ -54,9 +54,18 @@ Tailing P/E Ratio 跟 P/E TTM 的区别就是 Tailing P/E 的 EPS 是最近一�
 P/E 一般不用自己算，很多软件都有帮我们算好，只是具体计算口径略有差距所以有写出入，有很大出入的时候才需要自己去验证, 个人只当做一个学习过程 ... 
 
 
-**学习型的投资者可以加入我的 Financial Group 进行交流讨论**     
-Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
-Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
+
+------
+
+> **学习型的投资者可以加入我的讨论组进行交流讨论**     
+>
+> Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
+> Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
+> 微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码
+
+------
+
+
 
 
 ### Reference

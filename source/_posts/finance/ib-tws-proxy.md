@@ -92,6 +92,18 @@ interactivebrokers.co.in
 
 
 
+------
+
+> **学习型的投资者可以加入我的讨论组进行交流讨论**     
+>
+> Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
+> Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
+> 微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码
+
+------
+
+
+
 
 ## Proxifier TWS Log
 ```
@@ -152,7 +164,4 @@ interactivebrokers.co.in
 [01.17 12:49:12] JavaApplicationStub - ndc1.ibllc.com:4000 close, 4658 bytes (4.54 KB) sent, 14341 bytes (14.0 KB) received, lifetime 00:07
 ```
 
-**学习型的投资者可以加入我的 Financial Group 进行交流讨论**
-Finance Group in Telegram : [*My Financial Telegram Group*](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)
-Finance Group in Discord : [*My Financial Discord Group*](https://discord.gg/NgWdjb)
-理财微信公众号: 小海的练功房
+

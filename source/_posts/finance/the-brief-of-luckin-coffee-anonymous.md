@@ -43,3 +43,15 @@ Red Flag 比较容易理解了，就是风险提示了
 
 _这次 NW 来势汹汹，LK大概率得跪一下，先这样，要写的东西太多了，有空再继续写_
 
+
+
+------
+
+> **学习型的投资者可以加入我的讨论组进行交流讨论**     
+>
+> Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
+> Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
+> 微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码
+
+------
+
