@@ -4,6 +4,7 @@ date: 2020-02-02 22:34:19
 tags: coronavirus
 categories: miscellaneous
 permalink: miscellaneous/the-transmission-of-2019-ncov
+excerpt: '主要介绍了 2019-nCoV 的传播方式，包括直接传播，接触传播，气溶胶传播，还有可能的粪-口传播'
 ---
 
 
