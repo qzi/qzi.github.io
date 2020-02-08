@@ -101,3 +101,5 @@ ASHR 其实是通过 RQFII 进行大陆股票的投资，其实流动性不是�
 
 [_FXI_](https://www.ishares.com/us/products/239536/ishares-china-largecap-etf)
 
+[_HSI_](https://www.hkex.com.hk/Products/Listed-Derivatives/Equity-Index/Hang-Seng-Index-(HSI)/Hang-Seng-Index-Futures?sc_lang=zh-HK#&product=HSI)
+
