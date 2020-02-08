@@ -54,7 +54,7 @@ HSI 以港币计价，乘数 1：50，流动性非常好，银行股的权重略
 
 ## FXI（中国大盘股ETF）
 
-FXI ： iShares China Large-Cap ETF,  跟踪在香港上市交易的50只最大的中国股票，是外部市场跟踪中国经济趋势的窗口，以美元计价
+FXI: iShares China Large-Cap ETF,  跟踪在香港上市交易的50只最大的中国股票，是外部市场跟踪中国经济趋势的窗口，以美元计价
 
 > The iShares China Large-Cap ETF seeks to track the investment results of an index composed of large-capitalization Chinese equities that trade on the Hong Kong Stock Exchange.
 >

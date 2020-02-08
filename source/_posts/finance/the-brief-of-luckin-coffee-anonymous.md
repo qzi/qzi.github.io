@@ -4,6 +4,7 @@ categories: finance
 permalink: finance/the-brief-of-luckin-coffee-anonymous
 date: 2020-02-02 02:04:53
 tags: short
+excerpt: '网上有很多对浑水做空瑞幸的报告的截图，这篇文章知识简单探讨从这篇报告上学习到的有趣的英文俚语'
 ---
 
 浑水（ Muddy Waters Research )  做空瑞幸（ Luckin Coffee ）的报告，第一页打开就列举了一些 Smoking Gun Evidence and Red Flag 
