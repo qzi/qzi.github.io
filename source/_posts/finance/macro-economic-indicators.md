@@ -127,7 +127,7 @@ Annually Report
 ## Federal Reserve System Monetary Policy Report
 
 Federal Reserve System Monetary Policy Report : 美联储货币政策报告
-Rating: 5 stars
+Rating: 2 stars
 Agency: Federal Reserve
 Publish Date : 每半年一次
 
@@ -161,3 +161,6 @@ _To be continues_
 
 _monetary policy_
 https://www.federalreserve.gov/monetarypolicy.htm
+
+_Calendar Effect_
+https://en.wikipedia.org/wiki/Calendar_effect
