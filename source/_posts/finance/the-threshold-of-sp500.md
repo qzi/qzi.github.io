@@ -63,6 +63,18 @@ S&P 500 是 capitalization-weighted index
 
 S&P 500 Index Future，可以用来跟踪在盘前盘后，乘数为1:250， 用美金计价
 
+**Trading hours**
+
+>Open Outcry: Monday - Friday: 9:30 a.m. - 4:15 p.m. Eastern Time (ET)
+>
+>CME Globex: Sunday - Friday: 6:00 p.m. - 5:00 p.m. ET with a trading halt 9:15 a.m. - 4:30 p.m.
+>
+>CME Clearport: Sunday - Friday: 6:00 p.m. - 5:00 p.m. ET
+>
+>Origin from : https://www.cmegroup.com/trading/equity-index/us-index/sandp-500_contract_specifications.html
+
+其实我不建议交易这种期货，但是可以当指标看看
+
 
 
 ## SPY
@@ -89,6 +101,8 @@ ES: E-mini S&P 500 Futures Quotes, 可以用来跟踪在盘前盘后, 在CME Glo
 > Sunday - Friday 6:00 p.m. - 5:00 p.m. Eastern Time (ET) with trading halt 4:15 p.m. - 4:30 p.m.
 >
 > Origin from: https://www.cmegroup.com/trading/equity-index/us-index/e-mini-sandp500_contract_specifications.html
+
+其实我不建议交易这种期货，但是可以当指标看看
 
 
 
