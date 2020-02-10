@@ -76,7 +76,7 @@ S&P 500 Index Future，可以用来跟踪在盘前盘后，乘数为1:250， 用
 
 
 
-SPY 在高位的时候，之所以用option call 合适，是因为 risk limited
+SPY 在高位的时候，之所以用option call 合适，是因为 risk limited，因为只要美元持续独霸天下，金融危机不来，s&p 500 大周期就是一路向上的，想地位买入很难
 
 
 
