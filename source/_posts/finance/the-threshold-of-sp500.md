@@ -4,7 +4,7 @@ categories: finance
 permalink: finance/the-threshold-of-sp500
 date: 2020-02-11 01:48:22
 tags: index
-expert: ' 从 Tesla 的暴涨看 S&P 500 指数的长盛不衰，重点聊指数的编制门槛'
+excerpt: ' 从 Tesla 的暴涨看 S&P 500 指数的长盛不衰，重点聊指数的编制门槛'
 ---
 
 从2020年1月27号到2月4号，Tesla 涨了大概85%，从558块一路涨到887块，真是开Roadster都赶不上TSLA的股价上涨，而在2019年五月的时候，TSLA的股价还下探过185块，因为国际市场的开拓，仅仅不到一年的时间股价就翻了4倍，在此先给偶像Musk跪下。
@@ -80,3 +80,10 @@ S&P 500 Index Future，可以用来跟踪在盘前盘后，乘数为1:250， 用
 
 ES: E-mini S&P 500 Futures Quotes, 可以用来跟踪在盘前盘后, 乘数为1:50，用美元计价
 
+
+
+
+
+## Reference
+_How Are S&P 500 Stocks Chosen?_
+https://www.fool.com/investing/2019/02/09/how-are-sp-500-stocks-chosen.aspx
