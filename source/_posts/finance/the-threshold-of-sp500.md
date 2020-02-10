@@ -82,7 +82,16 @@ SPY 在高位的时候，之所以用option call 合适，是因为 risk limited
 
 ## ES
 
-ES: E-mini S&P 500 Futures Quotes, 可以用来跟踪在盘前盘后, 乘数为1:50，用美元计价
+ES: E-mini S&P 500 Futures Quotes, 可以用来跟踪在盘前盘后, 在CME Globex交易，乘数为1:50，用美元计价
+
+**Trading hours**
+
+> CME Globex: 
+> Sunday - Friday 6:00 p.m. - 5:00 p.m. Eastern Time (ET) with trading halt 4:15 p.m. - 4:30 p.m.
+>
+> Origin from: https://www.cmegroup.com/trading/equity-index/us-index/e-mini-sandp500_contract_specifications.html
+
+
 
 
 
