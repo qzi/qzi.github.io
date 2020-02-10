@@ -76,7 +76,7 @@ S&P 500 Index Future，可以用来跟踪在盘前盘后，乘数为1:250， 用
 
 
 
-SPY 在高位的时候，之所以用option call 合适，是因为 risk limited，因为只要美元持续独霸天下，金融危机不来，s&p 500 大周期就是一路向上的，想地位买入很难
+SPY 在高位的时候，之所以用option call 合适，是因为 risk limited，因为只要美元持续独霸天下，金融危机不来，s&p 500 大周期就是一路向上的，想低位买入很难
 
 
 
@@ -86,8 +86,13 @@ ES: E-mini S&P 500 Futures Quotes, 可以用来跟踪在盘前盘后, 乘数为1
 
 
 
+_To be continued_
+
 
 
 ## Reference
+_S&P 500 Index_
+https://en.wikipedia.org/wiki/S%26P_500_Index
+
 _How Are S&P 500 Stocks Chosen?_
 https://www.fool.com/investing/2019/02/09/how-are-sp-500-stocks-chosen.aspx
