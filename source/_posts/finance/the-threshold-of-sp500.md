@@ -34,7 +34,7 @@ excerpt: ' 从 Tesla 的暴涨看 S&P 500 指数的长盛不衰，重点聊指�
 * 至少 IPO 后半年也达标了
 * 过去四个月实现盈利，这个没有达标，似乎并不是强制要求，而且以它目前的趋势盈利已经大势所趋
 
-S&P 500 是 capitalization-weighted index，
+S&P 500 是 capitalization-weighted index
 
 >**What Is a Capitalization-Weighted Index?**
 >
@@ -73,6 +73,10 @@ S&P 500 Index Future，可以用来跟踪在盘前盘后，乘数为1:250， 用
 > SPY is the best-recognized and oldest ETF and typically tops rankings for largest AUM and greatest trading volume. The fund tracks the massively popular US index, the S&P 500. Few realize that S&P's index committee chooses 500 securities to represent the US large-cap space—not necessarily the 500 largest by market cap, which can lead to some omissions of single names. Still, the index offers outstanding exposure to the US large-cap space. Unlike direct peers IVV and VOO, SPY is a unit investment trust, an older but entirely viable structure. As a UIT, SPY must fully replicate its index (it probably would anyway) and forgo the small risk and reward of securities lending. It also can’t reinvest portfolio dividends between distributions; the resulting cash drag will slightly hurt performance in up markets and help in downtrends. SPY is extremely cheap to hold, but is typically edged out by IVV and VOO in this respect. SPY's phenomenal trading volume makes it the perfect vehicle for tactical traders and mom and pop investors alike.
 >
 > Origin from : https://www.etf.com/SPY#overview
+
+
+
+SPY 在高位的时候，之所以用option call 合适，是因为 risk limited
 
 
 
