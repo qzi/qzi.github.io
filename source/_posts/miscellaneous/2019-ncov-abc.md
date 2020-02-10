@@ -223,3 +223,6 @@ https://www.thelancet.com/coronavirus
 
 _曾鉴定出非典源头的石正丽团队发表研究，新型冠状病毒受体与非典病毒相同，还有哪些关键信息_  
 https://www.zhihu.com/question/367655939/answer/983850446
+
+_Clinical characteristics of 2019 novel coronavirus infection in China_
+https://www.medrxiv.org/content/10.1101/2020.02.06.20020974v1
