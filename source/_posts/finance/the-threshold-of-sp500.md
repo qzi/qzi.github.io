@@ -67,7 +67,7 @@ S&P 500 Index Future，可以用来跟踪在盘前盘后，乘数为1:250， 用
 
 ## SPY
 
-跟踪 SPX 的ETF，流动性极佳，衍生品也丰富，用来做期权交易极佳
+跟踪 S&P 500 index 的ETF，流动性极佳，衍生品也丰富，用来做期权交易极佳
 
 > SPY tracks a market-cap-weighted index of US large- and midcap stocks selected by the S&P Committee.
 >
@@ -75,9 +75,7 @@ S&P 500 Index Future，可以用来跟踪在盘前盘后，乘数为1:250， 用
 >
 > Origin from : https://www.etf.com/SPY#overview
 
-
-
-SPY 在高位的时候，之所以用option call 合适，是因为 risk limited，因为只要美元持续独霸天下，金融危机不来，s&p 500 大周期就是一路向上的，想低位买入很难
+SPY 在高位的时候，之所以用option call 合适，是因为 risk limited，因为只要美元持续独霸天下，金融危机或者地区冲突不来，s&p 500 大周期就是一路向上的，想低位买入很难
 
 
 
