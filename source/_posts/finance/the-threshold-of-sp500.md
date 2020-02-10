@@ -54,7 +54,7 @@ S&P 500 是 capitalization-weighted index，
 
 
 
-写到这里，大家应该都明白了，逢低 Long S&P 500 得多靠谱！！！！
+写到这里，大家应该都明白了，逢低 **Long S&P 500** 得多靠谱！！！！
 
 
 
