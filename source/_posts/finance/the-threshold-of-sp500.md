@@ -104,11 +104,19 @@ ES: E-mini S&P 500 Futures Quotes, 可以用来跟踪在盘前盘后, 在CME Glo
 
 其实我不建议交易这种期货，但是可以当指标看看
 
-
-
-
-
 _To be continued_
+
+
+
+------
+
+> **学习型的投资者可以加入我的讨论组进行交流讨论**     
+>
+> Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
+> Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
+> 微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码
+
+------
 
 
 
