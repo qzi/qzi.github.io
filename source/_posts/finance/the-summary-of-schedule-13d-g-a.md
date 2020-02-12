@@ -46,6 +46,14 @@ The determination of what constitutes “promptly” is based upon the facts and
 
 * Schedule 13G can be filed by three classes of investors - Exempt Investors (Rule 13d1(d)), Qualified Institutional Investors (Rule 13d-1(b)), and Passive Investors (Rule 13d1(c)). 
 
+> - Rule 13d-1(b) - [Institutional Investors](https://en.wikipedia.org/wiki/Institutional_investors) that acquire securities in the ordinary course of business and not with the intent nor with the effect of influencing control of the issuer.
+>
+> - Rule 13d-1(c) - Passive Investors that have not acquired the security with the intent nor effect of influencing control over the issuer, are not an "institutional investor," and are not directly or indirectly the beneficial owner of 20% or more of the security.
+>
+> - Rule 13d-1(d) - Exempt Investors under Section 13(d)(6)(A) or (B) of the [Securities Exchange Act of 1934](https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934), or because the beneficial ownership was acquired before December 22, 1970, or because the person is otherwise not required to file a statement on Schedule 13D.
+>
+>   Origin from : https://en.wikipedia.org/wiki/Schedule_13G
+
 
 
 ## Schedule 13G/A
@@ -74,3 +82,6 @@ _To be continued_
 
 _Schedule 13D_
 https://www.sec.gov/fast-answers/answerssched13htm.html
+
+_Schedule 13G_
+https://en.wikipedia.org/wiki/Schedule_13G
