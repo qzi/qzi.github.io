@@ -1,5 +1,5 @@
 ---
-title: ' 从腾讯增持哔哩哔哩股权开始学习 Schedule 13D/G/A '
+title: ' 从 腾讯集团 增持 哔哩哔哩 股权开始学习 Schedule 13D/G/A '
 categories: finance
 permalink: finance/the-summary-of-schedule-13d-g-a
 date: 2020-02-13 03:24:48
@@ -55,6 +55,20 @@ A : Amendment, Schedule 13G/A 就是对之前已经披露的 Schedule 13G 的修
 
 
 _To be continued_
+
+
+
+------
+
+> **学习型的投资者可以加入我的讨论组进行交流讨论**     
+>
+> Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
+> Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/NgWdjb)
+> 微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码
+
+------
+
+
 
 ## Reference
 
