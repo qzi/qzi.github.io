@@ -36,9 +36,9 @@ excerpt: ' 本文尝试普及新型冠状病毒（2019-nCoV）的基本情况，
 
 ## 病毒的名称
 
-病毒已被世界卫生组织（WHO）确认并命名为2019-nCoV ( 2019 - novel coronavirus )，所以不是很多谣言里面说的SARI或者什么其他的
+新型冠状病毒在初期被世界卫生组织（WHO）命名为 2019-nCoV ( 2019 - Novel Coronavirus )，现在为了便于易读重命名为  COVID - 19（Coronavirus Disease - 19），所以不是很多谣言里面说的SARI或者什么其他的
 
-国务院应对新型冠状病毒肺炎疫情联防联控机制成员现决定，将新型冠状病毒感染的肺炎暂命名为“新型冠状病毒肺炎”，英文名为“Novel coronavirus pneumonia”，简称“新冠肺炎”，英文简称NCP。
+国务院应对新型冠状病毒肺炎疫情联防联控机制成员现决定，将新型冠状病毒感染的肺炎暂命名为“新型冠状病毒肺炎”，英文名为“Novel Coronavirus Pneumonia”，简称“新冠肺炎”，英文简称NCP。
 
 
 
