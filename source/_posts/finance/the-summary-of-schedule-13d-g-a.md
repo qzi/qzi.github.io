@@ -9,10 +9,9 @@ excerpt: '本文主要从 腾讯集团（Tencent Holdings Limited）增持 哔�
 
 
 
-新冠病毒（COVID-19)期间, 大家都躲在家里过春节避免外出，在线视频和在线游戏风口顿起，哔哩哔哩（BILI）商业价值凸显，此时正值可预期解决的疫情的大周期的经济低谷，巨头们便盯上了这个香锅锅进行股权收购。就在2月10日，腾讯在 SEC Filing 13G 披露了它增持BILI的股权至4374万股，股权比例达到18%，而本文就是来讨论如何读取 Schedule 13D/G/A 的关键信息以帮助我们更好的判断股价趋势。
+新冠病毒（COVID-19)期间, 大家都躲在家里过春节避免外出，在线视频和在线游戏风口顿起，哔哩哔哩（BILI）商业价值凸显，此时正值可预期解决的疫情的大周期的经济低谷，巨头们便盯上了这个香锅锅进行股权收购。就在2月10日，腾讯在 SEC Filing 13G 披露了它增持BILI的股权至4374万股，股权比例达到18%，信息一披露，股票应声而涨，而本文就是来讨论如何读取 Schedule 13D/G/A 的关键信息以帮助我们更好的判断股价趋势。
 
 Origin from : [SC 13G/A 1 dp121177_sc13ga-bilibili.htm FORM SC 13G/A](https://www.sec.gov/Archives/edgar/data/1293451/000095010320002549/dp121177_sc13ga-bilibili.htm)
-
 | **CUSIP No.** | The information required under this item is set forth in the cover page and is incorporated herein by reference |
 | ------------- | ------------------------------------------------------------ |
 | 1.            | Names of Reporting Persons. <br />Tencent Holdings Limited   |
