@@ -4,7 +4,7 @@ categories: finance
 permalink: finance/the-summary-of-schedule-13d-g-a
 date: 2020-02-13 03:24:48
 tags: sec
-excerpt: '本文主要从腾讯增持哔哩哔哩股权去学习 Schedule 13D/G/A '
+excerpt: '本文主要从 腾讯集团（Tencent Holdings Limited）增持 哔哩哔哩（BILI）股权去学习 Schedule 13D/G/A '
 ---
 
 
