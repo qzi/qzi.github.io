@@ -46,7 +46,7 @@ https://www.law.cornell.edu/cfr/text/17/230.424
 
 primary offering is also known as "IPO".
 
-> 424(b)(5) A form of prospectus that discloses information, facts or events covered in both paragraphs (b) (2) and (3) shall be filed with the Commission no later than the second business day following the earlier of the date of the determination of the offering price or the date it is first used after effectiveness in connection with a public offering or sales, or transmitted by a means reasonably calculated to result in filing with the Commission by that date.
+> **(5)** A form of prospectus that discloses information, facts or events covered in both paragraphs (b) (2) and (3) shall be filed with the Commission no later than the second business day following the earlier of the date of the determination of the offering price or the date it is first used after effectiveness in connection with a public offering or sales, or transmitted by a means reasonably calculated to result in filing with the Commission by that date.
 >
 > Origin from : https://www.law.cornell.edu/cfr/text/17/230.424
 
@@ -54,7 +54,7 @@ primary offering is also known as "IPO".
 
 ## Form 424(b)(2)
 
->424(b)(2) A form of prospectus that is used in connection with a primary offering of securities pursuant to Rule 415(a)(1)(x) (§ 230.415(a)(1)(x)) or a primary offering of securities registered for issuance on a delayed basis pursuant to Rule 415(a)(1)(vii) or (viii) (§ 230.415(a)(1)(vii) or (viii)) and that, in the case of Rule 415(a)(1)(viii) discloses the public offering price, description of securities or similar matters, and in the case of Rule 415(a)(1)(vii) and (x) discloses information previously omitted from the prospectus filed as part of an effective registration statement in reliance on Rule 430B (§ 230.430B), or, in the case of asset-backed securities, Rule 430D (§ 230.430D) shall be filed with the Commission no later than the second business day following the earlier of the date of the determination of the offering price or the date it is first used after effectiveness in connection with a public offering or sales, or transmitted by a means reasonably calculated to result in filing with the Commission by that date.
+>**(2)** A form of prospectus that is used in connection with a primary offering of securities pursuant to Rule 415(a)(1)(x) (§ 230.415(a)(1)(x)) or a primary offering of securities registered for issuance on a delayed basis pursuant to Rule 415(a)(1)(vii) or (viii) (§ 230.415(a)(1)(vii) or (viii)) and that, in the case of Rule 415(a)(1)(viii) discloses the public offering price, description of securities or similar matters, and in the case of Rule 415(a)(1)(vii) and (x) discloses information previously omitted from the prospectus filed as part of an effective registration statement in reliance on Rule 430B (§ 230.430B), or, in the case of asset-backed securities, Rule 430D (§ 230.430D) shall be filed with the Commission no later than the second business day following the earlier of the date of the determination of the offering price or the date it is first used after effectiveness in connection with a public offering or sales, or transmitted by a means reasonably calculated to result in filing with the Commission by that date.
 >
 >Origin from : https://www.law.cornell.edu/cfr/text/17/230.424
 
