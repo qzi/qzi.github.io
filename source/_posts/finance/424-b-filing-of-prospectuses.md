@@ -66,7 +66,7 @@ primary offering is also known as "IPO".
 >
 > Origin from : https://www.law.cornell.edu/cfr/text/17/230.424
 
-有些往细了看太挺头疼的，有空再研究 
+有些往细了看挺头疼的，有空再研究 
 
 _To be continued_
 
