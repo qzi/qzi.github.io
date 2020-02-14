@@ -64,9 +64,29 @@ FXI 是美国市场跟踪中国的交易量最大的ETF，它的期权具有非�
 
 
 
+## AFTY ( 南方东英 A50 )
+
+AFTY: 通过 RQFII 跟踪在沪深上市的 前50 家最大的公司，以美元计价
+
+> AFTY tracks an index of the 50 largest China A-shares listed on the Shanghai and Shenzhen stock exchanges.
+>
+> AFTY provides direct exposure to China’s restricted mainland equity market with RQFII access through CSOP, an asset manager in Hong Kong. 
+>
+> In some respects, AFTY is an A-share version of iShares’ FXI, which holds 50 of the largest Chinese securities traded in Hong Kong. 
+>
+> Origin from : https://www.etf.com/AFTY#efficiency
+
+> RQFII
+>
+> Established in 2011, the **Renminbi Qualified Foreign Institutional Investor** (RQFII) program is a policy initiative that allows foreign investors who hold the RQFII quota to invest directly in Mainland China’s bond and equity markets. The program represents a continued loosening of [China](https://en.wikipedia.org/wiki/China)’s capital controls and departure from its predecessor [QFII](https://en.wikipedia.org/wiki/QFII). The RQFII program relaxes existing restrictions on currency settlement, adds permissible asset classes, and expands investor eligibility. The current RQFII relevant jurisdiction applies to financial organizations registered in [Hong Kong](https://en.wikipedia.org/wiki/Hong_Kong), [Singapore](https://en.wikipedia.org/wiki/Singapore), the [United Kingdom](https://en.wikipedia.org/wiki/United_Kingdom), [France](https://en.wikipedia.org/wiki/France), [Korea](https://en.wikipedia.org/wiki/Korea), [Germany](https://en.wikipedia.org/wiki/Germany), [Australia](https://en.wikipedia.org/wiki/Australia), [Switzerland](https://en.wikipedia.org/wiki/Switzerland), [Canada](https://en.wikipedia.org/wiki/Canada), the [United States](https://en.wikipedia.org/wiki/United_States) and [Luxembourg](https://en.wikipedia.org/wiki/Luxembourg).[[1\]](https://en.wikipedia.org/wiki/RMB_Qualified_Foreign_Institutional_Investor#cite_note-1)
+>
+> Origin from : https://en.wikipedia.org/wiki/RMB_Qualified_Foreign_Institutional_Investor
+
+
+
 ## ASHR（沪深300 ETF - 德银嘉实）
 
-ASHR : Xtrackers Harvest CSI 300 China A-Shares ETF,  跟踪在大陆的上市的沪深300的股票，以美元计价，不包括在香港和美国上市的公司股票，因为能更好的反馈大陆的走势
+ASHR : Xtrackers Harvest CSI 300 China A-Shares ETF,  通过 RQFII 跟踪在大陆的上市的沪深300的股票，以美元计价，不包括在香港和美国上市的公司股票，因为能更好的反馈大陆的走势
 
 > ASHR tracks an index of the 300 largest and most liquid Chinese shares traded on the Shanghai and Shenzhen exchanges. The fund holds physical China A-shares.
 >
