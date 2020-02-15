@@ -36,7 +36,7 @@ excerpt: ' 本文尝试普及 2019新型冠状病毒（2019-nCoV/COVID-19）的�
 
 ## 病毒的名称
 
-新型冠状病毒在初期被世界卫生组织（WHO）命名为 2019-nCoV ( 2019 - Novel Coronavirus），官方称呼为 SARS-COV2，而由新冠引起的疾病命名为  COVID - 19（Coronavirus Disease - 19），所以不是很多谣言里面说的SARI或者什么其他的
+新型冠状病毒在初期被世界卫生组织（WHO）命名为 2019-nCoV ( 2019 - Novel Coronavirus），官方称呼为 SARS-COV2，而由新冠引起的疾病命名为  COVID-19（Coronavirus Disease - 19），所以不是很多谣言里面说的SARI或者什么其他的
 
 > The **2019 novel coronavirus** (**2019-nCoV**),[[1\]](https://en.wikipedia.org/wiki/2019_novel_coronavirus#cite_note-WHO21Jan2020-1)[[2\]](https://en.wikipedia.org/wiki/2019_novel_coronavirus#cite_note-CDC10Jan2020-2) officially named **severe acute respiratory syndrome coronavirus 2** (**SARS-CoV-2**),[[3\]](https://en.wikipedia.org/wiki/2019_novel_coronavirus#cite_note-CoronavirusStudyGroup-3)[[4\]](https://en.wikipedia.org/wiki/2019_novel_coronavirus#cite_note-:2-4) is a [positive-sense, single-stranded RNA](https://en.wikipedia.org/wiki/Positive-sense_single-stranded_RNA_virus) [coronavirus](https://en.wikipedia.org/wiki/Coronavirus).[[5\]](https://en.wikipedia.org/wiki/2019_novel_coronavirus#cite_note-5)[[6\]](https://en.wikipedia.org/wiki/2019_novel_coronavirus#cite_note-:xinhuanet9Jan2020-6)[[7\]](https://en.wikipedia.org/wiki/2019_novel_coronavirus#cite_note-:gisaid-7)
 >
