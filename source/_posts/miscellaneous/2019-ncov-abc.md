@@ -230,3 +230,6 @@ https://www.zhihu.com/question/367655939/answer/983850446
 
 _Clinical characteristics of 2019 novel coronavirus infection in China_
 https://www.medrxiv.org/content/10.1101/2020.02.06.20020974v1
+
+_2019 novel coronavirus_
+https://en.wikipedia.org/wiki/2019_novel_coronavirus
