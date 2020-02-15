@@ -1,10 +1,10 @@
 ---
-title: 2019新型冠状病毒（2019-nCoV/COVID-19）- ABC
+title: 2019新型冠状病毒（2019-nCoV/SARS-COV2）- ABC
 date: 2020-01-25 02:17:42
 tags: coronavirus
 categories: miscellaneous
 permalink: miscellaneous/2019-ncov-abc
-excerpt: ' 本文尝试普及 2019新型冠状病毒（2019-nCoV/COVID-19）的基本常识，重点介绍了口罩的选择标准 '
+excerpt: ' 本文尝试普及 2019新型冠状病毒（2019-nCoV/SARS-COV2）的基本常识，重点介绍了口罩的选择标准 '
 ---
 
 
