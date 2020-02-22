@@ -35,7 +35,7 @@ excerpt: ' 从 Tesla 的暴涨看 S&P 500 指数的长盛不衰，重点聊指�
 * 至少 IPO 后半年也达标了
 * 过去四个月实现盈利，这个没有达标，而且以它目前的趋势盈利已经大势所趋，从后备军的角度上看
 
-S&P 500 是 capitalization-weighted index
+### S&P 500 is capitalization-weighted index
 
 >**What Is a Capitalization-Weighted Index?**
 >
@@ -43,7 +43,7 @@ S&P 500 是 capitalization-weighted index
 >
 >Origin from : https://www.investopedia.com/terms/c/capitalizationweightedindex.asp
 
-它的 Top 10 Holdings 如下：
+###  Top 10 Holdings 
 
 ![image-20200211034750308](the-threshold-of-sp500/image-20200211034750308.png)
 
