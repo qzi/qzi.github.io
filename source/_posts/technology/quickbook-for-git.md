@@ -9,7 +9,7 @@ excerpt: '使用Git这种强大的版本管理工具，时刻要记得一句名�
 
 
 
-使用Git这种强大的版本管理工具，时刻要记得一句名言“ Know your place！”
+开玩笑地说，使用Git这种强大的版本管理工具，时刻要记得一句名言“ Know your place！”
 
 
 
