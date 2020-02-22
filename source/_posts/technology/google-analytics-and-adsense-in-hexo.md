@@ -5,6 +5,7 @@ tags:
   - hexo
   - blog
 date: 2019-12-16 18:39:22
+excerpt: '本文主要介绍如何集成 google analytics 和 google adsense 到 hexo blog'
 ---
 
 _This is the guideline to setup the Google Analuytics and Adsense in Hexo with Theme-NexT_  

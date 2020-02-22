@@ -4,6 +4,7 @@ categories: technology
 abbrlink: 16478
 date: 2020-01-04 01:15:32
 tags: blog
+excerpt: '本文主要介绍通过 Travis-CI 部署 Hexo Blog 到 Firebase Hosting 上，其中要特别注意密码加密的步骤 '
 ---
 
 Firebase Hosting 提供 1GB 的免费托管，同时部署在高质量的 Goolge Cloud 上的效果非常好，普通 Blog 都够用，以后需求超了也可以弹性调节 ... 
