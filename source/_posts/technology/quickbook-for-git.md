@@ -91,6 +91,21 @@ leon:qzi.github.io leon$
 $git diff --staged
 ```
 
+```bash
+Leon:qzi.github.io leon$ git diff --staged
+diff --git a/source/_posts/miscellaneous/2019-ncov-abc.md b/source/_posts/miscellaneous/2019-ncov-abc.md
+index 6302830..61c0c54 100644
+--- a/source/_posts/miscellaneous/2019-ncov-abc.md
++++ b/source/_posts/miscellaneous/2019-ncov-abc.md
+@@ -31,6 +31,7 @@ excerpt: ' 本文尝试普及 2019新型冠状病毒（2019-nCoV/SARS-COV2）的
+ | 按电梯的按钮，用纸巾按，出门常备纸巾                         |
+ | 家庭成员不要共用個人生活用品                                 |
+ | 就餐时，公筷分餐，快进食，少说话                             |
++| 外出进门前注意鞋底在外可能踩踏吐痰等等中介传播物的路面的情况 |
+```
+
+
+
 ### Unstaged the files
 
 ```bash
