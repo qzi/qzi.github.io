@@ -56,6 +56,12 @@ $git checkout [branch name]
 $git log
 ```
 
+### Show Difference in unstaged area
+
+```bash
+$git diff
+```
+
 
 
 ## Git integration with Vscode
