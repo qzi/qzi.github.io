@@ -53,7 +53,7 @@ $git log
 $git status
 ```
 
-### Show Difference in unstaged area
+### Show difference in unstaged area
 
 ```bash
 $git diff
@@ -85,7 +85,7 @@ leon:qzi.github.io leon$
 
 `+`通常代表那行是增加的或者进行了更改后的内容
 
-### Show Difference in staged area
+### Show difference in staged area
 
 ```bash
 $git diff --staged
