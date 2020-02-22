@@ -44,7 +44,7 @@ $git commit [files]
 ### Review the log
 
 ```bash
-$git log
+$git log -p
 ```
 
 ### Show  status
