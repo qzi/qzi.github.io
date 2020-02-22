@@ -135,7 +135,7 @@ $git config --global core.editor "code --wait"
 ```
 **Install the Gitlens to view the commit message**
 
-Press`Shift + Command + P`, then type `Install extentions`enter to find the Gitlens
+Press`Shift + Command + P`, then type `Install extentions`enter to find the `Gitlens`
 
 _Gitlens_ : https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 
