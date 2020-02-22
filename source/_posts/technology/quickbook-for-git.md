@@ -137,9 +137,15 @@ $git config --global core.editor "code --wait"
 
 Press`Shift + Command + P`, then type `Install extentions`enter to find the Gitlens
 
- **Install the Git Graph to view the commit history**
+_Gitlens_ : https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 
-Press`Shift + Command + P`, then type `Install extentions`enter to find the `Git Graph` or `Git history `as a alternative
+**Install the Git Graph to view the commit history**
+
+Press`Shift + Command + P`, then type `Install extentions`enter to find the `Git Graph` or `Git history `as a alternative 
+_Git Graph_: https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
+_Git History_: https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
+
+
 
 
 
