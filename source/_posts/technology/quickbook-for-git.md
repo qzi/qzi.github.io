@@ -53,7 +53,7 @@ $git log
 $git status
 ```
 
-### Show difference in unstaged area
+### Show differences in unstaged area
 
 ```bash
 $git diff
@@ -77,7 +77,7 @@ S&P 500 为啥长生不衰
 leon:qzi.github.io leon$ 
 ```
 
-`--- a` 和 `--- b`是进行比较的源文件a和源文件b
+`--- a` 和 `--- b`是进行比较的 文件版本a 和 文件版本b
 
 `@@` 是 Chunk，代表这一个变更的集合块
 
@@ -85,7 +85,7 @@ leon:qzi.github.io leon$
 
 `+`通常代表那行是增加的或者进行了更改后的内容
 
-### Show difference in staged area
+### Show differences in staged area
 
 ```bash
 $git diff --staged
@@ -108,6 +108,8 @@ $git checkout -b [branch name]
 ```bash
 $git checkout [branch name]
 ```
+
+
 
 ## Git integration with Vscode
 
