@@ -4,7 +4,14 @@ categories: technology
 permalink: technology/quickbook-for-git
 date: 2020-01-06 06:30:07
 tags: git
+excerpt: '使用Git这种强大的版本管理工具，时刻要记得一句名言“ Know your place！”'
 ---
+
+
+
+使用Git这种强大的版本管理工具，时刻要记得一句名言“ Know your place！”
+
+
 
 ## 	Git Phases
 
@@ -26,6 +33,7 @@ B --> | git commit | C[ Repo - commited ];
 ## Quick Book of Git
 
 ### Staged files
+
 ```bash
 $git add [files]
 ```
@@ -33,7 +41,58 @@ $git add [files]
 ```bash
 $git commit [files]
 ```
+### Review the log
+
+```bash
+$git log
+```
+
+### Show  status
+
+```bash
+$git status
+```
+
+### Show Difference in unstaged area
+
+```bash
+$git diff
+```
+
+```bash
+leon:qzi.github.io leon$ git diff
+diff --git a/source/_posts/finance/the-threshold-of-sp500.md b/source/_posts/finance/the-threshold-of-sp500.md
+index dd45124..822c9cd 100644
+--- a/source/_posts/finance/the-threshold-of-sp500.md
++++ b/source/_posts/finance/the-threshold-of-sp500.md
+@@ -11,7 +11,7 @@ excerpt: ' 从 Tesla 的暴涨看 S&P 500 指数的长盛不衰，重点聊指
+
+![image-20200211015932474](the-threshold-of-sp500/image-20200211015932474.png)
+
+-
++test
+
+S&P 500 为啥长生不衰
+
+leon:qzi.github.io leon$ 
+```
+
+`--- a` 和 `--- b`是进行比较的源文件a和源文件b
+
+`@@` 是 Chunk，代表这一个变更的集合块
+
+`-`通常代表那行删除或者进行了更改前的内容
+
+`+`通常代表那行是增加的或者进行了更改后的内容
+
+### Show Difference in staged area
+
+```bash
+$git diff --staged
+```
+
 ### Unstaged the files
+
 ```bash
 $git restore [files]
 ```
@@ -49,27 +108,6 @@ $git checkout -b [branch name]
 ```bash
 $git checkout [branch name]
 ```
-
-### Review the log
-
-```bash
-$git log
-```
-
-### Show Difference in unstaged area
-
-```bash
-$git diff
-```
-
-### Show  status
-
-```bash
-$git status
-```
-https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/diffs
-
-
 
 ## Git integration with Vscode
 
@@ -93,3 +131,8 @@ _其实我只是想实验 Mermaid 的 flowchart 才写的这篇 つ﹏⊂_
 _To Be Continue ..._
 
 
+
+## Reference
+
+_用 diff 来检查改动_
+https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/diffs
