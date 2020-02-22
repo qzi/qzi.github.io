@@ -25,7 +25,7 @@ B --> | git commit | C[ Repo - commited ];
 
 ## Quick Book of Git
 
-### Staged Files
+### Staged files
 ```bash
 $git add [files]
 ```
@@ -41,7 +41,7 @@ $git restore [files]
 ```bash
 $git branch
 ```
-### Checkout and create a new branch
+### Checkout and Create a new branch
 ```bash
 $git checkout -b [branch name]
 ```
@@ -62,6 +62,13 @@ $git log
 $git diff
 ```
 
+### Show  status
+
+```bash
+$git status
+```
+https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/diffs
+
 
 
 ## Git integration with Vscode
@@ -81,7 +88,7 @@ Press`Shift + Command + P`, then type `Install extentions`enter to find the `Git
 
 
 
-_其实我只是想实验Mermaid的flowchart才写的这篇 つ﹏⊂_
+_其实我只是想实验 Mermaid 的 flowchart 才写的这篇 つ﹏⊂_
 
 _To Be Continue ..._
 
