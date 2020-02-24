@@ -1,5 +1,5 @@
 ---
-title: ' the brief of stock exchange '
+title: ' The Brief of Stock Exchange '
 categories: finance
 permalink: finance/the-brief-of-stock-exchange
 date: 2020-02-24 18:39:54
