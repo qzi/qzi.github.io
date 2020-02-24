@@ -1,5 +1,5 @@
 ---
-title: ' The Brief of Stock Exchange '
+title: 'Brief of Stock Exchange '
 categories: finance
 permalink: finance/the-brief-of-stock-exchange
 date: 2020-02-24 18:39:54
@@ -7,7 +7,7 @@ tags: exchange
 excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此时会需要去看一些指数指标，顺便梳理了一下在 IB 上看到的有点迷糊的交易所，提供一份基于实践的可持续整理的列表'
 ---
 
-新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此时会需要去看一些指数指标，顺便梳理了一下在 IB 上看到的有点迷糊的交易所，提供一份基于实践的可持续整理的列表
+新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此时会需要去看一些其他国家指数指标，顺便梳理了一下在 IB 上看到的有点迷糊的交易所和时间，提供一份基于实践的可持续整理的列表
 
 
 
@@ -33,6 +33,7 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 | America | NASDAQ.NMS | The National Market System (**NMS**) is the national system for trading equities in the United States. The System includes all the facilities and entities which are used by broker-dealers to fulfill trade orders for securities. This includes: Major stock exchanges, such as NYSE and **Nasdaq**. |  |
 | America | NYSE | The New York Stock Exchange |  |
 | America | ONE | OneChicago | [www.onechicago.com](http://www.onechicago.com/) |
+| European | DTB | EUREX, Deutsche Terminbörse | https://en.wikipedia.org/wiki/Eurex_Exchange |
 
 _to be continued_
 
