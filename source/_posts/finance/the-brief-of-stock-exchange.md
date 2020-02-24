@@ -29,7 +29,7 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 | America | ARCA | NYSE Arca is an electronic securities exchange in the U.S. on which exchange-traded products (ETPs) and equities trade. The exchange specializes in ETP listings, which include exchange-traded funds (ETFs), exchange-traded notes (ETNs) and exchange-traded vehicles (ETVs). | SPY@ARCA |
 | America | CBOT (ECBOT) | The Chicago Board of Trade<br />CME Group merged with the Chicago Board of Trade (CBOT), a Designated Contract Market offering products subject to CBOT rules and regulations, in 2007. CBOT brought a suite of interest rates, agricultural and equity index products to our existing offering. | ZB@ECBOT<br />https://www.cmegroup.com/company/cbot.html |
 | America | NYBOT | New York Board of Trade<br />Founded in 1870, the New York Board of Trade (NYBOT) is a [commodity futures exchange](https://www.investopedia.com/investing/commodities-trading-overview/) located in New York. In 2006, it became part of the [Intercontinental Exchange (ICE)](https://www.investopedia.com/terms/i/intercontinentalexchange.asp). |  |
-| America | ICE | The Intercontinental Exchange<br />The Intercontinental Exchange (ICE) was founded in May 2000 in Atlanta, Georgia, to facilitate the electronic purchase and sale of energy commodities. ICE operates entirely as an electronic exchange and is linked directly to individuals and companies looking to trade in oil, natural gas, jet fuel, emissions, electric power, commodity [derivatives](https://www.investopedia.com/terms/d/derivative.asp), and futures. | https://www.investopedia.com/terms/i/intercontinentalexchange.asp |
+| America | ICE | The Intercontinental Exchange<br />The Intercontinental Exchange (ICE) was founded in May 2000 in Atlanta, Georgia, to facilitate the electronic purchase and sale of energy commodities. ICE operates entirely as an electronic exchange and is linked directly to individuals and companies looking to trade in oil, natural gas, jet fuel, emissions, electric power, commodity [derivatives](https://www.investopedia.com/terms/d/derivative.asp), and futures. |  |
 | America | NASDAQ.NMS | The National Market System (**NMS**) is the national system for trading equities in the United States. The System includes all the facilities and entities which are used by broker-dealers to fulfill trade orders for securities. This includes: Major stock exchanges, such as NYSE and **Nasdaq**. |  |
 | America | NYSE | The New York Stock Exchange |  |
 | America | ONE | OneChicago | [www.onechicago.com](http://www.onechicago.com/) |
@@ -48,3 +48,5 @@ _Stock Exchange_
 https://en.wikipedia.org/wiki/Stock_exchange
 _Exchange Listings in IB_
 https://www1.interactivebrokers.com/en/index.php?f=1562
+_ICE_
+https://www.investopedia.com/terms/i/intercontinentalexchange.asp
