@@ -22,6 +22,10 @@ excerpt: '新冠疫情开始在中国以外的地方爆发，此时会需要去�
 | SEHK | The Stock Exchange of Hong Kong Limited | HSI@SEHK |
 | SEHKNTL | Shanghai-Hong Kong Stock Connect | 沪港通 |
 | HKFE | Hong Kong Futures Exchange | |
+| PHLX | Philadelphia Stock Exchange | SOX@PHLX |
+| CBOE | The Chicago Board Options Exchange |  |
+| GLOBEX | CME *Globex* is the premier electronic trading system providing global connectivity to the broadest array of futures and options across all asset classes. |  |
+| CME | The Chicago Mercantile Exchange |  |
 
 _to be continued_
 
@@ -30,3 +34,7 @@ _SEHKNTL_
 https://en.wikipedia.org/wiki/Shanghai-Hong_Kong_Stock_Connect
 _The list of SEHKNTL_
 https://www1.interactivebrokers.com/en/index.php?f=11759
+_List of stock exchange_
+https://en.wikipedia.org/wiki/List_of_stock_exchanges
+_Stock Exchange_
+https://en.wikipedia.org/wiki/Stock_exchange
