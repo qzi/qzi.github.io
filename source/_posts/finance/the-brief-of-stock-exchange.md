@@ -15,11 +15,11 @@ excerpt: '新冠疫情开始在中国以外的地方爆发，此时会需要去�
 
 | Exchange | Full Exchange name | Remark |
 | --- | --- | --- |
-| OSE | Osaka Stock Exchange | OSE.JPN |
+| OSE | Osaka Stock Exchange | N225@OSE.JPN |
 | TSE | Tokyo Stock Exchange | TSE.JPN |
-| KSE | Korea Stock Exchange | |
-| SGX | Singapore Exchange Limited |  |
-| SEHK | The Stock Exchange of Hong Kong Limited | |
+| KSE | Korea Stock Exchange | K200@KSE |
+| SGX | Singapore Exchange Limited | XINA50@SGX |
+| SEHK | The Stock Exchange of Hong Kong Limited | HSI@SEHK |
 | SEHKNTL | Shanghai-Hong Kong Stock Connect | 沪港通 |
 | HKFE | Hong Kong Futures Exchange | |
 
