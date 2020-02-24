@@ -85,6 +85,8 @@ leon:qzi.github.io leon$
 
 `+`通常代表那行是增加的或者进行了更改后的内容
 
+如果是全新创建的文件，没有diff
+
 ### Show differences in staged area
 
 ```bash
