@@ -98,6 +98,16 @@ ASHR 其实是通过 RQFII 进行大陆股票的投资，其实流动性不是�
 
 
 
+## CNXT（中小企业板创业板100指数 ETF）
+
+CNXT：VanEck Vectors® ChinaAMC SME-ChiNext ETF
+
+>VanEck Vectors® ChinaAMC SME-ChiNext ETF (CNXT®) seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the SME-ChiNext 100 Index (CNI6109), which tracks the performance of the 100 largest and most liquid China A-share stocks listed and trading on the Small and Medium Enterprise ("SME") Board and the ChiNext Board of the Shenzhen Stock Exchange.
+>
+>Origin from : https://www.vaneck.com/etf/equity/cnxt/holdings/
+
+
+
 这是中国崛起的时代，建议在出现流动性释放的时候，Long China！！！
 
 
