@@ -1,13 +1,13 @@
 ---
-title: 'Brief of Stock Exchange '
+title: 'The Brief of Stock Exchange and indicator'
 categories: finance
-permalink: finance/the-brief-of-stock-exchange
+permalink: finance/the-brief-of-stock-exchange-and-indicator
 date: 2020-02-24 18:39:54
 tags: exchange
 excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此时会需要去看一些指数指标，顺便梳理了一下在 IB 上看到的有点迷糊的交易所，提供一份基于实践的可持续整理的列表'
 ---
 
-新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此时会需要去看一些其他国家指数指标，顺便梳理了一下在 IB 上看到的有点迷糊的交易所和时间，提供一份基于实践的可持续整理的列表
+新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此时会需要去看一些其他国家指数指标，顺便梳理了一下在 IB 上看到的有点迷糊的交易所和指标，提供一份基于实践的可持续整理的列表
 
 
 
@@ -40,7 +40,7 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 
 # Indicator
 
-## N225
+## Nikkei 225
 
 Exchange: OSE.JPN
 Currency: JPY
@@ -66,9 +66,6 @@ https://www.jpx.co.jp/english/derivatives/products/domestic/225futures/01.html
 
 ## MSCI Japan Index
 
-Exchange: AMEX
-Currency: USD
-
 _Factsheet of MSCI Japan Index_
 https://www.msci.com/documents/10199/b3ee6464-f705-4d65-81a0-d8756607cf9f
 
@@ -77,12 +74,19 @@ https://www.msci.com/documents/10199/b3ee6464-f705-4d65-81a0-d8756607cf9f
 ### EWJ(MSCI Japan Index ETF)
 
 Underlying : MSCI Japan Index
+Exchange: AMEX
+Currency: USD
+
 https://www.etf.com/EWJ
+
 
 
 _to be continued_
 
-## Reference
+
+
+# Reference
+
 _SEHKNTL_
 https://en.wikipedia.org/wiki/Shanghai-Hong_Kong_Stock_Connect
 _The list of SEHKNTL_
@@ -97,3 +101,5 @@ _ICE_
 https://www.investopedia.com/terms/i/intercontinentalexchange.asp
 _Japan ETF_
 https://www.etf.com/channels/japan-etfs
+_NYSE AMEX_
+https://www.investopedia.com/terms/a/amex.asp
