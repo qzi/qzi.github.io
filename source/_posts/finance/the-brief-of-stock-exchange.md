@@ -35,6 +35,18 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 | America | ONE | OneChicago | [www.onechicago.com](http://www.onechicago.com/) |
 | European | DTB | EUREX, Deutsche Terminbörse | https://en.wikipedia.org/wiki/Eurex_Exchange |
 
+
+
+## N225 Future
+
+_Trading hours_
+8:45 JST - 15:15 JST
+16:30 JST - 5:30 JST
+
+https://www.jpx.co.jp/english/derivatives/products/domestic/225futures/01.html
+
+
+
 _to be continued_
 
 ## Reference
