@@ -33,6 +33,7 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 | America | NASDAQ.NMS | The National Market System (**NMS**) is the national system for trading equities in the United States. The System includes all the facilities and entities which are used by broker-dealers to fulfill trade orders for securities. This includes: Major stock exchanges, such as NYSE and **Nasdaq**. |  |
 | America | NYSE | The New York Stock Exchange |  |
 | America | ONE | OneChicago | [www.onechicago.com](http://www.onechicago.com/) |
+| America | AMEX | NYSE American, The American Stock Exchange (AMEX) was once the third-largest stock exchange in the U.S  |
 | European | DTB | EUREX, Deutsche Terminbörse | https://en.wikipedia.org/wiki/Eurex_Exchange |
 
 
@@ -41,6 +42,10 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 
 ## N225
 
+Exchange: OSE.JPN
+
+Currency: JPY
+
 **N225 Index Trading hours**
 09:00 JST - 15:00 JST
 
@@ -48,9 +53,36 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 8:45 JST - 15:15 JST
 16:30 JST - 5:30 JST
 
+**Nikkei 225 mini Trading hours**
+8:45 JST - 15:15 JST, 16:30 JST - 5:30 JST
+
+
+
+JST : https://www.timeanddate.com/time/zones/jst
+
+_Nikkei 225 Futures (Large Contracts) Specifications_
 https://www.jpx.co.jp/english/derivatives/products/domestic/225futures/01.html
 
 
+
+## MSCI Japan Index
+
+Exchange: AMEX
+
+Currency: USD
+
+_Factsheet of MSCI Japan Index_
+https://www.msci.com/documents/10199/b3ee6464-f705-4d65-81a0-d8756607cf9f
+
+
+
+### EWJ(MSCI Japan Index ETF)
+
+Underlying : MSCI Japan Index
+
+https://www.etf.com/EWJ
+
+####  
 
 _to be continued_
 
@@ -67,3 +99,5 @@ _Exchange Listings in IB_
 https://www1.interactivebrokers.com/en/index.php?f=1562
 _ICE_
 https://www.investopedia.com/terms/i/intercontinentalexchange.asp
+_Japan ETF_
+https://www.etf.com/channels/japan-etfs
