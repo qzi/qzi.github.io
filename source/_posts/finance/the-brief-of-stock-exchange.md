@@ -37,9 +37,14 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 
 
 
-## N225 Future
 
-_Trading hours_
+
+## N225
+
+**N225 Index Trading hours**
+09:00 JST - 15:00 JST
+
+**N225 Future Trading hours**
 8:45 JST - 15:15 JST
 16:30 JST - 5:30 JST
 
