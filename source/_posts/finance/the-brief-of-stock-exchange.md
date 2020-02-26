@@ -11,7 +11,7 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 
 
 
-## Stock Exchange
+# Stock Exchange
 
 | Country | Exchange | Full Exchange name | Remark |
 | --- | --- | --- | --- |
@@ -38,12 +38,11 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 
 
 
-
+# Indicator
 
 ## N225
 
 Exchange: OSE.JPN
-
 Currency: JPY
 
 **N225 Index Trading hours**
@@ -68,7 +67,6 @@ https://www.jpx.co.jp/english/derivatives/products/domestic/225futures/01.html
 ## MSCI Japan Index
 
 Exchange: AMEX
-
 Currency: USD
 
 _Factsheet of MSCI Japan Index_
@@ -79,10 +77,8 @@ https://www.msci.com/documents/10199/b3ee6464-f705-4d65-81a0-d8756607cf9f
 ### EWJ(MSCI Japan Index ETF)
 
 Underlying : MSCI Japan Index
-
 https://www.etf.com/EWJ
 
-####  
 
 _to be continued_
 
