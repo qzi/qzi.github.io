@@ -16,7 +16,7 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 | Country | Exchange | Full Exchange name | Remark |
 | --- | --- | --- | --- |
 | Japan | OSE | Osaka Stock Exchange | N225@OSE.JPN |
-| Japan | TSE | Tokyo Stock Exchange | TSE.JPN |
+| Japan | TSE.JPN/TSEJ | Tokyo Stock Exchange | 7203@TSEJ                                              |
 | Korea | KSE | Korea Stock Exchange | K200@KSE |
 | Singapore | SGX | Singapore Exchange Limited | XINA50@SGX |
 | China | SEHK | The Stock Exchange of Hong Kong Limited | HSI@SEHK |
@@ -78,7 +78,7 @@ https://www.msci.com/documents/10199/b3ee6464-f705-4d65-81a0-d8756607cf9f
 
 Underlying : MSCI Japan Index
 Exchange: NYSE Arca
-Currency: USD
+ETF Currency: USD
 
 Exchange of holdings: Tokyo Stock Exchange
 Market Currency: JPY
