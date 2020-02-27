@@ -66,6 +66,9 @@ https://www.jpx.co.jp/english/derivatives/products/domestic/225futures/01.html
 
 ## MSCI Japan Index
 
+Exchange of holdings: Tokyo Stock Exchange
+Market Currency: JPY
+
 _Factsheet of MSCI Japan Index_
 https://www.msci.com/documents/10199/b3ee6464-f705-4d65-81a0-d8756607cf9f
 
@@ -74,10 +77,15 @@ https://www.msci.com/documents/10199/b3ee6464-f705-4d65-81a0-d8756607cf9f
 ### EWJ(MSCI Japan Index ETF)
 
 Underlying : MSCI Japan Index
-Exchange: AMEX
+Exchange: NYSE Arca
 Currency: USD
 
-https://www.etf.com/EWJ
+Exchange of holdings: Tokyo Stock Exchange
+Market Currency: JPY
+
+ishares-msci-japan-etf: https://www.ishares.com/us/products/239665/ishares-msci-japan-etf
+
+EWJ: https://www.etf.com/EWJ
 
 
 
