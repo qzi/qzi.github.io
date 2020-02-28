@@ -44,6 +44,7 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 
 Exchange: OSE.JPN
 Currency: JPY
+Index Methodology : Price-weighted index
 
 **N225 Index Trading hours**
 09:00 JST - 15:00 JST
@@ -68,9 +69,15 @@ https://www.jpx.co.jp/english/derivatives/products/domestic/225futures/01.html
 
 Exchange of holdings: Tokyo Stock Exchange
 Market Currency: JPY
+Index Methodology : MSCI Global Investable Market Indexes (GIMI) Methodology 
+
+>The index is based on the MSCI Global Investable Market Indexes (GIMI) Methodology —a comprehensive and consistent approach to index construction that allows for meaningful global views and cross regional comparisons across all market capitalization size, sector and style segments and combinations. This methodology aims to provide exhaustive coverage of the relevant investment opportunity set with a strong emphasis on index liquidity, investability and replicability. The index is reviewed quarterly—in February, May, August and November—with the objective of reflecting change in the underlying equity markets in a timely manner, while limiting undue index turnover. During the May and November semi-annual index reviews, the index is rebalanced and the large and mid capitalization cutoff points are recalculated.
 
 _Factsheet of MSCI Japan Index_
 https://www.msci.com/documents/10199/b3ee6464-f705-4d65-81a0-d8756607cf9f
+
+_MSCI Global Investable Market Index_
+[MSCI_Global_Investable_Market_Indexes_Methodology_20200212.pdf](blob:https://www.msci.com/952aa376-56db-4ca8-a958-83010536b2da)
 
 
 
@@ -83,9 +90,11 @@ ETF Currency: USD
 Exchange of holdings: Tokyo Stock Exchange
 Market Currency: JPY
 
-ishares-msci-japan-etf: https://www.ishares.com/us/products/239665/ishares-msci-japan-etf
+Ishares MSCI Japan ETF: 
+https://www.ishares.com/us/products/239665/ishares-msci-japan-etf
 
-EWJ: https://www.etf.com/EWJ
+EWJ:
+https://www.etf.com/EWJ
 
 
 
