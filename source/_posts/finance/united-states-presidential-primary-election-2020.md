@@ -58,7 +58,7 @@ Caucus : 党团会议，“某个政党的地方成员举行会议，推举党�
 
 ## Primary
 
-Primary : 党内初选, New Hampshire 选举形势就有别与Iowa的cause，采用的真是Primary
+Primary : 党内初选, New Hampshire 选举形势就有别与Iowa的cause，采用初选制度的正是Primary
 
 党内初选 - Primary 是选民在投票日选择任何时间到投票站，投完票就走，不用和其它选民交流，程序比较简单。
 
