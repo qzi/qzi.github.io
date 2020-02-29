@@ -78,13 +78,13 @@ Primary : 党内初选, New Hampshire 选举形势就有别与Iowa的cause，采
 
 
 
-## The Democratic Nomination for President
+## Democratic Nomination for President
 
 | Nominator                               |      | Slogan                                                       |
 | --------------------------------------- | ---- | ------------------------------------------------------------ |
 | Senator Michael Bennet                  |      | Building Opportunity Together                                |
 | Former VP Joe Biden                     | *    | Our Best Days Still Lie Ahead                                |
-| Former NY Mayor Mike Bloomberg          |      | * A New Choice for Democrats<br />* Fighting For Our Future  |
+| Former NY Mayor Mike Bloomberg          | *    | * A New Choice for Democrats<br />* Fighting For Our Future  |
 | Former South Bend Mayor Pete Buttigieg  |      | * A Fresh Start for America <br />* Win the Era              |
 | Rep. Tulsi Gabbard                      |      | * Lead with Love <br />* Stand Up with Tulsi                 |
 | Sen. Amy Klobuchar                      |      | * Amy for America<br />* Let's Get to Work                   |
@@ -99,7 +99,7 @@ Sen. for Senator
 
 
 
-## The Republican Nomination for President
+## Republican Nomination for President
 
 | Nominator    |      | Slogan                                                       |
 | ------------ | ---- | ------------------------------------------------------------ |
