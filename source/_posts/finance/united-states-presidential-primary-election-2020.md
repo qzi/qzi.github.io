@@ -109,6 +109,17 @@ Sen. for Senator
 
 
 
+---
+
+>**学习型的投资者可以加入我的 Financial Group 进行交流讨论**    
+>Finance Group in Telegram : [_My Financial Telegram Group_](https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g)   
+>Finance Group in Discord : [_My Financial Discord Group_](https://discord.gg/bshbxuH)   
+>微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码
+
+---
+
+
+
 ## 2020 Election Calendar
 
 ![image-20200204073553256](united-states-presidential-primary-election-2020/image-20200204073553256.png)
