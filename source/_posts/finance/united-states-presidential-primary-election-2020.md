@@ -14,13 +14,15 @@ excerpt: '美股其实是需要去管理时间窗口的，尤其是在大选年�
 
 
 
-## United States Presidential Primary Election
+## Presidential Primary Election
 
 > **美国总统初选**是指在[美国总统选举](https://zh.wikipedia.org/wiki/美国总统选举)的候选人提名过程中，各州及领地举办的一系列[初选](https://zh.wikipedia.org/wiki/初選)（primary election）与[党团会议](https://zh.wikipedia.org/wiki/党团会议)（caucus）。
 >
 > [美国宪法](https://zh.wikipedia.org/wiki/美国宪法)对此并没有任何规定，这是各政党自己逐渐发展出来的一套流程。有些州只举办初选，也有些州只举办党团会议，还有些州两者皆有。每个大选年，各州的初选与党团会议并非同时举行，而是会持续数月，通常于一月下旬或二月上旬开始，于六月中旬结束。各州与当地政府会举行初选，而党团会议则是由各政党自己举行的内部会议。一州的初选或党团会议通常为[间接选举](https://zh.wikipedia.org/wiki/间接选举)，选民并非直接决定总统候选人，而是选出代表参加各党[提名大会](https://zh.wikipedia.org/wiki/美国总统提名大会)。这些代表则会在大会上选出各党总统候选人。
 >
 > Origin from [https://zh.wikipedia.org/wiki/美国总统初选](https://zh.wikipedia.org/wiki/美国总统初选)
+
+党团会议 - Cause 和 党内初选 - Primary 是都是美国总统大选中党内提名候选人的初步程序。
 
 
 
@@ -52,13 +54,31 @@ Caucus : 党团会议，“某个政党的地方成员举行会议，推举党�
 
 选举结果如无意外一般一两天就会出来，作为今后的选举风向标，可以提前布局相关的板块，比如医药板块
 
+
+
 ## Primary
 
-Primary : 党内初选
+Primary : 党内初选, New Hampshire 选举形势就有别与Iowa的cause，采用的真是Primary
 
-_现在还没primary，作者困了，以后继续补充_
+党内初选 - Primary 是选民在投票日选择任何时间到投票站，投完票就走，不用和其它选民交流，程序比较简单。
 
-### The Democratic Nomination for President
+党团会议 - Cause 选民要在规定的时间到投票站集合，开会，发言，最后投票；整个过程比较复杂、耗时。
+
+
+
+## Super Tuesday
+
+超级星期二会通常会决出将近四成的投票结果，Primary 集中度很高，是预测未来总统候选人的政治风向标
+
+>**Super Tuesday** is the election day early in a [United States presidential primary](https://en.wikipedia.org/wiki/United_States_presidential_primary) season (February or March) when the greatest number of [U.S. states](https://en.wikipedia.org/wiki/U.S._state) hold [primary elections](https://en.wikipedia.org/wiki/Primary_election) and [caucuses](https://en.wikipedia.org/wiki/Caucus). More [delegates](https://en.wikipedia.org/wiki/Delegate_(American_politics)) to the [presidential nominating conventions](https://en.wikipedia.org/wiki/United_States_presidential_nominating_convention) can be won on Super Tuesday than on any other single day. Super Tuesday primaries and caucuses occur in many states from geographically and socially diverse regions of the country and typically represent a presidential candidate's first test of national electability. Candidates must therefore do well on this day to help secure their party's nomination. Convincing wins in Super Tuesday primaries have usually propelled candidates to their party's nomination.[*[citation needed](https://en.wikipedia.org/wiki/Wikipedia:Citation_needed)*]
+>
+>Origin from: https://en.wikipedia.org/wiki/Super_Tuesday
+
+至于为什么会是星期二，据说是因为最初选举开始的时候，人们因为虔诚的宗教信仰会在周末休息礼拜，而周三会去赶集卖庄稼，农民想去投票需要走很远的路，所以周一和周四夜都不合适，最后就选择了周二。
+
+
+
+## The Democratic Nomination for President
 
 | Nominator                               |      | Slogan                                                       |
 | --------------------------------------- | ---- | ------------------------------------------------------------ |
@@ -79,7 +99,7 @@ Sen. for Senator
 
 
 
-### The Republican Nomination for President
+## The Republican Nomination for President
 
 | Nominator    |      | Slogan                                                       |
 | ------------ | ---- | ------------------------------------------------------------ |
@@ -198,3 +218,6 @@ https://zh.wikipedia.org/wiki/美国总统初选
 
 _2020 Election Calendar_
 https://www.270towin.com/2020-election-calendar/
+
+_美国大选知识：什么是党内初选Primary_
+https://www.voachinese.com/a/article-20120110-the-center-for-voting-and-democracy-137045928/792800.html
