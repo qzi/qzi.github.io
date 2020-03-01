@@ -103,11 +103,20 @@ https://www.etf.com/EWJ
 沙特阿拉伯全指,  这个指数有点意思，就是在周日也会波动，可以作为预测周一股市变化的因子
 
 Exchange:  Saudi Stock Exchange (Tadawul)
-
 Market Currency: SAR
 
-_to be continued_
 
+
+## iShare MSCI Saudi Arabia ETF(KSA)
+Underlying: MSCI Saudi Arabia IMI 25/50 Index
+ETF Currency: USD
+Market Currency: SAR
+
+_fact sheet_
+https://www.ishares.com/us/literature/fact-sheet/ksa-ishares-msci-saudi-arabia-etf-fund-fact-sheet-en-us.pdf
+
+
+_to be continued_
 
 
 ---
