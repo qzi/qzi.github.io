@@ -115,8 +115,13 @@ Market Currency: SAR
 _fact sheet_
 https://www.ishares.com/us/literature/fact-sheet/ksa-ishares-msci-saudi-arabia-etf-fund-fact-sheet-en-us.pdf
 
+_iShares MSCI Saudi Arabia ETF_
+https://www.ishares.com/us/products/271542/ishares-msci-saudi-arabia-capped-etf
+
+
 
 _to be continued_
+
 
 
 ---
