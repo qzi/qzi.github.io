@@ -82,13 +82,13 @@ Primary : 党内初选, New Hampshire 选举形势就有别与Iowa的cause，采
 
 | Nominator                               |      | Slogan                                                       |
 | --------------------------------------- | ---- | ------------------------------------------------------------ |
-| Senator Michael Bennet                  |      | Building Opportunity Together                                |
+| Senator Michael Bennet                  | *    | Building Opportunity Together                                |
 | Former VP Joe Biden                     | *    | Our Best Days Still Lie Ahead                                |
 | Former NY Mayor Mike Bloomberg          | *    | * A New Choice for Democrats<br />* Fighting For Our Future  |
-| Former South Bend Mayor Pete Buttigieg  |      | * A Fresh Start for America <br />* Win the Era              |
-| Rep. Tulsi Gabbard                      |      | * Lead with Love <br />* Stand Up with Tulsi                 |
-| Sen. Amy Klobuchar                      |      | * Amy for America<br />* Let's Get to Work                   |
-| Former Massachusetts Gov. Deval Patrick |      | Deval for All                                                |
+| Former South Bend Mayor Pete Buttigieg  | *    | * A Fresh Start for America <br />* Win the Era              |
+| Rep. Tulsi Gabbard                      | *    | * Lead with Love <br />* Stand Up with Tulsi                 |
+| Sen. Amy Klobuchar                      | *    | * Amy for America<br />* Let's Get to Work                   |
+| Former Massachusetts Gov. Deval Patrick | *    | Deval for All                                                |
 | Sen. Bernie Sanders                     | *    | Not Me. Us.                                                  |
 | Billionaire Tom Steyer                  |      | * Climate Change Cannot Wait<br />* Actions Speak Louder Than Words |
 | Sen. Elizabeth Warren                   | *    | * Persist<br />* Best President Money Can't Buy<br />* Warren Has a Plan For That |
@@ -232,3 +232,6 @@ https://www.270towin.com/2020-election-calendar/
 
 _美国大选知识：什么是党内初选Primary_
 https://www.voachinese.com/a/article-20120110-the-center-for-voting-and-democracy-137045928/792800.html
+
+_Primary Election_
+https://en.wikipedia.org/wiki/Primary_election
