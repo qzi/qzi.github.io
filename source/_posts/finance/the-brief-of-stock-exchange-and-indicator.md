@@ -49,6 +49,8 @@ Index Methodology : Price-weighted index
 **N225 Index Trading hours**
 09:00 JST - 15:00 JST
 
+N225 Index 支持期权交易
+
 **N225 Future Trading hours**
 8:45 JST - 15:15 JST
 16:30 JST - 5:30 JST
@@ -96,7 +98,7 @@ https://www.ishares.com/us/products/239665/ishares-msci-japan-etf
 EWJ:
 https://www.etf.com/EWJ
 
-
+EWJ 支持期权交易
 
 ## Tadawul All Share (TASI)
 
