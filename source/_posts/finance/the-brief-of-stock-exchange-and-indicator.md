@@ -49,7 +49,7 @@ Index Methodology : Price-weighted index
 **N225 Index Trading hours**
 09:00 JST - 15:00 JST
 
-N225 Index 支持期权交易
+N225 Index 支持欧式期权交易，乘数为1000
 
 **N225 Future Trading hours**
 8:45 JST - 15:15 JST
