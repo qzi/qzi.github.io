@@ -60,9 +60,9 @@ Caucus : 党团会议，“某个政党的地方成员举行会议，推举党�
 
 Primary : 党内初选, New Hampshire 选举形势就有别与Iowa的cause，采用初选制度的正是Primary
 
-党内初选 - Primary 是选民在投票日选择任何时间到投票站，投完票就走，不用和其它选民交流，程序比较简单。
+* 党内初选 - Primary 是选民在投票日选择任何时间到投票站，投完票就走，不用和其它选民交流，程序比较简单。
 
-党团会议 - Cause 选民要在规定的时间到投票站集合，开会，发言，最后投票；整个过程比较复杂、耗时。
+* 党团会议 - Cause 选民要在规定的时间到投票站集合，开会，发言，最后投票；整个过程比较复杂、耗时。
 
 Primary 又分为 Closed Primary, Semi-closed Primary, Open Primary 和 Semi-open Primary
 
