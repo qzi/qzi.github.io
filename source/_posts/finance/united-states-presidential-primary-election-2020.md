@@ -88,6 +88,8 @@ Primary 又分为 Closed Primary, Semi-closed Primary, Open Primary 和 Semi-ope
 
 至于为什么会是星期二，据说是因为最初选举开始的时候，人们因为虔诚的宗教信仰会在周末休息礼拜，而周三会去赶集卖庄稼，农民想去投票需要走很远的路，所以周一和周四夜都不合适，最后就选择了周二。
 
+另外，Super Tuesday 是个 Reginal holiday，估计放假让人去投票站投票吧
+
 
 
 ## Democratic Nomination for President
