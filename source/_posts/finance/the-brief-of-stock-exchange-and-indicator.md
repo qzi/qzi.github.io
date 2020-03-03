@@ -40,7 +40,7 @@ excerpt: '新冠（2019-nCoV）疫情开始在中国以外的地方爆发，此�
 
 # Indicator
 
-## Nikkei 225
+## N225（Nikkei 225 Index）
 
 Exchange: OSE.JPN
 Currency: JPY
@@ -49,23 +49,35 @@ Index Methodology : Price-weighted index
 **N225 Index Trading hours**
 09:00 JST - 15:00 JST
 
-N225 Index 支持欧式期权交易，乘数为1000
-
-这里说一下为什么要做日经期权，除了在疫情下行情随着消息面剧烈波动，买方期权是 Risk limited 的，货币自由兑换和美国作为最大的消费市场的体系下，日经经常是跟着美元趋势的，日经的期权是几乎 HKT 的白天和晚上都能交易的，这意味着如果白天有个疫情的重要会议的结果，你马上就可以在趋势逆转前平仓走人了，但是如果是美股，你要等到它开盘才能交易，但是那个时候可能另一个反向的消息来到了，反而可能已经由盈转亏了
+### N225 Future
 
 **N225 Future Trading hours**
 8:45 JST - 15:15 JST
-16:30 JST - 5:30 JST
-
-**Nikkei 225 mini Trading hours**
-8:45 JST - 15:15 JST, 16:30 JST - 5:30 JST
-
-
+16:30 JST - 05:30 JST
 
 JST : https://www.timeanddate.com/time/zones/jst
 
 _Nikkei 225 Futures (Large Contracts) Specifications_
 https://www.jpx.co.jp/english/derivatives/products/domestic/225futures/01.html
+
+
+
+### N225 Option
+
+**N225 Option Trading hours**
+09:00 JST - 15:15 JST
+16:30 JST - 05:30 JST
+
+N225 Index 支持欧式期权交易，乘数为1000
+
+这里说一下为什么要做日经期权，除了在疫情下行情随着消息面剧烈波动，买方期权是 Risk limited 的，货币自由兑换和美国作为最大的消费市场的体系下，日经经常是跟着美元趋势的，日经的期权是几乎 HKT 的白天和晚上都能交易的，这意味着如果白天有个疫情的重要会议的结果，你马上就可以在趋势逆转前平仓走人了，但是如果是美股，你要等到它开盘才能交易，但是那个时候可能另一个反向的消息来到了，反而可能已经由盈转亏了
+
+
+
+## N225M（Nikkei 225 Index Mini）
+
+**N225M future Trading hours**
+8:45 JST - 15:15 JST, 16:30 JST - 5:30 JST
 
 
 
