@@ -29,7 +29,7 @@ deploy:
   skip_cleanup: false
   provider: firebase
   token:
-    secure: oi3MqQ5QQRIM/Cy1LSmoI7hh8WIsmmZiSRAfXiGHxxRQ9e0XFU62m8BeWoRe8qxRe5hPc0hVZtt3IQMq64Wv2qUkcC0ZgEg9F+1MLbXRy3XvnFlBXh1V53hS5+QlF5iz7TtwjgEjh1bgCSa9TlINExgXg7D0T35TvfzgAI8Mj/HNae94R2q1NtEuR8ZAP7YnsEUAT1Ylsnf9fgPmiEH8EWXW41IkBYPQ92qnMuScpUtSjsoc5vOoLJ6PrBUTM1UM5y7IOTl5RITrVjSvDxkOT7iJNAc0MCQ4u8eu99xDYogOgvgZocxtN29yXCi2BzcXaglyrjwT0eoQ61vMP1VlraX0Jc7UsYD4yqVk7w9+/9+++AZv9vZhUl95Gj1/PMCUmJdHyuI0xe6WzxmpkRQsgg+XbBUpKBSVuiQ0A0jN+woeRhYNrnC4aVdEJIkciyw+fRyP05tdiUh8/D8RaOAbCfdw+0biI7ZWvU8zuag7yUlZuDS4PClUtaa4rwWpzk9ZRt4LAglsc6D2FJN7i4dKdsu5txxSBiv9KZ0tVx3b+cW2NOAfKUsQhIFqujn9cxdneEXXrzfRXf/CaPTkbPZ/E256lnf3lPONvHilxBNIZ/S1kRnYNj9t5woThQDoXfLMOcdrWyNYpnrNnH58xX0m/zAzyS6va5gU7MLaKUnC66M=
+    secure: $FIREBASE_TOKEN
   project: $FIREBASE_PROJECT
   on:
     all_branches: true
