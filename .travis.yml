@@ -6,7 +6,7 @@ branches:
   - hexo
 before_install:
 - npm install hexo-cli -g
-# - npm i -g firebase-tools
+- npm i -g firebase-tools
 - git config --global push.default matching
 - git config --global user.name "leon"
 - git config --global user.email "i@leonvision.online"
