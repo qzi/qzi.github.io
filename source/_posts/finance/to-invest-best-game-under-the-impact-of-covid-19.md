@@ -125,6 +125,16 @@ _没那么多时间调研那么多游戏，很多没玩过，慢慢添加和修�
 
 
 
+## Zynga
+
+## Rovio
+
+## Tencent
+
+## Netease
+
+
+
 ## Reference
 
 _动视暴雪_
