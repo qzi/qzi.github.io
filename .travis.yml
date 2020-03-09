@@ -30,7 +30,7 @@ deploy:
   provider: firebase
   token:
     secure: $FIREBASE_TOKEN
-  #project: $FIREBASE_PROJECT
+  project: $FIREBASE_PROJECT
   on:
     all_branches: true
     # branches: master

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "hexo-blog-60813"
+    "default": "hexo-blog-60813",
+    "hexo-blog": "hexo-blog-60813"
   }
 }
