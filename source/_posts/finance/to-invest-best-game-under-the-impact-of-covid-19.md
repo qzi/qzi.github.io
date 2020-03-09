@@ -34,7 +34,9 @@ tags: game
 
   
 
-## Electronic Art(NASDAQ:EA)
+## Electronic Art
+
+Electronic Art (NASDAQ:EA) : 艺电，一家靠收购游戏IP和运营游戏的邪恶公司
 
 * NBA live
 
@@ -44,7 +46,9 @@ tags: game
 
 
 
-## Activevision Blizzard(NASDAQ:ATVI)
+## Activevision Blizzard
+
+Activevision Blizzard (NASDAQ:ATVI) 
 
 动视暴雪公司（ Activision Blizzard, Inc. ）是由动视合并维旺迪游戏后更名而来的控股公司，是一家美国电子游戏开发商、发行商和经销商。
 
@@ -69,7 +73,8 @@ ATVI 即是游戏开发商，又是游戏发行商
 
 
 
-## Take-two Interative（NASDAQ:TTWO）
+## Take-two Interative
+Take-two Interative（NASDAQ:TTWO）
 
 ### 2K
 
@@ -85,7 +90,9 @@ GTA
 
 
 
-## Sony Interactive Entertainment（NYSE:SNE)(TSEJ:6758）
+## Sony Interactive Entertainment
+
+Sony Interactive Entertainment（NYSE:SNE)(TSEJ:6758）: 索尼旗下互动娱乐
 
 **PS4 platform**
 
@@ -95,7 +102,9 @@ GTA
 
 
 
-## Nintendo(TSEJ:7974)
+## Nintendo
+
+Nintendo (TSEJ:7974) ： 任天堂，这是一家在游戏玩法和模式上推陈出新的优秀公司
 
 **Swtich Platform**
 
@@ -103,9 +112,9 @@ GTA
 
 
 
-## Squre Enix Holding（TSEJ:9684)（PINK:SQNNY）
+## Squre Enix Holding
 
-SE 是 Final Fantasy 系列的开发商
+Squre Enix Holding（TSEJ:9684)（PINK:SQNNY）, SE 是 Final Fantasy 系列的开发商
 
 美国的ADR没啥交易量
 

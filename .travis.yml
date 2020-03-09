@@ -16,7 +16,7 @@ install:
 script:
 - hexo clean
 - hexo d -g
-- firebase deploy --project hexo-blog --token $FIREBASE_TOKEN_ORIG
+- firebase deploy --project=hexo-blog --token $FIREBASE_TOKEN_ORIG
 cache:
   directories:
   - node_modules
