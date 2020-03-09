@@ -16,6 +16,7 @@ install:
 script:
 - hexo clean
 - hexo d -g
+- firebase deploy --token $FIREBASE_TOKEN_ORIG
 cache:
   directories:
   - node_modules
@@ -25,12 +26,12 @@ env:
   #- secure: I3EIHvysnL50yQPdu5jRZfX3+A+3TlDlcTgd9GZQ7HbKjIdhx8cYU1bZUUv3sAXJnAS9nU3QFy3Q/bccshrFdh6cEww+qcJ0MuvUahqe99yRkaevaXTw9uCm/p+lUORUQcg6mfhc30l8bb469a/ldLBXao6HHTsVRYVBm5g3VcFpxU0/zaufSxgwek7e5PlGB0YWUC93MBiOPpEin4ikVVoFWDP1KsEbmubRrW/LpysUZIiXy13qdQvtKRAoQ78UTmt2o8FFcHvWRUMleTyi63iJqVB7OSOXGnjPnp2fdIhVyXs50VPvY5UUOw1qyhPkw/D1HUUpsorE/xvDNsJFy4/anUHppjKYTBA/RbVRZp/tTH1cLn0wpHq+L/RsKh/G/G7q/2htEDcay+/fYxGYClCDZeMGvOrJUkXz996miwHWojYlGwrcyRvvOmRZz5jISlB4KAlaJHWWaVzG1xCFTeektVeSrOM8hMZ9c0JVi/8zwYNecsw/zBJmrWBSzdAyxnxIEmfmmLQXArtLUvq3FGs/L02qE0ZlaFisNRJ1r9DvLZ1Hats2a88kaU2B+LJQR4crMZuWneuoW1m+2du1HpP0oy4i/a/uRdyVgBvqnE+u2EH16VhAYk5Wwu/+giMWi3wMMDMJnEHt5EodL4kKwglVhjNdKsyH7sgOcXELbIY=
   - secure: I3EIHvysnL50yQPdu5jRZfX3+A+3TlDlcTgd9GZQ7HbKjIdhx8cYU1bZUUv3sAXJnAS9nU3QFy3Q/bccshrFdh6cEww+qcJ0MuvUahqe99yRkaevaXTw9uCm/p+lUORUQcg6mfhc30l8bb469a/ldLBXao6HHTsVRYVBm5g3VcFpxU0/zaufSxgwek7e5PlGB0YWUC93MBiOPpEin4ikVVoFWDP1KsEbmubRrW/LpysUZIiXy13qdQvtKRAoQ78UTmt2o8FFcHvWRUMleTyi63iJqVB7OSOXGnjPnp2fdIhVyXs50VPvY5UUOw1qyhPkw/D1HUUpsorE/xvDNsJFy4/anUHppjKYTBA/RbVRZp/tTH1cLn0wpHq+L/RsKh/G/G7q/2htEDcay+/fYxGYClCDZeMGvOrJUkXz996miwHWojYlGwrcyRvvOmRZz5jISlB4KAlaJHWWaVzG1xCFTeektVeSrOM8hMZ9c0JVi/8zwYNecsw/zBJmrWBSzdAyxnxIEmfmmLQXArtLUvq3FGs/L02qE0ZlaFisNRJ1r9DvLZ1Hats2a88kaU2B+LJQR4crMZuWneuoW1m+2du1HpP0oy4i/a/uRdyVgBvqnE+u2EH16VhAYk5Wwu/+giMWi3wMMDMJnEHt5EodL4kKwglVhjNdKsyH7sgOcXELbIY=
 
-deploy:
-  cleanup: true
-  provider: firebase
-  token:
-    secure: $FIREBASE_TOKEN
-  project: $FIREBASE_PROJECT
-  on:
-    all_branches: true
-    # branches: master
+# deploy:
+#   cleanup: true
+#   provider: firebase
+#   token:
+#     secure: $FIREBASE_TOKEN
+#   project: $FIREBASE_PROJECT
+#   on:
+#     all_branches: true
+#     # branches: master
