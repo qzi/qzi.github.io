@@ -177,6 +177,8 @@ Ubisoft Entertainment（PINK：UBSFY）（SBF：UB1），法国公司 育碧
 
 * 刺客信条
 
+* 波士王子
+
   
 
 _没那么多时间调研那么多游戏，很多没玩过，慢慢添加和修正_
@@ -185,17 +187,33 @@ _没那么多时间调研那么多游戏，很多没玩过，慢慢添加和修�
 
 ## Zynga
 
-Zynga (NASDAQ:ZNGA,USD)
+Zynga （NASDAQ：ZNGA，USD）
+
+* FarmVille
+
+  
 
 ## Rovio
 
-Rovio(HEX:ROVIO, EUR)
+Rovio（HEX：ROVIO，EUR）
+
+* 愤怒的小鸟
+
+
 
 ## Tencent
 
+Tencent （HKEX：700，HKD）（PINK：TCEHY，USD），腾讯代理游戏好点，开发不值一提
+
+
+
 ## Netease
 
+Netease（NASDAQ：NTES，USD），游戏代理运营兼开发
 
+* 魔兽世界，运营
+* 梦幻西游
+* 大话西游
 
 
 
