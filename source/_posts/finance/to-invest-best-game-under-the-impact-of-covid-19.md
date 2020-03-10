@@ -165,13 +165,15 @@ Capcom Co Ltd（TSEJ:9697,JPY）（PINK:CCOEY,USD）
 
 Koei Tecmo Holdings Co Ltd（TSEJ:3635,JPY）
 
-* 海贼无双，PS4/PC（Steam）/Xbox One/Nintentdo Switch 
+* 海贼无双
+
+海贼无双 4，PS4/PC（Steam）/Xbox One/Nintentdo Switch 
 
 
 
 ## Ubisoft
 
-Ubisoft Entertainment（PINK：UBSFY）（SBF：UB1），法国的公司哦
+Ubisoft Entertainment（PINK：UBSFY）（SBF：UB1），法国公司 育碧
 
 * 刺客信条
 
