@@ -11,19 +11,39 @@ excerpt: "最近新冠疫情下全球都要蜗居在家了，游戏成为无聊�
 
 
 
-**先了解几个基本游戏公司角色的概念**
+## 不同定位的游戏公司
 
-**游戏研发商** 是开发游戏的，负责游戏的源码开发、页面设计、剧情和游戏体验等等，除此之外，还需要对游戏进行后期的维护更新。
+### 游戏研发商
+
+**游戏研发商**是开发游戏的，负责游戏的源码开发、页面设计、剧情和游戏体验等等，除此之外，还需要对游戏进行后期的维护更新。
+
+### 游戏发行商
 
 **游戏发行商** 是负责游戏市场推广的公司，为游戏研发商提供专业的市场营销方案，上游可以从研发商那里获得游戏资源，下游需要跟渠道商建立良好的关系，根据约定的比例获得游戏利润的分成。
+
+### 游戏代理商 
 
 **游戏代理商** 是发行商的一种，属于分包发行商，从总包手中取得某个地区的发行权，并在该区域内制定销售策略并组织销售
 
 
 
-## Up Coming
+## 游戏类型
 
-* FF VII remark, 四月
+### RPG（Role-playing Game）
+
+> A **role-playing game** (sometimes spelled **roleplaying game**;[[1\]](https://en.wikipedia.org/wiki/Role-playing_game#cite_note-secondperson-1)[[2\]](https://en.wikipedia.org/wiki/Role-playing_game#cite_note-gurpsrp-2) abbreviated **RPG**) is a [game](https://en.wikipedia.org/wiki/Game) in which players assume the roles of [characters](https://en.wikipedia.org/wiki/Player_character) in a fictional [setting](https://en.wikipedia.org/wiki/Setting_(narrative)). Players take responsibility for acting out these roles within a [narrative](https://en.wikipedia.org/wiki/Narrative), either through literal [acting](https://en.wikipedia.org/wiki/Acting), or through a process of structured decision-making regarding character development.
+>
+> Origin from : https://en.wikipedia.org/wiki/Role-playing_game
+
+
+
+## Game Up Coming
+
+* Final Fantasy VII Remark, 四月
+
+* 生化危机 3， 四月3号
+
+* 海贼无双4, 三月26号
 
 * 暗黑破坏时4
 
@@ -49,7 +69,7 @@ Electronic Art (NASDAQ:EA) : 艺电，一家靠收购游戏IP和运营游戏的�
 
 ## Activevision Blizzard
 
-Activevision Blizzard (NASDAQ:ATVI) 
+Activevision Blizzard (NASDAQ:ATVI, USD) 
 
 动视暴雪公司（ Activision Blizzard, Inc. ）是由动视合并维旺迪游戏后更名而来的控股公司，是一家美国电子游戏开发商、发行商和经销商。
 
@@ -75,7 +95,7 @@ ATVI 即是游戏开发商，又是游戏发行商
 
 
 ## Take-two Interative
-Take-two Interative（NASDAQ:TTWO）
+Take-two Interative（NASDAQ:TTWO, USD）
 
 ### 2K
 
@@ -93,7 +113,7 @@ GTA
 
 ## Sony Interactive Entertainment
 
-Sony Interactive Entertainment（NYSE:SNE)(TSEJ:6758）: 索尼旗下互动娱乐
+Sony Interactive Entertainment（NYSE:SNE,USD)(TSEJ:6758,JPY）: 索尼旗下互动娱乐
 
 **PS4 platform**
 
@@ -115,11 +135,31 @@ Nintendo (TSEJ:7974) ： 任天堂，这是一家在游戏玩法和模式上推�
 
 
 
-## Squre Enix Holding
+## Squre Enix Holdings
 
-Squre Enix Holding（TSEJ:9684)（PINK:SQNNY）, SE 是 Final Fantasy 系列的开发商
+Squre Enix Holding（TSEJ:9684,JPY)（PINK:SQNNY,USD）, SE 是 Final Fantasy 系列的开发商
 
 美国的ADR没啥交易量
+
+
+
+## Capcom
+
+Capcom Co Ltd（TSEJ:9697,JPY）（PINK:CCOEY,USD）
+
+动作游戏设计领先厂商，拥有《街头霸王》，《生化危机》等等众多牛逼IP
+
+* Resident Evil，生化危机
+* 街头霸王
+* 洛克人
+
+
+
+## KOEI TECMO
+
+Koei Tecmo Holdings Co Ltd（TSEJ:3635,JPY）
+
+* 海贼无双，PS4/PC（Steam）/Xbox One/Nintentdo Switch 
 
 
 
@@ -129,7 +169,11 @@ _没那么多时间调研那么多游戏，很多没玩过，慢慢添加和修�
 
 ## Zynga
 
+Zynga (NASDAQ:ZNGA,USD)
+
 ## Rovio
+
+Rovio(HEX:ROVIO, EUR)
 
 ## Tencent
 
