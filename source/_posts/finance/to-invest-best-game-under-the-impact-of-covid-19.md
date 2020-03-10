@@ -4,7 +4,7 @@ categories: finance
 permalink: finance/to-invest-best-game-under-the-impact-of-covid-19
 date: 2020-03-10 05:13:23
 tags: game
-excerpt: "最近新冠疫情下全球都要蜗居在家了，游戏成为无聊生活的一个选项，大胆预测游戏公司的业绩将会得到支撑，所以开始了解和梳理拥有各种大作IP的好游戏公司"
+excerpt: "这篇文章主要还是探讨新冠疫情（COVID-19）下，游戏作为宅男宅女们娱乐选项所带来的投资机会"
 ---
 
 本人极少玩游戏，一年玩不到一次那种（以后改善一下），没那么多时间，不过最近新冠疫情下全球都要蜗居在家了，游戏成为无聊生活的一个选项，大胆预测游戏公司的业绩将会得到支撑，所以开始了解和梳理拥有各种大作IP的好游戏公司。
@@ -34,6 +34,12 @@ excerpt: "最近新冠疫情下全球都要蜗居在家了，游戏成为无聊�
 > A **role-playing game** (sometimes spelled **roleplaying game**;[[1\]](https://en.wikipedia.org/wiki/Role-playing_game#cite_note-secondperson-1)[[2\]](https://en.wikipedia.org/wiki/Role-playing_game#cite_note-gurpsrp-2) abbreviated **RPG**) is a [game](https://en.wikipedia.org/wiki/Game) in which players assume the roles of [characters](https://en.wikipedia.org/wiki/Player_character) in a fictional [setting](https://en.wikipedia.org/wiki/Setting_(narrative)). Players take responsibility for acting out these roles within a [narrative](https://en.wikipedia.org/wiki/Narrative), either through literal [acting](https://en.wikipedia.org/wiki/Acting), or through a process of structured decision-making regarding character development.
 >
 > Origin from : https://en.wikipedia.org/wiki/Role-playing_game
+
+### 3A
+
+>**AAA** (pronounced and sometimes written **Triple-A**) is an informal classification used for [video games](https://en.wikipedia.org/wiki/Video_game) produced and distributed by a [mid-sized](https://en.wikipedia.org/wiki/Video_game_publisher#Mid-size_publishers) or [major publisher](https://en.wikipedia.org/wiki/Video_game_publisher#Major_publishers), typically having higher development and marketing budgets. AAA is analogous to the film industry term "[blockbuster](https://en.wikipedia.org/wiki/Blockbuster_(entertainment))".[[1\]](https://en.wikipedia.org/wiki/AAA_(video_game_industry)#cite_note-AAA_PR-1)
+>
+>Origin frm : https://en.wikipedia.org/wiki/AAA_(video_game_industry)
 
 
 
@@ -155,13 +161,21 @@ Capcom Co Ltd（TSEJ:9697,JPY）（PINK:CCOEY,USD）
 
 
 
-## KOEI TECMO
+## Koei Tecmo
 
 Koei Tecmo Holdings Co Ltd（TSEJ:3635,JPY）
 
 * 海贼无双，PS4/PC（Steam）/Xbox One/Nintentdo Switch 
 
 
+
+## Ubisoft
+
+Ubisoft Entertainment（PINK：UBSFY）（SBF：UB1），法国的公司哦
+
+* 刺客信条
+
+  
 
 _没那么多时间调研那么多游戏，很多没玩过，慢慢添加和修正_
 
