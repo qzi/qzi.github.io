@@ -7,7 +7,7 @@ tags: game
 excerpt: "这篇文章主要还是探讨新冠疫情（COVID-19）下，游戏作为宅男宅女们娱乐选项所带来的投资机会"
 ---
 
-本人极少玩游戏，一年玩不到一次那种（以后改善一下），没那么多时间，不过最近新冠疫情下全球都要蜗居在家了，游戏成为无聊生活的一个选项，大胆预测游戏公司的业绩将会得到支撑，所以开始了解和梳理拥有各种大作IP的好游戏公司。
+本人极少玩游戏，一年玩不到一次那种（以后改善一下），没那么多时间，不过最近新冠疫情下全球都要蜗居在家了，游戏成为无聊生活的一个选项，大胆预测游戏公司的业绩将会得到支撑，所以开始从投资角度了解和梳理拥有各种大作IP的好游戏公司和部分需要关注的重点游戏。
 
 
 
@@ -40,6 +40,12 @@ excerpt: "这篇文章主要还是探讨新冠疫情（COVID-19）下，游戏�
 >**AAA** (pronounced and sometimes written **Triple-A**) is an informal classification used for [video games](https://en.wikipedia.org/wiki/Video_game) produced and distributed by a [mid-sized](https://en.wikipedia.org/wiki/Video_game_publisher#Mid-size_publishers) or [major publisher](https://en.wikipedia.org/wiki/Video_game_publisher#Major_publishers), typically having higher development and marketing budgets. AAA is analogous to the film industry term "[blockbuster](https://en.wikipedia.org/wiki/Blockbuster_(entertainment))".[[1\]](https://en.wikipedia.org/wiki/AAA_(video_game_industry)#cite_note-AAA_PR-1)
 >
 >Origin frm : https://en.wikipedia.org/wiki/AAA_(video_game_industry)
+
+**Video Game**
+
+>A **video game** is an [electronic game](https://en.wikipedia.org/wiki/Electronic_game) that involves interaction with a [user interface](https://en.wikipedia.org/wiki/User_interface) to generate visual feedback on a two- or three-dimensional [video](https://en.wikipedia.org/wiki/Video) [display device](https://en.wikipedia.org/wiki/Display_device) such as a [touchscreen](https://en.wikipedia.org/wiki/Touchscreen), [virtual reality headset](https://en.wikipedia.org/wiki/Virtual_reality_headset) or [monitor](https://en.wikipedia.org/wiki/Computer_monitor)/[TV set](https://en.wikipedia.org/wiki/TV_set). Since the 1980s, video games have become an increasingly important part of the [entertainment industry](https://en.wikipedia.org/wiki/Entertainment_industry), and whether [they are also a form of art](https://en.wikipedia.org/wiki/Video_games_as_an_art_form) is a matter of dispute.
+>
+>Origin from : https://en.wikipedia.org/wiki/Video_game
 
 
 
@@ -113,7 +119,7 @@ NBA 2k
 
 Rockstar是 Take-two 旗下专门做暴力美学游戏的子公司
 
-GTA
+GTA : Grand Theft Auto
 
 
 
@@ -121,13 +127,15 @@ GTA
 
 Sony Interactive Entertainment（NYSE:SNE,USD)(TSEJ:6758,JPY）: 索尼旗下互动娱乐
 
-**PS4 platform**
+**PS4 Platform**
 
-* 战神
+* 战神（God of War）
 
-* 最终幻想
+* 最终幻想（Final Fantasy）
 
-战神4是年度游戏
+战神4是年度游戏，由 SIE 旗下的 Santa Monica Studio 开发
+
+最终幻想 是由冷饭王 Sqare Enix 开发并登陆了PS
 
 
 
@@ -157,9 +165,8 @@ Capcom Co Ltd（TSEJ:9697,JPY）（PINK:CCOEY,USD）
 
 * Resident Evil，生化危机
 * 街头霸王
-* 洛克人
 
-
+  
 
 ## Koei Tecmo
 
@@ -173,7 +180,7 @@ Koei Tecmo Holdings Co Ltd（TSEJ:3635,JPY）
 
 ## Ubisoft
 
-Ubisoft Entertainment（PINK：UBSFY）（SBF：UB1），法国公司 育碧
+Ubisoft Entertainment（PINK：UBSFY，USD）（SBF：UB1，EUR），法国公司 育碧
 
 * 刺客信条
 
@@ -232,3 +239,6 @@ Netease（NASDAQ：NTES，USD），游戏代理运营兼开发
 
 _动视暴雪_
 https://baike.baidu.com/item/%E5%8A%A8%E8%A7%86%E6%9A%B4%E9%9B%AA
+
+_Video Game_
+https://en.wikipedia.org/wiki/Video_game
