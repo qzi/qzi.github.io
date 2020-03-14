@@ -47,17 +47,29 @@ excerpt: "这篇文章主要还是探讨新冠疫情（COVID-19）下，游戏�
 >
 >Origin from : https://en.wikipedia.org/wiki/Video_game
 
+**DLC**
 
+>**Downloadable content** (**DLC**) is additional content created for an already released [video game](https://en.wikipedia.org/wiki/Video_game), distributed through the [Internet](https://en.wikipedia.org/wiki/Internet) by the game's publisher. It can either be added for no extra cost or it can be a form of [video game monetization](https://en.wikipedia.org/wiki/Video_game_monetization)[[1\]](https://en.wikipedia.org/wiki/Downloadable_content#cite_note-TAdlcunits-1), enabling the publisher to gain additional revenue from a title after it has been purchased, often using some type of [microtransaction](https://en.wikipedia.org/wiki/Microtransaction) system.
+>
+>Origin from : https://en.wikipedia.org/wiki/Downloadable_content
+
+**FPS**
+
+>**First-person shooter** (**FPS**) is a [video game genre](https://en.wikipedia.org/wiki/Video_game_genre) centered on gun and other weapon-based combat in a [first-person perspective](https://en.wikipedia.org/wiki/First_person_(video_games)); that is, the player experiences the action through the eyes of the [protagonist](https://en.wikipedia.org/wiki/Protagonist). The genre shares common traits with other [shooter games](https://en.wikipedia.org/wiki/Shooter_game), which in turn makes it fall under the heading [action game](https://en.wikipedia.org/wiki/Action_game). Since the genre's inception, advanced [3D](https://en.wikipedia.org/wiki/3D_computer_graphics) and [pseudo-3D](https://en.wikipedia.org/wiki/2.5D) graphics have challenged hardware development, and [multiplayer gaming](https://en.wikipedia.org/wiki/Multiplayer_video_game) has been integral.
+>
+>Origin from : https://en.wikipedia.org/wiki/First-person_shooter
+>
+>
 
 ## Game Up Coming
 
-* Final Fantasy VII Remark, 四月
+* Final Fantasy VII Remake, 四月10号
 
 * 生化危机 3， 四月3号
 
-* 海贼无双4, 三月26号
+* 海贼无双 4, 三月26号
 
-* 暗黑破坏时4
+* 暗黑破坏神 4
 
 * Red dead
 
@@ -119,7 +131,7 @@ NBA 2k
 
 Rockstar是 Take-two 旗下专门做暴力美学游戏的子公司
 
-GTA : Grand Theft Auto
+GTA : Grand Theft Auto，侠盗猎车手
 
 
 
@@ -173,6 +185,7 @@ Capcom Co Ltd（TSEJ:9697,JPY）（PINK:CCOEY,USD）
 Koei Tecmo Holdings Co Ltd（TSEJ:3635,JPY）
 
 * 海贼无双
+* 真三国无双
 
 海贼无双 4，PS4/PC（Steam）/Xbox One/Nintentdo Switch 
 
