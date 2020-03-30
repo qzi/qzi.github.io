@@ -167,7 +167,12 @@ Nintendo (TSEJ:7974) ： 任天堂，这是一家在游戏玩法和模式上推�
 
 Microsoft（NASDAQ：MSFT），微软，拥有 Xbox 这个游戏平台，而且还拥有最好的在线游戏网络 Xbox live，同时座拥 Azure cloud为其Xbox live提供强大的支持，能轻松应对暴涨的流量需求
 
+**Xbox Platform**
 
+* 光环（Halo）
+* 战争机器（Gears of war）
+* 极限竞速（Forza Horizon）
+  
 
 
 ## Squre Enix Holdings
