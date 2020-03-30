@@ -157,7 +157,16 @@ Nintendo (TSEJ:7974) ： 任天堂，这是一家在游戏玩法和模式上推�
 
 **Swtich Platform**
 
-塞尔达传说
+* 塞尔达传说
+
+* 动物森友会
+
+  
+
+## Microsoft
+
+Microsoft（NASDAQ：MSFT），微软，拥有 Xbox 这个游戏平台，而且还拥有最好的在线游戏网络 Xbox live，同时座拥 Azure cloud为其Xbox live提供强大的支持，能轻松应对暴涨的流量需求
+
 
 
 
