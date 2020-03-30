@@ -77,7 +77,44 @@ excerpt: "这篇文章主要还是探讨新冠疫情（COVID-19）下，游戏�
 
 * 斗阵
 
+
+
+## Sony Interactive Entertainment
+
+Sony Interactive Entertainment（NYSE:SNE,USD)(TSEJ:6758,JPY）: 索尼旗下互动娱乐
+
+**PS4 Platform**
+
+* 战神（God of War）
+* 最终幻想（Final Fantasy）
+
+战神4是年度游戏，由 SIE 旗下的 Santa Monica Studio 开发
+最终幻想 是由冷饭王 Sqare Enix 开发并登陆了PS
+
+
+
+## Nintendo
+
+Nintendo (TSEJ:7974) ： 任天堂，这是一家在游戏玩法和模式上推陈出新的优秀公司
+
+**Swtich Platform**
+
+* 塞尔达传说
+* 动物森友会
+
   
+
+## Microsoft
+
+Microsoft（NASDAQ：MSFT），微软，拥有 Xbox 这个游戏平台，而且还拥有最好的在线游戏网络 Xbox live，同时座拥 Azure cloud为其Xbox live提供强大的支持，能轻松应对暴涨的流量需求
+
+**Xbox Platform**
+
+* 光环（Halo）
+* 战争机器（Gears of war）
+* 极限竞速（Forza Horizon）
+
+
 
 ## Electronic Art
 
@@ -134,45 +171,6 @@ Rockstar是 Take-two 旗下专门做暴力美学游戏的子公司
 GTA : Grand Theft Auto，侠盗猎车手
 
 
-
-## Sony Interactive Entertainment
-
-Sony Interactive Entertainment（NYSE:SNE,USD)(TSEJ:6758,JPY）: 索尼旗下互动娱乐
-
-**PS4 Platform**
-
-* 战神（God of War）
-
-* 最终幻想（Final Fantasy）
-
-战神4是年度游戏，由 SIE 旗下的 Santa Monica Studio 开发
-
-最终幻想 是由冷饭王 Sqare Enix 开发并登陆了PS
-
-
-
-## Nintendo
-
-Nintendo (TSEJ:7974) ： 任天堂，这是一家在游戏玩法和模式上推陈出新的优秀公司
-
-**Swtich Platform**
-
-* 塞尔达传说
-
-* 动物森友会
-
-  
-
-## Microsoft
-
-Microsoft（NASDAQ：MSFT），微软，拥有 Xbox 这个游戏平台，而且还拥有最好的在线游戏网络 Xbox live，同时座拥 Azure cloud为其Xbox live提供强大的支持，能轻松应对暴涨的流量需求
-
-**Xbox Platform**
-
-* 光环（Halo）
-* 战争机器（Gears of war）
-* 极限竞速（Forza Horizon）
-  
 
 
 ## Squre Enix Holdings
