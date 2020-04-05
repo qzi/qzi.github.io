@@ -7,6 +7,8 @@ tags: short
 excerpt: '网上有很多对浑水做空瑞幸的报告的截图，这篇文章知识简单探讨从这篇报告上学习到的有趣的英文俚语'
 ---
 
+## 浑水做空报告上有趣的英语
+
 浑水（ Muddy Waters Research )  做空瑞幸（ Luckin Coffee ）的报告，第一页打开就列举了一些 Smoking Gun Evidence and Red Flag 
 
 ![image-20200202020947536](the-brief-of-luckin-coffee-anonymous/image-20200202020947536.png)
@@ -31,17 +33,30 @@ excerpt: '网上有很多对浑水做空瑞幸的报告的截图，这篇文章�
 
 Red Flag 比较容易理解了，就是风险提示了
 
-
-
 理解了后会发现中文翻译其实没有英文本身意会来得有意思，有木有？！
 
 
 
 > 钛媒体 报告作者对指控瑞幸造假欺诈列举了五大确凿铁证（SmokingGun Evidence）、六大风险警告（Redflag） 和五大商业模式缺陷，称其对981个门店进行了追踪，派出了92个全职和1400个兼职调查员，向超过1万名用户收集了25000多张用户小票 ，进行了11260个小时的门店录像，并且收集了大量内部微信聊天记录，真可谓下足了血本。
 >
-> 
 
-_这次 NW 来势汹汹，LK大概率得跪一下，先这样，要写的东西太多了，有空再继续写_
+此次MW携大量的匿名样本来势汹汹，LK目测得跪，有空再继续写写 ...
+
+
+
+## 有关集体诉讼
+
+我印象里面集体诉讼好像很简单，就是找个发起集体诉讼的律师事务所登记一下姓名和邮箱就可以了，但是中国国内的人购买美国的中概ADR是否能主体不明能否有效维权我也不知道
+
+至于大概赔偿的力度，哈佛大学有篇SEC的对公民理赔的文章可以参考一下
+
+https://corpgov.law.harvard.edu/2016/01/24/calculating-sec-civil-money-penalties/
+
+| **Tier**                                                     | **Individual** | **Entity** |
+| ------------------------------------------------------------ | -------------- | ---------- |
+| Tier 1— Any Violation                                        | $7,500         | $80,000    |
+| Tier 2— A Violation Involving Fraud, Deceit, Manipulation or Deliberate or Reckless Disregard of Regulatory Requirement | $80,000        | $400,000   |
+| Tier 3— A Violation that Also Involves a Substantial Risk of Loss to Others or Gain to the Violator | $160,000       | $775,000   |
 
 
 
