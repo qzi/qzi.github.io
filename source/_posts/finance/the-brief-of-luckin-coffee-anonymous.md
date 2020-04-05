@@ -52,6 +52,7 @@ Red Flag 比较容易理解了，就是风险提示了
 
 https://corpgov.law.harvard.edu/2016/01/24/calculating-sec-civil-money-penalties/
 
+Currently, the maximum penalties for each act or omission violating the securities laws are:
 | **Tier**                                                     | **Individual** | **Entity** |
 | ------------------------------------------------------------ | -------------- | ---------- |
 | Tier 1— Any Violation                                        | $7,500         | $80,000    |
