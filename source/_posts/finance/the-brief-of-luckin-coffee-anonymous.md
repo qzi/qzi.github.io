@@ -46,19 +46,31 @@ Red Flag 比较容易理解了，就是风险提示了
 
 ## 有关集体诉讼
 
-我印象里面集体诉讼好像很简单，就是找个发起集体诉讼的律师事务所登记一下姓名和邮箱就可以了，但是中国国内的人购买美国的中概ADR是否能主体不明能否有效维权我也不知道
+我印象里面集体诉讼好像很简单，就是找个发起集体诉讼的律师事务所登记一下姓名和邮箱就可以了，但是中国国内的人购买美国的中概ADR是否主体不明能否有效维权我也不知道, 等待后续发酵 ... 
 
 至于大概赔偿的力度，哈佛大学有篇SEC的对公民理赔的文章可以参考一下
 
-https://corpgov.law.harvard.edu/2016/01/24/calculating-sec-civil-money-penalties/
+> Currently, the maximum penalties for each act or omission violating the securities laws are:
+>
+> | **Tier**                                                     | **Individual** | **Entity** |
+> | ------------------------------------------------------------ | -------------- | ---------- |
+> | Tier 1— Any Violation                                        | $7,500         | $80,000    |
+> | Tier 2— A Violation Involving Fraud, Deceit, Manipulation or Deliberate or Reckless Disregard of Regulatory Requirement | $80,000        | $400,000   |
+> | Tier 3— A Violation that Also Involves a Substantial Risk of Loss to Others or Gain to the Violator | $160,000       | $775,000   |
+>
+> Origin from : https://corpgov.law.harvard.edu/2016/01/24/calculating-sec-civil-money-penalties/
+>
+> 
 
-Currently, the maximum penalties for each act or omission violating the securities laws are:
+现在可以看到老虎证券，雪盈证券，The Schall Law Firm都在发起集体诉讼的受害人征集了，那究竟去哪家投比较好呢？
 
-| **Tier**                                                     | **Individual** | **Entity** |
-| ------------------------------------------------------------ | -------------- | ---------- |
-| Tier 1— Any Violation                                        | $7,500         | $80,000    |
-| Tier 2— A Violation Involving Fraud, Deceit, Manipulation or Deliberate or Reckless Disregard of Regulatory Requirement | $80,000        | $400,000   |
-| Tier 3— A Violation that Also Involves a Substantial Risk of Loss to Others or Gain to the Violator | $160,000       | $775,000   |
+> 集体诉讼的流程是什么？柳治平律师指出，在美国，首先是由不同的律所代表不同的投资者群体各自提起诉讼，然后通常在法官主持下合并成为一个大的集体诉讼，一般哪家律师事务所代理的投资者群体最大，就由哪家律所来主导诉讼。
+>
+> Origin from : https://tech.sina.com.cn/i/2020-04-03/doc-iimxyqwa4809713.shtml
+>
+> 
+
+根据新浪财经引文里面说的，除了股东集体诉讼索赔，瑞幸可能还会受到中国证监会的罚款和美国证监会追究相关个人的刑责，瑞幸这次大概率是跪的，可惜了购物车里面的三四折的咖啡券 ...
 
 
 
