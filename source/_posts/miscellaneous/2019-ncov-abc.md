@@ -123,6 +123,51 @@ KN95是中国国家标准GB2626-2006对防颗粒物口罩的分类，KN类的口
 
 
 
+### 口罩标准的认证
+
+**中国国家药监局的注册编号**
+
+1. 进入 http://www.nmpa.gov.cn
+
+2. 点击：医疗器械 - 国产医疗器械产品（注册）
+
+3. 输入：豫械注准20162640787（根据自己手上的产品包装上的注册编号输入）
+
+   ![img](2019-ncov-abc/6102d03ed2aee73f.jpg)
+
+
+**CE 认证**
+
+CE 是欧盟的卫生安全标准，出口欧盟的产品需要有这个认证
+
+>**CE marking** is a [certification mark](https://en.wikipedia.org/wiki/Certification_mark) that indicates conformity with health, safety, and environmental protection standards for products sold within the [European Economic Area](https://en.wikipedia.org/wiki/European_Economic_Area) (EEA).[[1\]](https://en.wikipedia.org/wiki/CE_marking#cite_note-EUR-Lex_-_31993L0068_-_EN-1) The CE marking is also found on products sold outside the [EEA](https://en.wikipedia.org/wiki/European_Economic_Area) that have been manufactured to EEA standards. This makes the CE marking recognizable worldwide even to people who are not familiar with the European Economic Area. It is in that sense similar to the [FCC Declaration of Conformity](https://en.wikipedia.org/wiki/FCC_Declaration_of_Conformity) used on certain electronic devices sold in the [United States](https://en.wikipedia.org/wiki/United_States).
+>
+>Origin from : https://en.wikipedia.org/wiki/CE_marking
+
+![img](2019-ncov-abc/49bc00d2bc3fdcb5.jpg)
+
+
+
+**FDA 认证**
+
+Surgical Mask 出口美国需要获得 FDA （美国食品药监局）的安全认证，Surgical Respirator 需要获得NIOSH（美国国家职业安全卫生研究所）认证
+
+> **Surgical Mask**
+>
+> A surgical mask covers the user’s nose and mouth and provides a physical barrier to fluids and particulate materials. The surgical masks referenced in this guidance document include masks that are labeled as a surgical, laser, isolation, dental or medical procedure masks with or without a face shield.
+>
+> **Surgical Respirator “N95 NIOSH Certified”**
+>
+> A surgical respirator is fitted to the user’s face, forming a seal that provides a physical barrier to fluids, particulate materials, and aerosols. If you wish to label your device “N95 NIOSH Certified,” please refer to the (NIOSH) website at http://www.cdc.gov/niosh/npptl/resources/certpgmspt/ for information about NIOSH's Certification Program Support for Respirator Manufacturers.
+>
+> Origin from : https://www.fda.gov/regulatory-information/search-fda-guidance-documents/surgical-masks-premarket-notification-510k-submissions
+
+![img](2019-ncov-abc/3abc84a2a85e1d2b.jpg)
+
+
+
+
+
 ### 口罩废弃
 
 口罩用后即弃（一般四个小时为准，或被水汽浸湿失去防护效果时也需要更换），避免留存交叉感染
