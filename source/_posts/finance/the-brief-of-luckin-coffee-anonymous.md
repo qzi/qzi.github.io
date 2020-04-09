@@ -72,7 +72,15 @@ Red Flag 比较容易理解了，就是风险提示了
 
 根据新浪财经引文里面说的，除了股东集体诉讼索赔，瑞幸可能还会受到中国证监会的罚款和美国证监会追究相关个人的刑责，瑞幸这次大概率是跪的，可惜了购物车里面的三四折的咖啡券 ...
 
+## 用 “Good Luckin” 群嘲
 
+Wolfpack 在IQ的做空报告的里面有一段这样的文字
+
+>However, if what we’ve said thus far doesn’t concern you, all we can say is “good Luckin”
+
+这是很有意思的，就是它的心态上是认为如果我说了那么多道理还无法触动你，那我只能跟你说一句“Good Luckin”，他显然是认为这个现象级的俚语是能唤起你对高危中概的惨痛记忆和高度警惕。所以即便是跳脱出IQ和lK，你以后想对其他中概发起高度警惕，似乎说一句“Good Luckin”，大家也就秒懂了，真的有点悲哀啊！
+
+![image-20200409124815546](the-brief-of-luckin-coffee-anonymous/image-20200409124815546.png)
 
 ------
 
