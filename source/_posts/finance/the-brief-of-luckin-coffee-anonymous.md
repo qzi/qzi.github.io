@@ -4,8 +4,18 @@ categories: finance
 permalink: finance/the-brief-of-luckin-coffee-anonymous
 date: 2020-02-02 02:04:53
 tags: short
-excerpt: '网上有很多对浑水做空瑞幸的报告的截图，这篇文章知识简单探讨从这篇报告上学习到的有趣的英文俚语'
+excerpt: '网上有很多对浑水做空瑞幸的报告的解读，这篇文章知识简单探讨从这篇报告上学习到的有趣的英文俚语和集体诉讼等补充内容'
 ---
+
+
+
+> 钛媒体 报告作者对指控瑞幸造假欺诈列举了五大确凿铁证（SmokingGun Evidence）、六大风险警告（Redflag） 和五大商业模式缺陷，称其对981个门店进行了追踪，派出了92个全职和1400个兼职调查员，向超过1万名用户收集了25000多张用户小票 ，进行了11260个小时的门店录像，并且收集了大量内部微信聊天记录，真可谓下足了血本。
+>
+> Origin from : https://m.tmtpost.com/4240365.html
+
+此次MW携大量的匿名样本来势汹汹，LK目测得跪，但是网上优秀的解读已经很多，没必要重复解读，我就补充点我觉得可以学习东西的有趣的补充内容
+
+
 
 ## 浑水做空报告上有趣的英语
 
@@ -20,7 +30,7 @@ excerpt: '网上有很多对浑水做空瑞幸的报告的截图，这篇文章�
 **Smokng Gun Evidence**
 
 >The term "smoking gun" is a reference to an object or fact that serves as conclusive evidence of a crime or similar act, just short of being caught in flagrante delicto. "Smoking gun" refers to the strongest kind of circumstantial evidence, as opposed to direct evidence. Direct evidence would include the entire action: Pulling the trigger, firing the gun, and the victim falling.[1]
->https://en.wikipedia.org/wiki/Smoking_gun
+>Orign from : https://en.wikipedia.org/wiki/Smoking_gun
 
 可以看出 Smoking Gun Evidence 就是那种一击送你归天的铁证
 
@@ -29,18 +39,13 @@ excerpt: '网上有很多对浑水做空瑞幸的报告的截图，这篇文章�
 **Red Flag**
 
 >The term red flag could mean either a literal flag used for signaling or, as a metaphor, a sign of some particular problem requiring attention.[2]
->https://en.wikipedia.org/wiki/Red_flag_(idiom)
+>Origin from https://en.wikipedia.org/wiki/Red_flag_(idiom)
 
 Red Flag 比较容易理解了，就是风险提示了
 
 理解了后会发现中文翻译其实没有英文本身意会来得有意思，有木有？！
 
 
-
-> 钛媒体 报告作者对指控瑞幸造假欺诈列举了五大确凿铁证（SmokingGun Evidence）、六大风险警告（Redflag） 和五大商业模式缺陷，称其对981个门店进行了追踪，派出了92个全职和1400个兼职调查员，向超过1万名用户收集了25000多张用户小票 ，进行了11260个小时的门店录像，并且收集了大量内部微信聊天记录，真可谓下足了血本。
->
-
-此次MW携大量的匿名样本来势汹汹，LK目测得跪，有空再继续写写 ...
 
 
 
@@ -80,7 +85,7 @@ Wolfpack 在IQ的做空报告的里面有一段这样的文字
 
 >However, if what we’ve said thus far doesn’t concern you, all we can say is “good Luckin”
 
-这是很有意思的，就是它的心态上是认为如果我说了那么多道理还无法触动你，那我只能跟你说一句“Good Luckin”，他显然是认为这个现象级的俚语是能唤起你对高危中概的惨痛记忆和高度警惕。所以即便是跳脱出IQ和lK，你以后想对其他中概发起高度警惕，似乎说一句“Good Luckin”，大家也就秒懂了，真的有点悲哀啊！
+这是很有意思的，就是它的心态上是认为如果我说了那么多道理还无法触动你，那我只能跟你说一句“Good Luckin”，他显然是认为这个现象级的俚语是能唤起你对高危中概的惨痛记忆和高度警惕。所以即便是跳脱出IQ和lK，你以后想对其他中概发起高度警告，似乎说一句“Good Luckin”，大家也就秒懂了，真的有点悲哀啊！
 
 ![image-20200409124815546](the-brief-of-luckin-coffee-anonymous/image-20200409124815546.png)
 
