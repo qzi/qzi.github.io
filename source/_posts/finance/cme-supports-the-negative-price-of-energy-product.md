@@ -1,5 +1,5 @@
 ---
-title: 从CME支持负值交易开始聊聊相关期货知识
+title: 从CME支持负值交易开始聊起 ...
 categories: finance
 permalink: finance/cme-supports-the-negative-price-of-energy-product
 date: 2020-04-27 02:35:51
