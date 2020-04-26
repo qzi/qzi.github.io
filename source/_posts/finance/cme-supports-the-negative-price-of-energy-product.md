@@ -4,12 +4,12 @@ categories: finance
 permalink: finance/cme-supports-the-negative-price-of-energy-product
 date: 2020-04-27 02:35:51
 tags: future
-excerpt: "WTI Future出现了历史上首次的负值交易，这个就比较有趣了，所以顺便学习并聊聊相关的大瓜和知识点"
+excerpt: "WTI Future出现了历史上首次的负值交易，那天晚上亲眼看到WTI五月的合约跌入-40，甚是震撼，所以来聊聊相关的大瓜和知识点"
 ---
 
 
 
-原油期货出现了历史上首次的负值交易，这个就比较有趣了，所以顺便学习并聊聊相关的大瓜和知识点
+原油期货出现了历史上首次的负值交易，那天晚上亲眼看到WTI五月的合约跌入-40，甚是震撼，所以来聊聊相关的大瓜和知识点
 
 
 
