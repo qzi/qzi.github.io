@@ -63,7 +63,7 @@ USO 的底层在之前主要是跟踪近期的WTI future，没错，就是五月
 
 ## 进击中的USO
 
-USO 是美国最大的原油基金，这种底层是Future的衍生品，在这么极端原油行情下也只能奔溃，发起 Reverse split，8合1
+USO 是美国最大的原油基金，这种底层是Future的衍生品，在这么极端原油行情下也只能崩溃，发起 Reverse split，8股合成1股
 
 >USCF announced today that it will execute a one-for-eight reverse share split that will be effective for shareholders of the United States Oil Fund, LP (NYSE Arca: [USO](https://sec.report/Ticker/USO)) after the close of the markets on April 28, 2020. Shares of USO will trade at their post-split prices on April 29, 2020. [USO](https://sec.report/Ticker/USO)’s ticker symbol, “[USO](https://sec.report/Ticker/USO)”, will not change, and shares of USO will continue to trade on the NYSE Arca. [USO](https://sec.report/Ticker/USO)’s new CUSIP number will be 91232N207.
 >
