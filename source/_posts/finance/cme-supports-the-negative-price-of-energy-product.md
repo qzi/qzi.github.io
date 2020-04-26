@@ -61,6 +61,24 @@ USO 的底层在之前主要是跟踪近期的WTI future，没错，就是五月
 
 
 
+## 进击中的USO
+
+USO 是美国最大的原油基金，这种底层是Future的衍生品，在这么极端原油行情下也只能奔溃，发起 Reverse split，8合1
+
+>USCF announced today that it will execute a one-for-eight reverse share split that will be effective for shareholders of the United States Oil Fund, LP (NYSE Arca: [USO](https://sec.report/Ticker/USO)) after the close of the markets on April 28, 2020. Shares of USO will trade at their post-split prices on April 29, 2020. [USO](https://sec.report/Ticker/USO)’s ticker symbol, “[USO](https://sec.report/Ticker/USO)”, will not change, and shares of USO will continue to trade on the NYSE Arca. [USO](https://sec.report/Ticker/USO)’s new CUSIP number will be 91232N207.
+>
+>https://sec.report/Document/0001171200-20-000271/
+
+
+
+以往USO主要跟踪最近一期的WTI Future，但是这么极端的行情预期下，USO为了避免从这个地球上消失，调整了它的底层产品结构, 20%的资金投资在6月的合约，40%在7月，20%在8月，最后20%在9月的合约。
+
+>As of April 24, 2020, and for the reasons discussed below, USO may invest approximately 20% of its portfolio in crude oil futures contracts on the NYMEX and ICE Futures in the June futures contract, approximately 40% of its portfolio in crude oil futures contracts on the NYMEX and ICE Futures in the July contract, approximately 20% of its portfolio in crude oil futures contracts on the NYMEX and ICE Futures in the August contract, and approximately 20% of its portfolio in crude oil futures contracts on the NYMEX and ICE Futures in the September contract.
+>
+>https://sec.report/Document/0001171200-20-000288/
+
+
+
 ## 中行原油宝的瓜
 
 中行原油宝是中行参考WTI future的一个虚拟盘产品，WTI 一手1000桶，原油宝一手一桶，对手盘是中行自己，并不是WIT Future的国际炒家，所以原油宝并不是导致这次WTI Future的直接选手，中行只是拿用户撮合的单按照自己的逻辑去国际市场进行对冲套利罢了。而包括中行在内整个国际市场的WTI Future多头都是此次原油负值事件的狙击对象 ... 
