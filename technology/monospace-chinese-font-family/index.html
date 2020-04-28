@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en,zh-cn,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://leonvision.online').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="中文等宽字体，一个中文字符等宽两个英文字符，Mac下很多字体（ Menlo, Monaco, Courier New, Source Code Pro ）没有严格遵循或者说达不到这个标准, 它们不包括CJK的字库，有的时候用一些 markdown table formatter 会导致不整齐，其实并不是排列不整齐，而是字体的宽度不同">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中文等宽字体（Monospace Chinese Font Family）">
+<meta property="og:url" content="https://leonvision.online/technology/monospace-chinese-font-family/index.html">
+<meta property="og:site_name" content="Leon Vision">
+<meta property="og:description" content="中文等宽字体，一个中文字符等宽两个英文字符，Mac下很多字体（ Menlo, Monaco, Courier New, Source Code Pro ）没有严格遵循或者说达不到这个标准, 它们不包括CJK的字库，有的时候用一些 markdown table formatter 会导致不整齐，其实并不是排列不整齐，而是字体的宽度不同">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://leonvision.online/technology/monospace-chinese-font-family/5A821E0E-F5F7-409B-BDB7-4E987C3A198C.png">
+<meta property="og:image" content="https://leonvision.online/technology/monospace-chinese-font-family/F28D57C0-21BF-4A00-B0A8-F1DB5CB7BD54.png">
+<meta property="og:image" content="https://leonvision.online/technology/monospace-chinese-font-family/AE86A8BD-619A-4A71-B4FB-F37783250DB3.png">
+<meta property="og:image" content="https://leonvision.online/technology/monospace-chinese-font-family/442F50EA-1780-427A-A901-BABCBDC8004D.png">
+<meta property="article:published_time" content="2019-12-25T16:52:18.000Z">
+<meta property="article:modified_time" content="2020-04-28T22:09:27.339Z">
+<meta property="article:author" content="Leon Qiu">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://leonvision.online/technology/monospace-chinese-font-family/5A821E0E-F5F7-409B-BDB7-4E987C3A198C.png">
+
+<link rel="canonical" href="https://leonvision.online/technology/monospace-chinese-font-family/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXJKBD7');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+
+
+  <title>中文等宽字体（Monospace Chinese Font Family） | Leon Vision</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b895fbd10c58879b3aba226792894088";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Leon Vision" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Leon Vision</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Keep simple, keep hungry</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-timeline">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Timeline</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJKBD7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://leonvision.online/technology/monospace-chinese-font-family/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+      <meta itemprop="name" content="Leon Qiu">
+      <meta itemprop="description" content="Technology, Finance, Photograhpy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Leon Vision">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          中文等宽字体（Monospace Chinese Font Family）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-12-26 00:52:18" itemprop="dateCreated datePublished" datetime="2019-12-26T00:52:18+08:00">2019-12-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-29 06:09:27" itemprop="dateModified" datetime="2020-04-29T06:09:27+08:00">2020-04-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/technology/" itemprop="url" rel="index">
+                    <span itemprop="name">technology</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/technology/monospace-chinese-font-family/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/technology/monospace-chinese-font-family/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>中文等宽字体，一个中文字符等宽两个英文字符，Mac下很多字体（ Menlo, Monaco, Courier New, Source Code Pro ）没有严格遵循或者说达不到这个标准, 它们不包括CJK的字库，有的时候用一些 markdown table formatter 会导致不整齐，其实并不是排列不整齐，而是字体的宽度不同<br>​<br>即使排列好，但是中英文宽度没有对齐，就会不整齐<br><img data-src="/technology/monospace-chinese-font-family/5A821E0E-F5F7-409B-BDB7-4E987C3A198C.png" alt="21bb4a49793092d7ba7bd6db7dd8cd45"></p>
+<p>使用了 Sarasa Mono SC, 排列就会变得整齐了, 而且并没有重新排列<br><img data-src="/technology/monospace-chinese-font-family/F28D57C0-21BF-4A00-B0A8-F1DB5CB7BD54.png" alt="3e429fbd7c1d497729da944f93f0dd02"></p>
+<h2 id="Sarasa-Gothic-更纱黑体-更紗黑體-更紗ゴシック-사라사고딕"><a href="#Sarasa-Gothic-更纱黑体-更紗黑體-更紗ゴシック-사라사고딕" class="headerlink" title="Sarasa Gothic (更纱黑体 / 更紗黑體 / 更紗ゴシック / 사라사고딕)"></a>Sarasa Gothic (更纱黑体 / 更紗黑體 / 更紗ゴシック / 사라사고딕)</h2><p>SARASA GOTHIC, a CJK programming font based on Iosevka and Source Han Sans.  </p>
+<p><strong>Installation</strong><br>Download sarasa-gothic-ttf from <a href="https://github.com/be5invis/Sarasa-Gothic" target="_blank" rel="noopener">https://github.com/be5invis/Sarasa-Gothic</a><br>安装 Sarasa Mono SC，regular/light/bold/italy 即可<br>在你需要用到这个字体的编辑器里面设置字体为 Sarasa Mono SC， Size 最好的16以上  </p>
+<p><img data-src="/technology/monospace-chinese-font-family/AE86A8BD-619A-4A71-B4FB-F37783250DB3.png" alt="7d98a2385467a80ff9e6412e4198a8ca"></p>
+<h2 id="Noto-Sans-CJK-思源黑体"><a href="#Noto-Sans-CJK-思源黑体" class="headerlink" title="Noto Sans CJK (思源黑体)"></a>Noto Sans CJK (思源黑体)</h2><p>2014年 Google 和 Adobe 宣布合作推出一款免费、开源的字体——思源黑体，也叫做 Source Han Sans 或 Noto Sans CJK。整套字体设计优雅，显示效果优秀    </p>
+<p>思源黑体支持简体中文、繁体中文、日文、韩文以及英文；支持 ExtraLight、Light、Normal、Regular、Medium、Bold 和 Heavy 共7种字体粗细，可以满足不同场景下的文字显示需求。这个字体通过免费开源方式提供，支持多种语言，适合设计、开发人员甚至是普通用户下载和使用  </p>
+<p>主页 （ <a href="https://www.google.com/get/noto/help/cjk/" target="_blank" rel="noopener">https://www.google.com/get/noto/help/cjk/</a> ）上有比较详细的指引<br>我使用了 Super OpenType/CFF Collection (Super OTC)<br>Sans-serif    NotoSansCJK.ttc  </p>
+<p><img data-src="/technology/monospace-chinese-font-family/442F50EA-1780-427A-A901-BABCBDC8004D.png" alt="967f4755779b57d690ca45dc6886a697"></p>
+<p>在编辑器里面设置 Noto Sans Mono CJK SC 即可 …  </p>
+<h2 id="TTC-和-TTF"><a href="#TTC-和-TTF" class="headerlink" title="TTC 和 TTF"></a>TTC 和 TTF</h2><p>在 更纱黑体 的 Release 下面有两种格式（ TTC 和 TTF ）, 它们的区别如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">A TrueType Collection (TTC) is a means of delivering multiple TrueType fonts</span><br><span class="line">in a single file structure. TrueType Collections are most useful when the</span><br><span class="line">fonts to be delivered together share many glyphs in common. By allowing</span><br><span class="line">multiple fonts to share glyph sets, TTCs can result in a significant saving</span><br><span class="line">of file space.</span><br><span class="line">For example, a group of Japanese fonts may each have their own designs for</span><br><span class="line">the kana glyphs, but share identical designs for the kanji. With ordinary</span><br><span class="line">TrueType font files, the only way to include the common kanji glyphs is to</span><br><span class="line">copy their glyph data into each font. Since the kanji represent much more</span><br><span class="line">data than the kana, this results in a great deal of wasteful duplication of</span><br><span class="line">glyph data. TTCs were defined to solve this problem.</span><br></pre></td></tr></table></figure>
+
+<h2 id="J-K-SC-TC-的区别"><a href="#J-K-SC-TC-的区别" class="headerlink" title="J/K/SC/TC 的区别"></a>J/K/SC/TC 的区别</h2><p>字体后面的 J/K/SC/TC 分别对应日文、韩文、简体中文和繁体中文的汉字  </p>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>需要反思另一个问题，就是字体渲染效果是否符合你的审美，有时候不见得绝对等宽就是好，如果不用绝对等宽但是结果有个八成满意，但是同时字体更好看些，也是一种取舍, 但是这个问题要交由每个人去权衡 …  </p>
+<p><em>还在继续测试中，如果随缘发现新的字体合适，我会再回来增补</em></p>
+<h2 id="Markdown-in-Visual-Studio-Code"><a href="#Markdown-in-Visual-Studio-Code" class="headerlink" title="Markdown in Visual Studio Code"></a>Markdown in Visual Studio Code</h2><p>等宽字体长期对着屏幕写代码其实并不舒服，所以可以把等宽中文限制只限制在markdown文档里面<br>在 <code>~/Library/Application Support/Code/User/settings.json</code> 这个 vscode settings json 里面添加  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;[markdown]&quot;: &#123;</span><br><span class="line">    &quot;editor.defaultFormatter&quot;: &quot;yzhang.markdown-all-in-one&quot;,</span><br><span class="line">    &quot;editor.fontFamily&quot;: &quot;Sarasa Mono SC, Noto Sans Mono CJK SC, monospace&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><em>更纱黑体</em><br><a href="https://github.com/be5invis/Sarasa-Gothic" target="_blank" rel="noopener">https://github.com/be5invis/Sarasa-Gothic</a>  </p>
+<p><em>思源黑体</em><br><a href="https://www.google.com/get/noto/help/cjk/" target="_blank" rel="noopener">https://www.google.com/get/noto/help/cjk/</a></p>
+<p><em>Monospaced font</em><br><a href="https://en.wikipedia.org/wiki/Monospaced_font" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Monospaced_font</a>  </p>
+<p><em>TrueType</em><br><a href="https://en.wikipedia.org/wiki/TrueType" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/TrueType</a>  </p>
+<p><em>思源黑体的发布</em><br><a href="https://blog.typekit.com/alternate/source-han-sans-chs/" target="_blank" rel="noopener">https://blog.typekit.com/alternate/source-han-sans-chs/</a></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpeg" alt="Leon Qiu WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Leon Qiu
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://leonvision.online/technology/monospace-chinese-font-family/" title="中文等宽字体（Monospace Chinese Font Family）">https://leonvision.online/technology/monospace-chinese-font-family/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/blog/" rel="tag"># blog</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/technology/readium-for-premium-articles/" rel="prev" title="Readium for Premium Articles ( 读书人的事，能算偷么？）">
+      <i class="fa fa-chevron-left"></i> Readium for Premium Articles ( 读书人的事，能算偷么？）
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/finance/learning-p-e-ratio-and-baba-ipo-in-hk/" rel="next" title="Learning P/E Ratio and BABA IPO in HK">
+      Learning P/E Ratio and BABA IPO in HK <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
+            <li class="tab"><a href="#comment-valine">valine</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane disqusjs" id="comment-disqusjs">
+              
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+            </div>
+            <div class="tab-pane valine" id="comment-valine">
+              <div class="comments" id="valine-comments"></div>
+            </div>
+        </div>
+      </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Sarasa-Gothic-更纱黑体-更紗黑體-更紗ゴシック-사라사고딕"><span class="nav-number">1.</span> <span class="nav-text">Sarasa Gothic (更纱黑体 &#x2F; 更紗黑體 &#x2F; 更紗ゴシック &#x2F; 사라사고딕)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Noto-Sans-CJK-思源黑体"><span class="nav-number">2.</span> <span class="nav-text">Noto Sans CJK (思源黑体)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TTC-和-TTF"><span class="nav-number">3.</span> <span class="nav-text">TTC 和 TTF</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#J-K-SC-TC-的区别"><span class="nav-number">4.</span> <span class="nav-text">J&#x2F;K&#x2F;SC&#x2F;TC 的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-number">5.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-in-Visual-Studio-Code"><span class="nav-number">6.</span> <span class="nav-text">Markdown in Visual Studio Code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">7.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leon Qiu"
+      src="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+  <p class="site-author-name" itemprop="name">Leon Qiu</p>
+  <div class="site-description" itemprop="description">Technology, Finance, Photograhpy</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:i@leonvision.online" title="Email → mailto:i@leonvision.online"><i class="fa fa-fw fa-envelope"></i>Email</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/leon_qiu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;leon_qiu" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/iLeonVision" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;iLeonVision" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leon Qiu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.0
+  </div>
+
+
+  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  
+
+  <script>
+
+    jQuery.getExternalScript =  function(url, callback, condition) {
+      if (condition) {
+        callback();
+      } else {
+        var script = document.createElement('script');
+        script.onload = script.onreadystatechange = function(_, isAbort) {
+          if (isAbort || !script.readyState || /loaded|complete/.test(script.readyState)) {
+            script.onload = script.onreadystatechange = null;
+            script = undefined;
+            if (!isAbort && callback) setTimeout(callback, 0);
+          }
+        };
+        script.src = url;
+        document.head.appendChild(script);
+      }
+    };
+
+    jQuery.cachedScript = function( url, options ) {
+      // Allow user to set any option except for dataType, cache, and url
+      options = $.extend( options || {}, {
+        dataType: "script",
+        cache: true,
+        url: url,
+        type: 'GET'
+      });
+    
+      // Use $.ajax() since it is more flexible than $.getScript
+      // Return the jqXHR object so we can chain callbacks
+      return jQuery.ajax( options );
+      
+    };
+
+  if (document.querySelectorAll('pre.mermaid').length) {
+
+    $.cachedScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js')
+    .done(() => {
+      console.log("start to load the mermaid script");
+      mermaid.initialize({
+            theme: 'neutral',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+            gantt: { axisFormat: '%m/%d/%Y' },
+            sequence: { actorMargin: 50 }
+      });
+    });
+  }
+
+  // if (document.querySelectorAll('pre.mermaid').length) {
+
+  //   $.getExternalScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js', () => {
+  //     console.log("start to load the mermaid script");
+  //     mermaid.initialize({
+  //           theme: 'forest',
+  //           logLevel: 3,
+  //           flowchart: { curve: 'basis' },
+  //           gantt: { axisFormat: '%m/%d/%Y' },
+  //           sequence: { actorMargin: 50 }
+  //     });
+  //   }, window.mermaid);
+  // }
+  
+  </script>
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6391042540548664"
+     data-ad-slot="7494260686"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api: 'https://disqus-api-proxy.herokuapp.com/disqus/' || 'https://disqus.com/api/',
+      apikey: 'uAXdAL5fpzUZEe5PnLvCTvN5Y4iCHEfnUDjOMKJRNSk9nnypHzS7D7Ddya2DiCAq',
+      shortname: 'leonvision',
+      url: "https://leonvision.online/technology/monospace-chinese-font-family/",
+      identifier: "technology/monospace-chinese-font-family/",
+      title: "中文等宽字体（Monospace Chinese Font Family）",
+    });
+  }, window.DisqusJS);
+});
+</script>
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: 'BnlxSmDeyGYvxfkTqGcQTdAa-MdYXbMMI',
+      appKey: 'DxggU2hzw6wWyv8tetFybuSM',
+      placeholder: "Just go go",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: '' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

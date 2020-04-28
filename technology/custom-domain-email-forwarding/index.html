@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en,zh-cn,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://leonvision.online').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="免费域名邮件转发有很多服务，但是有些服务需要提供的材料太多了，例如备案，还有提供手机之类，所以均不予采用，筛选剩余两个服务：  ImprovMX Forwardemail.net  ImprovMX 设置简单，但是在测试使用 163 和 QQ 转发的时候，经常因为这些国内域名垃圾邮件评级不好收不到，而且客服认为它们不能控制垃圾邮件评分表无法改善，所以选择了 https:&#x2F;&#x2F;forwardemail">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Custom Domain Email Forwarding">
+<meta property="og:url" content="https://leonvision.online/technology/custom-domain-email-forwarding/index.html">
+<meta property="og:site_name" content="Leon Vision">
+<meta property="og:description" content="免费域名邮件转发有很多服务，但是有些服务需要提供的材料太多了，例如备案，还有提供手机之类，所以均不予采用，筛选剩余两个服务：  ImprovMX Forwardemail.net  ImprovMX 设置简单，但是在测试使用 163 和 QQ 转发的时候，经常因为这些国内域名垃圾邮件评级不好收不到，而且客服认为它们不能控制垃圾邮件评分表无法改善，所以选择了 https:&#x2F;&#x2F;forwardemail">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-01-01T19:12:04.000Z">
+<meta property="article:modified_time" content="2020-04-28T22:09:27.331Z">
+<meta property="article:author" content="Leon Qiu">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://leonvision.online/technology/custom-domain-email-forwarding/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXJKBD7');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+
+
+  <title>Custom Domain Email Forwarding | Leon Vision</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b895fbd10c58879b3aba226792894088";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Leon Vision" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Leon Vision</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Keep simple, keep hungry</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-timeline">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Timeline</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJKBD7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://leonvision.online/technology/custom-domain-email-forwarding/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+      <meta itemprop="name" content="Leon Qiu">
+      <meta itemprop="description" content="Technology, Finance, Photograhpy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Leon Vision">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Custom Domain Email Forwarding
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-02 03:12:04" itemprop="dateCreated datePublished" datetime="2020-01-02T03:12:04+08:00">2020-01-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-29 06:09:27" itemprop="dateModified" datetime="2020-04-29T06:09:27+08:00">2020-04-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/technology/" itemprop="url" rel="index">
+                    <span itemprop="name">technology</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/technology/custom-domain-email-forwarding/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/technology/custom-domain-email-forwarding/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>免费域名邮件转发有很多服务，但是有些服务需要提供的材料太多了，例如备案，还有提供手机之类，所以均不予采用，筛选剩余两个服务：</p>
+<ul>
+<li>ImprovMX</li>
+<li>Forwardemail.net</li>
+</ul>
+<p>ImprovMX 设置简单，但是在测试使用 163 和 QQ 转发的时候，经常因为这些国内域名垃圾邮件评级不好收不到，而且客服认为它们不能控制垃圾邮件评分表无法改善，所以选择了 <code>https://forwardemail.net</code></p>
+<h2 id="Set-up-MX-record-on-your-domain-name"><a href="#Set-up-MX-record-on-your-domain-name" class="headerlink" title="Set up MX record on your domain name"></a>Set up MX record on your domain name</h2><p>Set up MX record on your DNS service provider, like Cloudfare   </p>
+<table>
+<thead>
+<tr>
+<th>Name/Host/Alias</th>
+<th>TTL</th>
+<th>Record Type</th>
+<th>Priority</th>
+<th>Value/Answer/Destination</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@ or leave blank</td>
+<td>3600</td>
+<td>MX</td>
+<td>10</td>
+<td>mx1.forwardemail.net</td>
+</tr>
+<tr>
+<td>@ or leave blank</td>
+<td>3600</td>
+<td>MX</td>
+<td>20</td>
+<td>mx2.forwardemail.net</td>
+</tr>
+</tbody></table>
+<h2 id="Set-up-TXT-record-to-specify-your-personal-email"><a href="#Set-up-TXT-record-to-specify-your-personal-email" class="headerlink" title="Set up TXT record to specify your personal email"></a>Set up TXT record to specify your personal email</h2><p>If you are forwarding all emails from your domain, (<a href="mailto:all@niftylettuce.com">all@niftylettuce.com</a>, <a href="mailto:hello@niftylettuce.com">hello@niftylettuce.com</a>, etc) to a specific address <a href="mailto:niftylettuce@gmail.com">niftylettuce@gmail.com</a>. In this case, you needn’t define any custom email address of custom domain.</p>
+<p>Make sure to replace the values below in the “Value/Answer/Destination” column with your own email address! Do not leave it as-is, otherwise I will get your forwarded emails!</p>
+<table>
+<thead>
+<tr>
+<th>Name/Host/Alias</th>
+<th>TTL</th>
+<th>Record Type</th>
+<th>Value/Answer/Destination</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@ or leave blank</td>
+<td>3600</td>
+<td>TXT</td>
+<td>forward-email=niftylettuce@gmail.com</td>
+</tr>
+</tbody></table>
+<h2 id="Set-up-SPF-verification"><a href="#Set-up-SPF-verification" class="headerlink" title="Set up SPF verification"></a>Set up SPF verification</h2><p>If you’re using a service like Google Apps,Cloudflare or Amazon Route 53, then edit your existing TXT record and add the following as a new line:  </p>
+<table>
+<thead>
+<tr>
+<th>Name/Host/Alias</th>
+<th>TTL</th>
+<th>Record Type</th>
+<th>Value/Answer/Destination</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@ or leave blank</td>
+<td>3600</td>
+<td>TXT</td>
+<td>v=spf1 a mx include:spf.forwardemail.net include:_spf.google.com -all</td>
+</tr>
+</tbody></table>
+<p>现在可以测试域名邮件的转发了，这个设置其实发送到你域名邮箱的任何邮件都会转发到你的个人邮箱上</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><em>forwardemail</em><br><a href="https://forwardemail.net/#/?id=how-do-i-get-started-and-set-up-email-forwarding" target="_blank" rel="noopener">https://forwardemail.net/#/?id=how-do-i-get-started-and-set-up-email-forwarding</a></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpeg" alt="Leon Qiu WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Leon Qiu
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://leonvision.online/technology/custom-domain-email-forwarding/" title="Custom Domain Email Forwarding">https://leonvision.online/technology/custom-domain-email-forwarding/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/blog/" rel="tag"># blog</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/finance/learning-p-e-ratio-and-baba-ipo-in-hk/" rel="prev" title="Learning P/E Ratio and BABA IPO in HK">
+      <i class="fa fa-chevron-left"></i> Learning P/E Ratio and BABA IPO in HK
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/" rel="next" title="通过 Travis-CI 部署 Hexo Blog 到 Firebase Hosting - Google">
+      通过 Travis-CI 部署 Hexo Blog 到 Firebase Hosting - Google <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
+            <li class="tab"><a href="#comment-valine">valine</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane disqusjs" id="comment-disqusjs">
+              
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+            </div>
+            <div class="tab-pane valine" id="comment-valine">
+              <div class="comments" id="valine-comments"></div>
+            </div>
+        </div>
+      </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Set-up-MX-record-on-your-domain-name"><span class="nav-number">1.</span> <span class="nav-text">Set up MX record on your domain name</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Set-up-TXT-record-to-specify-your-personal-email"><span class="nav-number">2.</span> <span class="nav-text">Set up TXT record to specify your personal email</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Set-up-SPF-verification"><span class="nav-number">3.</span> <span class="nav-text">Set up SPF verification</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leon Qiu"
+      src="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+  <p class="site-author-name" itemprop="name">Leon Qiu</p>
+  <div class="site-description" itemprop="description">Technology, Finance, Photograhpy</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:i@leonvision.online" title="Email → mailto:i@leonvision.online"><i class="fa fa-fw fa-envelope"></i>Email</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/leon_qiu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;leon_qiu" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/iLeonVision" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;iLeonVision" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leon Qiu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.0
+  </div>
+
+
+  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  
+
+  <script>
+
+    jQuery.getExternalScript =  function(url, callback, condition) {
+      if (condition) {
+        callback();
+      } else {
+        var script = document.createElement('script');
+        script.onload = script.onreadystatechange = function(_, isAbort) {
+          if (isAbort || !script.readyState || /loaded|complete/.test(script.readyState)) {
+            script.onload = script.onreadystatechange = null;
+            script = undefined;
+            if (!isAbort && callback) setTimeout(callback, 0);
+          }
+        };
+        script.src = url;
+        document.head.appendChild(script);
+      }
+    };
+
+    jQuery.cachedScript = function( url, options ) {
+      // Allow user to set any option except for dataType, cache, and url
+      options = $.extend( options || {}, {
+        dataType: "script",
+        cache: true,
+        url: url,
+        type: 'GET'
+      });
+    
+      // Use $.ajax() since it is more flexible than $.getScript
+      // Return the jqXHR object so we can chain callbacks
+      return jQuery.ajax( options );
+      
+    };
+
+  if (document.querySelectorAll('pre.mermaid').length) {
+
+    $.cachedScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js')
+    .done(() => {
+      console.log("start to load the mermaid script");
+      mermaid.initialize({
+            theme: 'neutral',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+            gantt: { axisFormat: '%m/%d/%Y' },
+            sequence: { actorMargin: 50 }
+      });
+    });
+  }
+
+  // if (document.querySelectorAll('pre.mermaid').length) {
+
+  //   $.getExternalScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js', () => {
+  //     console.log("start to load the mermaid script");
+  //     mermaid.initialize({
+  //           theme: 'forest',
+  //           logLevel: 3,
+  //           flowchart: { curve: 'basis' },
+  //           gantt: { axisFormat: '%m/%d/%Y' },
+  //           sequence: { actorMargin: 50 }
+  //     });
+  //   }, window.mermaid);
+  // }
+  
+  </script>
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6391042540548664"
+     data-ad-slot="7494260686"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api: 'https://disqus-api-proxy.herokuapp.com/disqus/' || 'https://disqus.com/api/',
+      apikey: 'uAXdAL5fpzUZEe5PnLvCTvN5Y4iCHEfnUDjOMKJRNSk9nnypHzS7D7Ddya2DiCAq',
+      shortname: 'leonvision',
+      url: "https://leonvision.online/technology/custom-domain-email-forwarding/",
+      identifier: "technology/custom-domain-email-forwarding/",
+      title: "Custom Domain Email Forwarding",
+    });
+  }, window.DisqusJS);
+});
+</script>
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: 'BnlxSmDeyGYvxfkTqGcQTdAa-MdYXbMMI',
+      appKey: 'DxggU2hzw6wWyv8tetFybuSM',
+      placeholder: "Just go go",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: '' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

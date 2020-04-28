@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en,zh-cn,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://leonvision.online').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="本文主要介绍通过 Travis-CI 部署 Hexo Blog 到 Firebase Hosting 上，其中要特别注意密码加密的步骤">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通过 Travis-CI 部署 Hexo Blog 到 Firebase Hosting - Google">
+<meta property="og:url" content="https://leonvision.online/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/index.html">
+<meta property="og:site_name" content="Leon Vision">
+<meta property="og:description" content="本文主要介绍通过 Travis-CI 部署 Hexo Blog 到 Firebase Hosting 上，其中要特别注意密码加密的步骤">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://leonvision.online/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/image-20200113050017995.png">
+<meta property="article:published_time" content="2020-01-03T17:15:32.000Z">
+<meta property="article:modified_time" content="2020-04-28T22:09:27.331Z">
+<meta property="article:author" content="Leon Qiu">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://leonvision.online/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/image-20200113050017995.png">
+
+<link rel="canonical" href="https://leonvision.online/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXJKBD7');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+
+
+  <title>通过 Travis-CI 部署 Hexo Blog 到 Firebase Hosting - Google | Leon Vision</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b895fbd10c58879b3aba226792894088";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Leon Vision" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Leon Vision</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Keep simple, keep hungry</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-timeline">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Timeline</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJKBD7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://leonvision.online/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+      <meta itemprop="name" content="Leon Qiu">
+      <meta itemprop="description" content="Technology, Finance, Photograhpy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Leon Vision">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          通过 Travis-CI 部署 Hexo Blog 到 Firebase Hosting - Google
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-04 01:15:32" itemprop="dateCreated datePublished" datetime="2020-01-04T01:15:32+08:00">2020-01-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-29 06:09:27" itemprop="dateModified" datetime="2020-04-29T06:09:27+08:00">2020-04-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/technology/" itemprop="url" rel="index">
+                    <span itemprop="name">technology</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Firebase Hosting Spark Plan提供 1GB 的免费托管，同时部署在高质量的 Goolge Cloud Platform 上的效果非常好，普通 Blog 都够用，以后需求超了也可以弹性调节 … </p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>套件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Continuous Integration</td>
+<td>Travis CI</td>
+</tr>
+<tr>
+<td>BaaS</td>
+<td>Firebase Hosting</td>
+</tr>
+<tr>
+<td>Website</td>
+<td>Hexo</td>
+</tr>
+</tbody></table>
+<p>如果超过使用量可以升级到 #Blaze Plan =&gt; <a href="https://firebase.google.com/pricing" target="_blank" rel="noopener">https://firebase.google.com/pricing</a></p>
+<h2 id="Google-Proxy"><a href="#Google-Proxy" class="headerlink" title="Google Proxy"></a>Google Proxy</h2><p>欲论Google，代理先行，建议使用简单粗暴的方式直接上 Proxifier, 代理 <code>node</code> 这个程序的通信代理到你本地的HTTPS 代理上就行了<br>我从 log 里面看到在操作的过程中其实node会去request <code>www.googleapis.com:443</code>，所以你也可以单独代理这个地址还有 Google 全家桶的地址测试一下</p>
+<h2 id="Firebase-Init"><a href="#Firebase-Init" class="headerlink" title="Firebase Init"></a>Firebase Init</h2><p>首先安装Firebase CLI   </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install -g firebase-tools</span><br></pre></td></tr></table></figure>
+
+<p>登录firebase，此处开始会弹出一个网页，需要用代理登陆 Google 账号并授权  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$firebase</span> login</span><br></pre></td></tr></table></figure>
+<p>切换到你的Hexo项目的根目录，初始化firebase配置，选择Hosting  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$firebase</span> init</span><br></pre></td></tr></table></figure>
+<p>Firebase会生成一个firebase.json并进行配置hexo项目存放静态文件的public目录     </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"hosting"</span>: &#123;</span><br><span class="line">    <span class="attr">"public"</span>: <span class="string">"public"</span>,</span><br><span class="line">    <span class="attr">"ignore"</span>: [</span><br><span class="line">      <span class="string">"firebase.json"</span>,</span><br><span class="line">      <span class="string">"**/.*"</span>,</span><br><span class="line">      <span class="string">"**/node_modules/**"</span></span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>部署到firebase成功后它会给到你访问的地址  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$firebase</span> deploy</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Travis-CI-Integration"><a href="#Travis-CI-Integration" class="headerlink" title="Travis CI Integration"></a>Travis CI Integration</h2><p>到 <a href="https://travis-ci.org/" target="_blank" rel="noopener">https://travis-ci.org/</a> 初始化账号 用github账号直接登陆，并在Hexo项目的根目录新建一个.travis.yml，内容参考如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">node</span></span><br><span class="line"><span class="attr">branches:</span></span><br><span class="line">  <span class="attr">only:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span></span><br><span class="line"><span class="attr">before_install:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-cli</span> <span class="string">-g</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">npm</span> <span class="string">i</span> <span class="string">-g</span> <span class="string">firebase-tools</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">git</span> <span class="string">config</span> <span class="string">--global</span> <span class="string">push.default</span> <span class="string">matching</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">git</span> <span class="string">config</span> <span class="string">--global</span> <span class="string">user.name</span> <span class="string">"leon"</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">git</span> <span class="string">config</span> <span class="string">--global</span> <span class="string">user.email</span> <span class="string">"i@leonvision.online"</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">sed</span> <span class="string">-i''</span> <span class="string">"/^ *repo/s~github\.com~$&#123;GITHUB_TOKEN&#125;@github.com~"</span> <span class="string">_config.yml</span></span><br><span class="line"><span class="attr">install:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">hexo</span> <span class="string">clean</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">hexo</span> <span class="string">d</span> <span class="string">-g</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">firebase</span> <span class="string">deploy</span> <span class="string">--project=hexo-blog</span> <span class="string">--token</span> <span class="string">$FIREBASE_TOKEN_ORIG</span></span><br><span class="line"><span class="attr">cache:</span></span><br><span class="line">  <span class="attr">directories:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">node_modules</span></span><br><span class="line"><span class="attr">env:</span></span><br><span class="line">  <span class="attr">global:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">secure:</span> <span class="string">[enrypted</span> <span class="string">token]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># deploy:</span></span><br><span class="line"><span class="comment">#   cleanup: true</span></span><br><span class="line"><span class="comment">#   provider: firebase</span></span><br><span class="line"><span class="comment">#   token:</span></span><br><span class="line"><span class="comment">#     secure: $FIREBASE_TOKEN</span></span><br><span class="line"><span class="comment">#   project: $FIREBASE_PROJECT</span></span><br><span class="line"><span class="comment">#   on:</span></span><br><span class="line"><span class="comment">#     all_branches: true</span></span><br><span class="line"><span class="comment">#     # branches: master</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Encrypt-Github-Token-and-Firebase-CLI-Token"><a href="#Encrypt-Github-Token-and-Firebase-CLI-Token" class="headerlink" title="Encrypt Github Token and Firebase CLI Token"></a>Encrypt Github Token and Firebase CLI Token</h3><p>因为你的 Github 已经对 Travis 进行授权，所以如果用 github public key 对字符串进行加密，Travis其实可以用 private key 对密文进行解密，但是因为其他人没有这个调用 private key 的权限，所以即便你在 .travis.yml 里面的密文放在 github 上让人看到也是安全的。</p>
+<p><strong>Github</strong><br>到 <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">https://github.com/settings/tokens</a> 申请一个 Github access token，密文只会出现一次需要保存起来，授权上全选Repo就行了</p>
+<p>加密并直接更新进 .travis.yml 的环境变量, GITHUB_TOKEN为引用的Key  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$travis</span> encrypt -r [github user]/[github page project] <span class="string">"GITHUB_TOKEN=[github access token]"</span> --add</span><br></pre></td></tr></table></figure>
+
+<p><strong>Firebase Token</strong><br>运行一下代码获取firebase免交互的Login Token</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$firebase</span> login:ci</span><br></pre></td></tr></table></figure>
+
+<p>利用github的 public key 对 firebase token 进行加密,并添加到<code>.travis.yml</code>的 deploy.token.secure  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$travis</span> encrypt -r [github user]/[github page project] [firebase token] --add deploy.token</span><br></pre></td></tr></table></figure>
+
+<p>最终在 CI Pipleline 运行脚本的前需要把你在本地进行 Firebase login 后的 Session 进行 <code>firebase logout</code></p>
+<h3 id="Travis-Env-Variables-Setting"><a href="#Travis-Env-Variables-Setting" class="headerlink" title="Travis Env Variables Setting"></a>Travis Env Variables Setting</h3><p>我使用直接在 travis-ci.org/[github user]/[github user repo]/settings设置环境变量的方法，就不用暴露在 Github 的<code>.travis.yml</code>里面，感觉似乎更安全, 而且这样就不需要进行加密了</p>
+<p><img data-src="/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/image-20200113050017995.png" alt="image-20200113050017995"></p>
+<p>这种方式跟直接加在<code>.travis.yml</code>的区别就是在 run script 的时候环境变量的变量来源不同</p>
+<ul>
+<li>Setting environment variables from repository settings</li>
+<li>Setting environment variables from .travis.yml</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Snippet of running script</span></span><br><span class="line">Setting environment variables from repository settings</span><br><span class="line">$ <span class="built_in">export</span> FIREBASE_TOKEN= ****</span><br><span class="line">$ <span class="built_in">export</span> FIREBASE_PROJECT=**</span><br><span class="line"></span><br><span class="line">Setting environment variables from .travis.yml</span><br><span class="line">$ <span class="built_in">export</span> GITHUB_TOKEN=[secure]</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Travis-ci-org-vs-Travis-ci-com"><a href="#Travis-ci-org-vs-Travis-ci-com" class="headerlink" title="Travis-ci.org vs Travis-ci.com"></a>Travis-ci.org vs Travis-ci.com</h3><p>Travis-ci.org 只能显示github 上 public 的项目，而Travis-ci.com 可以看到 private 的项目，有些收费计划那样， 不过我还是选择了 org, 暂时够用就好了</p>
+<p>文章的设置是针对 travis-ci.org 的，而对于travis-ci.com，它的加密方式需要再参数上加<code>--pro</code>，加密前需用pro的账号登陆</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">travis login --pro</span><br></pre></td></tr></table></figure>
+
+<p>其他命令雷同，只是在参数上加上 <code>--pro</code>即可</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><em>travis ci for firebase</em><br><a href="https://docs.travis-ci.com/user/deployment-v2/providers/firebase/" target="_blank" rel="noopener">https://docs.travis-ci.com/user/deployment-v2/providers/firebase/</a><br><em>guideline</em><br><a href="https://blog.erguotou.me/hexo-on-firebase.html" target="_blank" rel="noopener">https://blog.erguotou.me/hexo-on-firebase.html</a><br><em>travis with js</em><br><a href="https://github.com/dwyl/learn-travis" target="_blank" rel="noopener">https://github.com/dwyl/learn-travis</a><br><em>Travis-CI加密变量</em><br><a href="https://blog.ahao.moe/posts/Travis_CI_Encrypting_keys.html" target="_blank" rel="noopener">https://blog.ahao.moe/posts/Travis_CI_Encrypting_keys.html</a><br><em>Travis CI</em><br><a href="https://docs.travis-ci.com/user/environment-variables/" target="_blank" rel="noopener">https://docs.travis-ci.com/user/environment-variables/</a></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpeg" alt="Leon Qiu WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Leon Qiu
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://leonvision.online/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/" title="通过 Travis-CI 部署 Hexo Blog 到 Firebase Hosting - Google">https://leonvision.online/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/blog/" rel="tag"># blog</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/technology/custom-domain-email-forwarding/" rel="prev" title="Custom Domain Email Forwarding">
+      <i class="fa fa-chevron-left"></i> Custom Domain Email Forwarding
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/technology/wysiwyg-markdown-editor-typora/" rel="next" title="WYSIWYG Markdown Editor - Typora With Hexo">
+      WYSIWYG Markdown Editor - Typora With Hexo <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
+            <li class="tab"><a href="#comment-valine">valine</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane disqusjs" id="comment-disqusjs">
+              
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+            </div>
+            <div class="tab-pane valine" id="comment-valine">
+              <div class="comments" id="valine-comments"></div>
+            </div>
+        </div>
+      </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Google-Proxy"><span class="nav-number">1.</span> <span class="nav-text">Google Proxy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Firebase-Init"><span class="nav-number">2.</span> <span class="nav-text">Firebase Init</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Travis-CI-Integration"><span class="nav-number">3.</span> <span class="nav-text">Travis CI Integration</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Encrypt-Github-Token-and-Firebase-CLI-Token"><span class="nav-number">3.1.</span> <span class="nav-text">Encrypt Github Token and Firebase CLI Token</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Travis-Env-Variables-Setting"><span class="nav-number">3.2.</span> <span class="nav-text">Travis Env Variables Setting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Travis-ci-org-vs-Travis-ci-com"><span class="nav-number">3.3.</span> <span class="nav-text">Travis-ci.org vs Travis-ci.com</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leon Qiu"
+      src="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+  <p class="site-author-name" itemprop="name">Leon Qiu</p>
+  <div class="site-description" itemprop="description">Technology, Finance, Photograhpy</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:i@leonvision.online" title="Email → mailto:i@leonvision.online"><i class="fa fa-fw fa-envelope"></i>Email</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/leon_qiu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;leon_qiu" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/iLeonVision" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;iLeonVision" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leon Qiu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.0
+  </div>
+
+
+  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  
+
+  <script>
+
+    jQuery.getExternalScript =  function(url, callback, condition) {
+      if (condition) {
+        callback();
+      } else {
+        var script = document.createElement('script');
+        script.onload = script.onreadystatechange = function(_, isAbort) {
+          if (isAbort || !script.readyState || /loaded|complete/.test(script.readyState)) {
+            script.onload = script.onreadystatechange = null;
+            script = undefined;
+            if (!isAbort && callback) setTimeout(callback, 0);
+          }
+        };
+        script.src = url;
+        document.head.appendChild(script);
+      }
+    };
+
+    jQuery.cachedScript = function( url, options ) {
+      // Allow user to set any option except for dataType, cache, and url
+      options = $.extend( options || {}, {
+        dataType: "script",
+        cache: true,
+        url: url,
+        type: 'GET'
+      });
+    
+      // Use $.ajax() since it is more flexible than $.getScript
+      // Return the jqXHR object so we can chain callbacks
+      return jQuery.ajax( options );
+      
+    };
+
+  if (document.querySelectorAll('pre.mermaid').length) {
+
+    $.cachedScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js')
+    .done(() => {
+      console.log("start to load the mermaid script");
+      mermaid.initialize({
+            theme: 'neutral',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+            gantt: { axisFormat: '%m/%d/%Y' },
+            sequence: { actorMargin: 50 }
+      });
+    });
+  }
+
+  // if (document.querySelectorAll('pre.mermaid').length) {
+
+  //   $.getExternalScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js', () => {
+  //     console.log("start to load the mermaid script");
+  //     mermaid.initialize({
+  //           theme: 'forest',
+  //           logLevel: 3,
+  //           flowchart: { curve: 'basis' },
+  //           gantt: { axisFormat: '%m/%d/%Y' },
+  //           sequence: { actorMargin: 50 }
+  //     });
+  //   }, window.mermaid);
+  // }
+  
+  </script>
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6391042540548664"
+     data-ad-slot="7494260686"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api: 'https://disqus-api-proxy.herokuapp.com/disqus/' || 'https://disqus.com/api/',
+      apikey: 'uAXdAL5fpzUZEe5PnLvCTvN5Y4iCHEfnUDjOMKJRNSk9nnypHzS7D7Ddya2DiCAq',
+      shortname: 'leonvision',
+      url: "https://leonvision.online/technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/",
+      identifier: "technology/deploy-hexo-to-google-firebase-hosting-via-travis-ci/",
+      title: "通过 Travis-CI 部署 Hexo Blog 到 Firebase Hosting - Google",
+    });
+  }, window.DisqusJS);
+});
+</script>
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: 'BnlxSmDeyGYvxfkTqGcQTdAa-MdYXbMMI',
+      appKey: 'DxggU2hzw6wWyv8tetFybuSM',
+      placeholder: "Just go go",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: '' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en,zh-cn,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://leonvision.online').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="本文主要还是讨论如何在境外进行沪深A股的趋势投资和指标跟踪，之所以会有这个需求主要还是在于境外市场的衍生品品种丰富，还有非A股交易交易时段的波动的指标有指示意义">
+<meta property="og:type" content="article">
+<meta property="og:title" content=" 沪深A股黑夜里的影子  ">
+<meta property="og:url" content="https://leonvision.online/finance/the-shadow-of-china-a-shares/index.html">
+<meta property="og:site_name" content="Leon Vision">
+<meta property="og:description" content="本文主要还是讨论如何在境外进行沪深A股的趋势投资和指标跟踪，之所以会有这个需求主要还是在于境外市场的衍生品品种丰富，还有非A股交易交易时段的波动的指标有指示意义">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-06T23:05:10.000Z">
+<meta property="article:modified_time" content="2020-04-28T22:09:27.319Z">
+<meta property="article:author" content="Leon Qiu">
+<meta property="article:tag" content="china-a-shares">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://leonvision.online/finance/the-shadow-of-china-a-shares/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXJKBD7');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+
+
+  <title> 沪深A股黑夜里的影子   | Leon Vision</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b895fbd10c58879b3aba226792894088";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Leon Vision" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Leon Vision</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Keep simple, keep hungry</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-timeline">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Timeline</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJKBD7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://leonvision.online/finance/the-shadow-of-china-a-shares/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+      <meta itemprop="name" content="Leon Qiu">
+      <meta itemprop="description" content="Technology, Finance, Photograhpy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Leon Vision">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+           沪深A股黑夜里的影子  
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-02-07 07:05:10" itemprop="dateCreated datePublished" datetime="2020-02-07T07:05:10+08:00">2020-02-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-29 06:09:27" itemprop="dateModified" datetime="2020-04-29T06:09:27+08:00">2020-04-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/finance/" itemprop="url" rel="index">
+                    <span itemprop="name">finance</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/finance/the-shadow-of-china-a-shares/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/finance/the-shadow-of-china-a-shares/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>本文主要还是讨论如何在境外进行沪深A股的趋势投资和指标跟踪，之所以会有这个需求主要还是在于境外市场的衍生品品种丰富，还有非A股交易交易时段的指标波动有指示意义</p>
+<ol>
+<li>像最近2020春节沪深A股停止交易，同时 2019-nCoV 疫情叠加在春节上，理论上疫情影响消费经济A股是要大跌的，但是闭市期间是无法进行价格反馈的，此时，境外市场没有春节假期停市，在这些市场上市的跟踪标的却是可以交易，所以你可以看到 SGX XINA50 期货在春节跌了大概7%，等到A股开盘大概也就跌了这个幅度，市场已经在春节期间进行了适当定价</li>
+<li>境外市场的标的衍生品相对丰富，交易流动性相对好点，比如 FXI 的期权交易</li>
+<li>更廉价的融资环境</li>
+</ol>
+<h2 id="为什么叫-A-股"><a href="#为什么叫-A-股" class="headerlink" title="为什么叫 A 股"></a>为什么叫 A 股</h2><p>首先还是需要先了解一下为啥叫 A 股，这是一直让我很困惑的问题–为啥没有中文名呢？ 其实是因为沪深股市分为A股，B股等等，而A股是用人民币计价的，B股是其他货币计价供境外投资交易的, A股代称大陆的人民币计价的股票市场</p>
+<blockquote>
+<p>China A-shares are different from B-shares. A-shares are only quoted in RMB, while B-shares are quoted in foreign currencies, such as the U.S. dollar, and are more widely available to foreign investors.<br>Origin from : <a href="https://www.investopedia.com/terms/a/a-shares.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/a/a-shares.asp</a></p>
+</blockquote>
+<h2 id="SGX-XINA50-Future（新加坡-A50-期货）"><a href="#SGX-XINA50-Future（新加坡-A50-期货）" class="headerlink" title="SGX XINA50 Future（新加坡 A50 期货）"></a>SGX XINA50 Future（新加坡 A50 期货）</h2><p>新加坡 A50 期货是离岸市场以美元计价的最交易量最大的 A50 期货，跟踪的是FTSE China A50 Index，XINA50 是在非A股交易时段跟踪和预测A股大盘最重要的标的</p>
+<p><strong>Trading hours (Singapore Time)</strong></p>
+<p>T session: 9.00am – 4.30pm<br>T+1 session: 4.40pm – 4.45am (next day)</p>
+<p>在IB可以进行交易和跟踪，Symbol 是 XINA50，乘数为1:1</p>
+<h2 id="HSI-Future（香港恒生指数期货）"><a href="#HSI-Future（香港恒生指数期货）" class="headerlink" title="HSI Future（香港恒生指数期货）"></a>HSI Future（香港恒生指数期货）</h2><p>HSI Future, Hang Seng Index Future 是 Hong Kong Futures Exchange 进行交易的跟踪 Hang Seng Index 的期货合约, 是跟踪港股趋势的较好的标的</p>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th><strong>Trading hours (Hongkong Time)</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Pre-Market Opening Period</td>
+<td>8:45 am - 9:15 am &amp; 12:30 pm - 1:00 pm</td>
+</tr>
+<tr>
+<td>Trading Hours</td>
+<td>9:15 am - 12:00 noon, 1:00 pm - 4:30 pm <br />&amp; 5:15 pm - 3:00 am in the early morning next day<br />(Expiring contract month closes at 4:00 pm on the Last Trading Day)</td>
+</tr>
+</tbody></table>
+<p>HSI 以港币计价，乘数 1：50，流动性非常好，银行股的权重略大</p>
+<h2 id="FXI（中国大盘股ETF）"><a href="#FXI（中国大盘股ETF）" class="headerlink" title="FXI（中国大盘股ETF）"></a>FXI（中国大盘股ETF）</h2><p>FXI: iShares China Large-Cap ETF,  跟踪在香港上市交易的50只最大的中国股票，是外部市场跟踪中国经济趋势的窗口，以美元计价</p>
+<blockquote>
+<p>The iShares China Large-Cap ETF seeks to track the investment results of an index composed of large-capitalization Chinese equities that trade on the Hong Kong Stock Exchange.</p>
+<p>Origin from : <a href="https://www.ishares.com/us/products/239536/ishares-china-largecap-etf" target="_blank" rel="noopener">https://www.ishares.com/us/products/239536/ishares-china-largecap-etf</a></p>
+</blockquote>
+<p>FXI 是美国市场跟踪中国的交易量最大的ETF，它的期权具有非常好的流动性, 它的正股波动幅度通常很小，用期权继续增幅和风险管控是个非常好的选择</p>
+<h2 id="AFTY-南方东英-A50"><a href="#AFTY-南方东英-A50" class="headerlink" title="AFTY ( 南方东英 A50 )"></a>AFTY ( 南方东英 A50 )</h2><p>AFTY: 通过 RQFII 跟踪在沪深上市的 前50 家最大的公司，以美元计价</p>
+<blockquote>
+<p>AFTY tracks an index of the 50 largest China A-shares listed on the Shanghai and Shenzhen stock exchanges.</p>
+<p>AFTY provides direct exposure to China’s restricted mainland equity market with RQFII access through CSOP, an asset manager in Hong Kong. </p>
+<p>In some respects, AFTY is an A-share version of iShares’ FXI, which holds 50 of the largest Chinese securities traded in Hong Kong. </p>
+<p>Origin from : <a href="https://www.etf.com/AFTY#efficiency" target="_blank" rel="noopener">https://www.etf.com/AFTY#efficiency</a></p>
+</blockquote>
+<blockquote>
+<p>RQFII</p>
+<p>Established in 2011, the <strong>Renminbi Qualified Foreign Institutional Investor</strong> (RQFII) program is a policy initiative that allows foreign investors who hold the RQFII quota to invest directly in Mainland China’s bond and equity markets. The program represents a continued loosening of <a href="https://en.wikipedia.org/wiki/China" target="_blank" rel="noopener">China</a>’s capital controls and departure from its predecessor <a href="https://en.wikipedia.org/wiki/QFII" target="_blank" rel="noopener">QFII</a>. The RQFII program relaxes existing restrictions on currency settlement, adds permissible asset classes, and expands investor eligibility. The current RQFII relevant jurisdiction applies to financial organizations registered in <a href="https://en.wikipedia.org/wiki/Hong_Kong" target="_blank" rel="noopener">Hong Kong</a>, <a href="https://en.wikipedia.org/wiki/Singapore" target="_blank" rel="noopener">Singapore</a>, the <a href="https://en.wikipedia.org/wiki/United_Kingdom" target="_blank" rel="noopener">United Kingdom</a>, <a href="https://en.wikipedia.org/wiki/France" target="_blank" rel="noopener">France</a>, <a href="https://en.wikipedia.org/wiki/Korea" target="_blank" rel="noopener">Korea</a>, <a href="https://en.wikipedia.org/wiki/Germany" target="_blank" rel="noopener">Germany</a>, <a href="https://en.wikipedia.org/wiki/Australia" target="_blank" rel="noopener">Australia</a>, <a href="https://en.wikipedia.org/wiki/Switzerland" target="_blank" rel="noopener">Switzerland</a>, <a href="https://en.wikipedia.org/wiki/Canada" target="_blank" rel="noopener">Canada</a>, the <a href="https://en.wikipedia.org/wiki/United_States" target="_blank" rel="noopener">United States</a> and <a href="https://en.wikipedia.org/wiki/Luxembourg" target="_blank" rel="noopener">Luxembourg</a>.<a href="https://en.wikipedia.org/wiki/RMB_Qualified_Foreign_Institutional_Investor#cite_note-1" target="_blank" rel="noopener">[1]</a></p>
+<p>Origin from : <a href="https://en.wikipedia.org/wiki/RMB_Qualified_Foreign_Institutional_Investor" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/RMB_Qualified_Foreign_Institutional_Investor</a></p>
+</blockquote>
+<h2 id="ASHR（沪深300-ETF-德银嘉实）"><a href="#ASHR（沪深300-ETF-德银嘉实）" class="headerlink" title="ASHR（沪深300 ETF - 德银嘉实）"></a>ASHR（沪深300 ETF - 德银嘉实）</h2><p>ASHR : Xtrackers Harvest CSI 300 China A-Shares ETF,  通过 RQFII 跟踪在大陆的上市的沪深300的股票，以美元计价，不包括在香港和美国上市的公司股票，因为能更好的反馈大陆的走势</p>
+<blockquote>
+<p>ASHR tracks an index of the 300 largest and most liquid Chinese shares traded on the Shanghai and Shenzhen exchanges. The fund holds physical China A-shares.</p>
+<p>ASHR was the first US-listed China ETF capable of accessing the coveted China A-share market directly. The fund is able to hold A-shares through the subadvisor, Harvest Global Investments, which has an RQFII license up to a specific quota. If the quota is reached, the fund will have to either get its quota increased, use derivatives to maintain exposure, or limit or halt creations, so monitoring is warranted. ASHR doesn’t Fit our neutral “all-share” benchmark well, since it tracks an index specific to A-shares and misses out on companies solely listed in Hong Kong or the US. ASHR’s focus on mainland A-shares also gives it a large-cap tilt and a heavy bias toward financials compared to our “all China” benchmark. Liquidity is good, though the RQFII quota can make creations difficult. An expensive fund to hold due to high fees and significant tracking challenges, ASHR’s exposure nevertheless lands it on our Opportunities List for investors willing to watch this fund’s performance carefully.</p>
+</blockquote>
+<p>ASHR 其实是通过 RQFII 进行大陆股票的投资，其实流动性不是很好，期权的交易流动性也一般</p>
+<p>但是依然不失指标意义，在2019-nCoV 春节疫情期间，大陆A股停止交易，ASHR提前磨合计价了A股春节开市后的大致波动</p>
+<h2 id="CNXT（中小企业板创业板100指数-ETF）"><a href="#CNXT（中小企业板创业板100指数-ETF）" class="headerlink" title="CNXT（中小企业板创业板100指数 ETF）"></a>CNXT（中小企业板创业板100指数 ETF）</h2><p>CNXT：VanEck Vectors® ChinaAMC SME-ChiNext ETF</p>
+<blockquote>
+<p>VanEck Vectors® ChinaAMC SME-ChiNext ETF (CNXT®) seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the SME-ChiNext 100 Index (CNI6109), which tracks the performance of the 100 largest and most liquid China A-share stocks listed and trading on the Small and Medium Enterprise (“SME”) Board and the ChiNext Board of the Shenzhen Stock Exchange.</p>
+<p>Origin from : <a href="https://www.vaneck.com/etf/equity/cnxt/holdings/" target="_blank" rel="noopener">https://www.vaneck.com/etf/equity/cnxt/holdings/</a></p>
+</blockquote>
+<p>这是中国崛起的时代，建议在出现流动性释放的时候，Long China！！！</p>
+<hr>
+<blockquote>
+<p><strong>学习型的投资者可以加入我的讨论组进行交流讨论</strong>     </p>
+<p>Finance Group in Telegram : <a href="https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g" target="_blank" rel="noopener"><em>My Financial Telegram Group</em></a><br>Finance Group in Discord : <a href="https://discord.gg/NgWdjb" target="_blank" rel="noopener"><em>My Financial Discord Group</em></a><br>微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码</p>
+</blockquote>
+<hr>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://www.investopedia.com/terms/a/a-shares.asp" target="_blank" rel="noopener"><em>China A-Shares Definition</em></a></p>
+<p><a href="https://api2.sgx.com/sites/default/files/2018-06/SGX%20FTSE%20China%20A50%20Index%20Futures%20Factsheet%20%28Eng%29%20-%20Nov%202017_D2.pdf" target="_blank" rel="noopener"><em>SGX FTSE China A50 Index Futures</em></a></p>
+<p><a href="https://www.ishares.com/us/products/239536/ishares-china-largecap-etf" target="_blank" rel="noopener"><em>FXI</em></a></p>
+<p><a href="https://www.hkex.com.hk/Products/Listed-Derivatives/Equity-Index/Hang-Seng-Index-(HSI)/Hang-Seng-Index-Futures?sc_lang=zh-HK#&product=HSI" target="_blank" rel="noopener"><em>HSI</em></a></p>
+<p><a href="https://baijiahao.baidu.com/s?id=1645533652207522951&wfr=spider&for=pc" target="_blank" rel="noopener">还不懂QFII和RQFII？这篇漫画你一定不容错过！</a></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpeg" alt="Leon Qiu WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Leon Qiu
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://leonvision.online/finance/the-shadow-of-china-a-shares/" title=" 沪深A股黑夜里的影子  ">https://leonvision.online/finance/the-shadow-of-china-a-shares/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/china-a-shares/" rel="tag"># china-a-shares</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/finance/united-states-presidential-primary-election-2020/" rel="prev" title=" 从 2020 美国总统初选开始学习选举流程 ">
+      <i class="fa fa-chevron-left"></i>  从 2020 美国总统初选开始学习选举流程 
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/finance/the-threshold-of-sp500/" rel="next" title=" 从 Tesla 的暴涨看 S&P 500 指数的长盛不衰 ">
+       从 Tesla 的暴涨看 S&P 500 指数的长盛不衰  <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
+            <li class="tab"><a href="#comment-valine">valine</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane disqusjs" id="comment-disqusjs">
+              
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+            </div>
+            <div class="tab-pane valine" id="comment-valine">
+              <div class="comments" id="valine-comments"></div>
+            </div>
+        </div>
+      </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么叫-A-股"><span class="nav-number">1.</span> <span class="nav-text">为什么叫 A 股</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SGX-XINA50-Future（新加坡-A50-期货）"><span class="nav-number">2.</span> <span class="nav-text">SGX XINA50 Future（新加坡 A50 期货）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HSI-Future（香港恒生指数期货）"><span class="nav-number">3.</span> <span class="nav-text">HSI Future（香港恒生指数期货）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FXI（中国大盘股ETF）"><span class="nav-number">4.</span> <span class="nav-text">FXI（中国大盘股ETF）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AFTY-南方东英-A50"><span class="nav-number">5.</span> <span class="nav-text">AFTY ( 南方东英 A50 )</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ASHR（沪深300-ETF-德银嘉实）"><span class="nav-number">6.</span> <span class="nav-text">ASHR（沪深300 ETF - 德银嘉实）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CNXT（中小企业板创业板100指数-ETF）"><span class="nav-number">7.</span> <span class="nav-text">CNXT（中小企业板创业板100指数 ETF）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">8.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leon Qiu"
+      src="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+  <p class="site-author-name" itemprop="name">Leon Qiu</p>
+  <div class="site-description" itemprop="description">Technology, Finance, Photograhpy</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:i@leonvision.online" title="Email → mailto:i@leonvision.online"><i class="fa fa-fw fa-envelope"></i>Email</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/leon_qiu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;leon_qiu" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/iLeonVision" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;iLeonVision" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leon Qiu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.0
+  </div>
+
+
+  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  
+
+  <script>
+
+    jQuery.getExternalScript =  function(url, callback, condition) {
+      if (condition) {
+        callback();
+      } else {
+        var script = document.createElement('script');
+        script.onload = script.onreadystatechange = function(_, isAbort) {
+          if (isAbort || !script.readyState || /loaded|complete/.test(script.readyState)) {
+            script.onload = script.onreadystatechange = null;
+            script = undefined;
+            if (!isAbort && callback) setTimeout(callback, 0);
+          }
+        };
+        script.src = url;
+        document.head.appendChild(script);
+      }
+    };
+
+    jQuery.cachedScript = function( url, options ) {
+      // Allow user to set any option except for dataType, cache, and url
+      options = $.extend( options || {}, {
+        dataType: "script",
+        cache: true,
+        url: url,
+        type: 'GET'
+      });
+    
+      // Use $.ajax() since it is more flexible than $.getScript
+      // Return the jqXHR object so we can chain callbacks
+      return jQuery.ajax( options );
+      
+    };
+
+  if (document.querySelectorAll('pre.mermaid').length) {
+
+    $.cachedScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js')
+    .done(() => {
+      console.log("start to load the mermaid script");
+      mermaid.initialize({
+            theme: 'neutral',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+            gantt: { axisFormat: '%m/%d/%Y' },
+            sequence: { actorMargin: 50 }
+      });
+    });
+  }
+
+  // if (document.querySelectorAll('pre.mermaid').length) {
+
+  //   $.getExternalScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js', () => {
+  //     console.log("start to load the mermaid script");
+  //     mermaid.initialize({
+  //           theme: 'forest',
+  //           logLevel: 3,
+  //           flowchart: { curve: 'basis' },
+  //           gantt: { axisFormat: '%m/%d/%Y' },
+  //           sequence: { actorMargin: 50 }
+  //     });
+  //   }, window.mermaid);
+  // }
+  
+  </script>
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6391042540548664"
+     data-ad-slot="7494260686"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api: 'https://disqus-api-proxy.herokuapp.com/disqus/' || 'https://disqus.com/api/',
+      apikey: 'uAXdAL5fpzUZEe5PnLvCTvN5Y4iCHEfnUDjOMKJRNSk9nnypHzS7D7Ddya2DiCAq',
+      shortname: 'leonvision',
+      url: "https://leonvision.online/finance/the-shadow-of-china-a-shares/",
+      identifier: "finance/the-shadow-of-china-a-shares/",
+      title: " 沪深A股黑夜里的影子  ",
+    });
+  }, window.DisqusJS);
+});
+</script>
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: 'BnlxSmDeyGYvxfkTqGcQTdAa-MdYXbMMI',
+      appKey: 'DxggU2hzw6wWyv8tetFybuSM',
+      placeholder: "Just go go",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: '' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

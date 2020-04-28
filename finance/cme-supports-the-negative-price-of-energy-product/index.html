@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en,zh-cn,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://leonvision.online').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="WTI Future出现了历史上首次的负值交易，那天晚上亲眼看到WTI五月的合约跌入-40，甚是震撼，所以来聊聊相关的大瓜和知识点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从CME支持负值交易开始聊起 ...">
+<meta property="og:url" content="https://leonvision.online/finance/cme-supports-the-negative-price-of-energy-product/index.html">
+<meta property="og:site_name" content="Leon Vision">
+<meta property="og:description" content="WTI Future出现了历史上首次的负值交易，那天晚上亲眼看到WTI五月的合约跌入-40，甚是震撼，所以来聊聊相关的大瓜和知识点">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-26T18:35:51.000Z">
+<meta property="article:modified_time" content="2020-04-28T22:09:27.319Z">
+<meta property="article:author" content="Leon Qiu">
+<meta property="article:tag" content="future">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://leonvision.online/finance/cme-supports-the-negative-price-of-energy-product/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXJKBD7');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+
+
+  <title>从CME支持负值交易开始聊起 ... | Leon Vision</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b895fbd10c58879b3aba226792894088";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Leon Vision" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Leon Vision</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Keep simple, keep hungry</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-timeline">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Timeline</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJKBD7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://leonvision.online/finance/cme-supports-the-negative-price-of-energy-product/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+      <meta itemprop="name" content="Leon Qiu">
+      <meta itemprop="description" content="Technology, Finance, Photograhpy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Leon Vision">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          从CME支持负值交易开始聊起 ...
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-04-27 02:35:51" itemprop="dateCreated datePublished" datetime="2020-04-27T02:35:51+08:00">2020-04-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-29 06:09:27" itemprop="dateModified" datetime="2020-04-29T06:09:27+08:00">2020-04-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/finance/" itemprop="url" rel="index">
+                    <span itemprop="name">finance</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/finance/cme-supports-the-negative-price-of-energy-product/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/finance/cme-supports-the-negative-price-of-energy-product/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>原油期货出现了历史上首次的负值交易，那天晚上亲眼看到WTI五月的合约跌入-40，甚是震撼，所以来聊聊相关的大瓜和知识点</p>
+<h2 id="CME-首次支持负值的交易"><a href="#CME-首次支持负值的交易" class="headerlink" title="CME 首次支持负值的交易"></a>CME 首次支持负值的交易</h2><p>CME 是在四月3号公告四月5号能源产品的支持负值交易，原文如下：</p>
+<blockquote>
+<p>To CME Globex and Market Data Customers<br>From Global Market Solutions and Services<br>Notice Date 03 April 2020<br><strong>Effective Date 05 April 2020</strong><br>This Sunday, April 5 (trade date Monday, April 6), as an operational step toward potentially supporting negative pricing and strikes, the MDP 3 Security Definition (tag 35-MsgType=d) for these Energy outright futures and options on CME Globex will be flagged as eligible to trade at negative prices. The options on futures will also be flagged as negative strike price eligible.</p>
+<p>Origin from : <a href="https://www.cmegroup.com/notices/electronic-trading/2020/04/20200403.html#pageNumber=1" target="_blank" rel="noopener">https://www.cmegroup.com/notices/electronic-trading/2020/04/20200403.html#pageNumber=1</a></p>
+</blockquote>
+<h2 id="为啥在四月21日首次出现负值"><a href="#为啥在四月21日首次出现负值" class="headerlink" title="为啥在四月21日首次出现负值"></a>为啥在四月21日首次出现负值</h2><p>WTI Future 首次出现负值是在纽约时间时间四月21号，五月的期货合约出现创纪录的-40块美元。从四月4号到四月20号，这中间大概有十五天的缓冲期可以给机构去调整，同时也是催生了很多大瓜可以看热闹，后面再聊聊，我们先聊聊负值为啥会出现在四月21号</p>
+<blockquote>
+<p>石油報價通常以現時最快到期的石油期貨合約為準，目前參考的是2020年5月的合約。根據該份合約的條款，生產商必須在2020年5月1日至30日期間，將石油送到俄克拉荷馬州庫欣市的指定地點。為了準備實物交收，期貨合約的最後交易日和正式結算日定為2020年4月21日。任何持有合約的人士須根據合約條款交收石油，當中條款包括：</p>
+<p>交收將以船上交貨方式（「FOB」），於俄克拉荷馬州庫欣市的任何油管或儲存設施上進行，並接通庫欣市倉庫的Enterprise或庫欣市倉庫的Enbridge油管。交收將按照所有適用聯邦行政命令，以及所有適用聯邦、國家和地方法例和法規進行。</p>
+<p>在4月22日，石油的官方報價標準從2020年5月的合約變為2020年6月的合約。有關合約的結算日為5月19日，交收須於2020年6月完成。</p>
+<p>Origin from <a href="https://www.fool.hk/2020/04/24/%e8%b2%a0%e6%b2%b9%e5%83%b9%e5%8f%aa%e6%98%af%e8%83%bd%e6%ba%90%e5%b8%82%e5%a0%b4%e5%a4%b1%e5%b8%b8%e7%9a%84%e9%96%8b%e5%a7%8b/" target="_blank" rel="noopener">https://www.fool.hk/2020/04/24/%e8%b2%a0%e6%b2%b9%e5%83%b9%e5%8f%aa%e6%98%af%e8%83%bd%e6%ba%90%e5%b8%82%e5%a0%b4%e5%a4%b1%e5%b8%b8%e7%9a%84%e9%96%8b%e5%a7%8b/</a></p>
+</blockquote>
+<p>正因为四月21号是WTI 5月期货合约的最后交割日，所以虽然从四月5号就开始支持负值，但是直到21号原油空头瞄准了所有未平仓的多单进行精准狙杀，印象中那天5月的 WTI 期货未平仓数是10万多单，一单是1000桶原油</p>
+<p>在前段时间，沙特和俄罗斯为了保护本国原油利益无法达成减产协议，进行了疯狂增产，企图整垮美国的页岩油生产商，严重干扰并拉低了世界油价，各国的SPR（原油战略储备）纷纷开仓储存石油，各种储油船等等的储油设备纷纷容量接近极限。以此为背景，在四月21号这个交割日，原油空头们豪赌未平仓的原油多头如果不认亏平仓，即便低价购买了原油期货也没有存储能力进行原油现货的交割。由此创造出原油期货市场上首次的负值成交价格 …</p>
+<h2 id="Super-Contango"><a href="#Super-Contango" class="headerlink" title="Super Contango"></a>Super Contango</h2><p>第二天各大新闻头条竞相报道原油割韭菜的凶残，但是这一切来得并不突然 … 除了上述所说的CME在四月3号就已经公告的负值交易支持（人家早就预告了结局，就看你愿不愿意配合了，不能光埋怨帝国主义太凶残），还有就是期货市场早就存在的 Super Contango</p>
+<blockquote>
+<h3 id="What-Is-Contango"><a href="#What-Is-Contango" class="headerlink" title="What Is Contango?"></a>What Is Contango?</h3><p>Contango is a situation where the <a href="https://www.investopedia.com/terms/f/futures.asp" target="_blank" rel="noopener">futures</a> price of a <a href="https://www.investopedia.com/terms/c/commodity.asp" target="_blank" rel="noopener">commodity</a> is higher than the spot price. Contango usually occurs when an asset price is expected to rise over time. That results in an upward sloping forward curve.</p>
+<p>Orogin from : <a href="https://www.investopedia.com/terms/c/contango.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/c/contango.asp</a></p>
+</blockquote>
+<p>在发生负值之前，WTI五月的合约一度价格跌到只有六月合约的一半，由此产生了Super Contango。任何一个看到 CME 支持负值交易 同时看到期货一路跌 产生 Super Contango的人，难道不应该联想到点啥不详的预感吗？ 我的天，至少应该离场看热闹先。但是实际上很多人没有，觉得可以抄底，比如抄底美国最大的原油基金 USO</p>
+<p>USO 的底层在之前主要是跟踪近期的WTI future，没错，就是五月的合约，但是高达几十亿的资金流入USO大多数是为了抄底投机原油，但是底层买入那么多的 WTI Future并不意味USO有足够的存储能力去交割，事实上它需要在交割日结束前把5月的到期合约 roll 到下个月或者更远的期货合约，可以说巨亏移仓，那抄底的价格下方还有十八层地狱的空间可以慢慢享受 … 由此，进一步助推五月合约的下跌，因为接手的对手盘并没有想解套的需求大，由此催生负值油价已经完事具备了！！</p>
+<h2 id="进击中的USO"><a href="#进击中的USO" class="headerlink" title="进击中的USO"></a>进击中的USO</h2><p>USO 是美国最大的原油基金，这种底层是Future的衍生品，在这么极端原油行情下也只能崩溃，发起 Reverse split，8股合成1股</p>
+<blockquote>
+<p>USCF announced today that it will execute a one-for-eight reverse share split that will be effective for shareholders of the United States Oil Fund, LP (NYSE Arca: <a href="https://sec.report/Ticker/USO" target="_blank" rel="noopener">USO</a>) after the close of the markets on April 28, 2020. Shares of USO will trade at their post-split prices on April 29, 2020. <a href="https://sec.report/Ticker/USO" target="_blank" rel="noopener">USO</a>’s ticker symbol, “<a href="https://sec.report/Ticker/USO" target="_blank" rel="noopener">USO</a>”, will not change, and shares of USO will continue to trade on the NYSE Arca. <a href="https://sec.report/Ticker/USO" target="_blank" rel="noopener">USO</a>’s new CUSIP number will be 91232N207.</p>
+<p><a href="https://sec.report/Document/0001171200-20-000271/" target="_blank" rel="noopener">https://sec.report/Document/0001171200-20-000271/</a></p>
+</blockquote>
+<p>以往USO主要跟踪最近一期的WTI Future，但是这么极端的行情预期下，USO为了避免从这个地球上消失，调整了它的底层产品结构, 20%的资金投资在6月的合约，40%在7月，20%在8月，最后20%在9月的合约。</p>
+<blockquote>
+<p>As of April 24, 2020, and for the reasons discussed below, USO may invest approximately 20% of its portfolio in crude oil futures contracts on the NYMEX and ICE Futures in the June futures contract, approximately 40% of its portfolio in crude oil futures contracts on the NYMEX and ICE Futures in the July contract, approximately 20% of its portfolio in crude oil futures contracts on the NYMEX and ICE Futures in the August contract, and approximately 20% of its portfolio in crude oil futures contracts on the NYMEX and ICE Futures in the September contract.</p>
+<p><a href="https://sec.report/Document/0001171200-20-000288/" target="_blank" rel="noopener">https://sec.report/Document/0001171200-20-000288/</a></p>
+</blockquote>
+<p>这个结构调整我的理解是从USO的角度出发是增强了基金的抗风险能力和稳定性，但是从短线投机者的角度来看会对短线投机操作逻辑产生点影响</p>
+<h2 id="中行原油宝的瓜"><a href="#中行原油宝的瓜" class="headerlink" title="中行原油宝的瓜"></a>中行原油宝的瓜</h2><p>中行原油宝是中行参考 WTI future 价格开发的一个虚拟盘产品，WTI 一手1000桶，原油宝一手一桶，对手盘是中行自己，并不是WIT Future的国际炒家，所以原油宝并不是导致这次WTI Future的直接选手，中行只是拿用户撮合的单按照自己的逻辑去国际市场进行对冲套利罢了。而包括中行在内整个国际市场的WTI Future多头都是此次原油负值事件的狙击对象 … </p>
+<p>其实我对中行原油宝跟用户签的产品协议并没有兴趣，但是为什么要聊一下呢，因为中国人是一个很没有民族自信的很惯性崇洋媚外的群体，这个瓜一出来很多人有种丢了国际信誉的感觉，很容易对自身金融水准产生群体性的不信任感，所以其实简单聊聊还原真相有利于平衡大家的心态</p>
+<p><em>To to continued …</em></p>
+<p><em>作者困了，这次负值事件太极端，很多瓜可以聊，后面再看情况补充</em></p>
+<hr>
+<blockquote>
+<p><strong>学习型的投资者可以加入我的 Financial Group 进行交流讨论</strong><br>Finance Group in Telegram : <a href="https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g" target="_blank" rel="noopener"><em>My Financial Telegram Group</em></a><br>Finance Group in Discord : <a href="https://discord.gg/bshbxuH" target="_blank" rel="noopener"><em>My Financial Discord Group</em></a><br>微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码</p>
+</blockquote>
+<hr>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpeg" alt="Leon Qiu WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Leon Qiu
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://leonvision.online/finance/cme-supports-the-negative-price-of-energy-product/" title="从CME支持负值交易开始聊起 ...">https://leonvision.online/finance/cme-supports-the-negative-price-of-energy-product/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/future/" rel="tag"># future</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/finance/to-invest-best-game-under-the-impact-of-covid-19/" rel="prev" title=" 新冠疫情下那些可供投资的优秀游戏公司 ">
+      <i class="fa fa-chevron-left"></i>  新冠疫情下那些可供投资的优秀游戏公司 
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
+            <li class="tab"><a href="#comment-valine">valine</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane disqusjs" id="comment-disqusjs">
+              
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+            </div>
+            <div class="tab-pane valine" id="comment-valine">
+              <div class="comments" id="valine-comments"></div>
+            </div>
+        </div>
+      </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CME-首次支持负值的交易"><span class="nav-number">1.</span> <span class="nav-text">CME 首次支持负值的交易</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为啥在四月21日首次出现负值"><span class="nav-number">2.</span> <span class="nav-text">为啥在四月21日首次出现负值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Super-Contango"><span class="nav-number">3.</span> <span class="nav-text">Super Contango</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#What-Is-Contango"><span class="nav-number">3.1.</span> <span class="nav-text">What Is Contango?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进击中的USO"><span class="nav-number">4.</span> <span class="nav-text">进击中的USO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中行原油宝的瓜"><span class="nav-number">5.</span> <span class="nav-text">中行原油宝的瓜</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leon Qiu"
+      src="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+  <p class="site-author-name" itemprop="name">Leon Qiu</p>
+  <div class="site-description" itemprop="description">Technology, Finance, Photograhpy</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:i@leonvision.online" title="Email → mailto:i@leonvision.online"><i class="fa fa-fw fa-envelope"></i>Email</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/leon_qiu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;leon_qiu" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/iLeonVision" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;iLeonVision" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leon Qiu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.0
+  </div>
+
+
+  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  
+
+  <script>
+
+    jQuery.getExternalScript =  function(url, callback, condition) {
+      if (condition) {
+        callback();
+      } else {
+        var script = document.createElement('script');
+        script.onload = script.onreadystatechange = function(_, isAbort) {
+          if (isAbort || !script.readyState || /loaded|complete/.test(script.readyState)) {
+            script.onload = script.onreadystatechange = null;
+            script = undefined;
+            if (!isAbort && callback) setTimeout(callback, 0);
+          }
+        };
+        script.src = url;
+        document.head.appendChild(script);
+      }
+    };
+
+    jQuery.cachedScript = function( url, options ) {
+      // Allow user to set any option except for dataType, cache, and url
+      options = $.extend( options || {}, {
+        dataType: "script",
+        cache: true,
+        url: url,
+        type: 'GET'
+      });
+    
+      // Use $.ajax() since it is more flexible than $.getScript
+      // Return the jqXHR object so we can chain callbacks
+      return jQuery.ajax( options );
+      
+    };
+
+  if (document.querySelectorAll('pre.mermaid').length) {
+
+    $.cachedScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js')
+    .done(() => {
+      console.log("start to load the mermaid script");
+      mermaid.initialize({
+            theme: 'neutral',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+            gantt: { axisFormat: '%m/%d/%Y' },
+            sequence: { actorMargin: 50 }
+      });
+    });
+  }
+
+  // if (document.querySelectorAll('pre.mermaid').length) {
+
+  //   $.getExternalScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js', () => {
+  //     console.log("start to load the mermaid script");
+  //     mermaid.initialize({
+  //           theme: 'forest',
+  //           logLevel: 3,
+  //           flowchart: { curve: 'basis' },
+  //           gantt: { axisFormat: '%m/%d/%Y' },
+  //           sequence: { actorMargin: 50 }
+  //     });
+  //   }, window.mermaid);
+  // }
+  
+  </script>
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6391042540548664"
+     data-ad-slot="7494260686"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api: 'https://disqus-api-proxy.herokuapp.com/disqus/' || 'https://disqus.com/api/',
+      apikey: 'uAXdAL5fpzUZEe5PnLvCTvN5Y4iCHEfnUDjOMKJRNSk9nnypHzS7D7Ddya2DiCAq',
+      shortname: 'leonvision',
+      url: "https://leonvision.online/finance/cme-supports-the-negative-price-of-energy-product/",
+      identifier: "finance/cme-supports-the-negative-price-of-energy-product/",
+      title: "从CME支持负值交易开始聊起 ...",
+    });
+  }, window.DisqusJS);
+});
+</script>
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: 'BnlxSmDeyGYvxfkTqGcQTdAa-MdYXbMMI',
+      appKey: 'DxggU2hzw6wWyv8tetFybuSM',
+      placeholder: "Just go go",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: '' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

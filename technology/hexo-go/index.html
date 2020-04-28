@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en,zh-cn,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://leonvision.online').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="Hexo is flexible blog system and Next comes with bundle of extensions to make it easier to use hexo blog.    Component Version    hexo 4.2   hexo-theme-next 7.7   Hexo Init$ hexo init # Initial the pr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo With NexT on Github Page">
+<meta property="og:url" content="https://leonvision.online/technology/hexo-go/index.html">
+<meta property="og:site_name" content="Leon Vision">
+<meta property="og:description" content="Hexo is flexible blog system and Next comes with bundle of extensions to make it easier to use hexo blog.    Component Version    hexo 4.2   hexo-theme-next 7.7   Hexo Init$ hexo init # Initial the pr">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-03T23:37:08.000Z">
+<meta property="article:modified_time" content="2020-04-28T22:09:27.335Z">
+<meta property="article:author" content="Leon Qiu">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://leonvision.online/technology/hexo-go/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXJKBD7');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+
+
+  <title>Hexo With NexT on Github Page | Leon Vision</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b895fbd10c58879b3aba226792894088";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Leon Vision" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Leon Vision</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Keep simple, keep hungry</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-timeline">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Timeline</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJKBD7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://leonvision.online/technology/hexo-go/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+      <meta itemprop="name" content="Leon Qiu">
+      <meta itemprop="description" content="Technology, Finance, Photograhpy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Leon Vision">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo With NexT on Github Page
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-12-04 07:37:08" itemprop="dateCreated datePublished" datetime="2019-12-04T07:37:08+08:00">2019-12-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-29 06:09:27" itemprop="dateModified" datetime="2020-04-29T06:09:27+08:00">2020-04-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/technology/" itemprop="url" rel="index">
+                    <span itemprop="name">technology</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/technology/hexo-go/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/technology/hexo-go/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Hexo is flexible blog system and Next comes with bundle of extensions to make it easier to use hexo blog.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>hexo</td>
+<td>4.2</td>
+</tr>
+<tr>
+<td>hexo-theme-next</td>
+<td>7.7</td>
+</tr>
+</tbody></table>
+<h1 id="Hexo-Init"><a href="#Hexo-Init" class="headerlink" title="Hexo Init"></a>Hexo Init</h1><p>$ hexo init # Initial the project<br>$ npm install # download the independencies<br>$ tree ./ -L 1 #  Just review the file tree<br>$ hexo g # Generate the html<br>$ hexo s # Start the server<br>$ code _config.yml</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span>  <span class="comment"># your github repo</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="Custom-Domain-Name"><a href="#Custom-Domain-Name" class="headerlink" title="Custom Domain Name"></a>Custom Domain Name</h1><p>add a new file “CNAME” under the folder /public/<br>add your domain name as the content</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="string">"domain name"</span> &gt; ./public/CNAME</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="Custom-Theme"><a href="#Custom-Theme" class="headerlink" title="Custom Theme"></a>Custom Theme</h1><p>$ git clone <a href="https://github.com/theme-next/hexo-theme-next.git" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next.git</a> themes/theme_next<br>change the content in the _config.yml</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">theme_next</span></span><br></pre></td></tr></table></figure>
+
+<p>$ hexo clean # clean public/</p>
+<p>Link to the homepage : <a href="https://theme-next.org" target="_blank" rel="noopener">https://theme-next.org</a></p>
+<h1 id="Google-Adsense"><a href="#Google-Adsense" class="headerlink" title="Google Adsense"></a>Google Adsense</h1><ul>
+<li>Add a file source/_data/header.swig.</li>
+<li>past the <script>..</script> from google adsense on it</li>
+<li>uncomment the line in themes/theme_next/_config.yml<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">    <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">    <span class="attr">header:</span> <span class="string">source/_data/header.swig</span></span><br><span class="line">    <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>more detail in <a href="https://i.leonvision.online/technology/2019/12/16/google-analytics-and-adsense-in-hexo/" target="_blank" rel="noopener">google-analytics-and-adsense-in-hexo</a>   </p>
+<h1 id="Comment-System"><a href="#Comment-System" class="headerlink" title="Comment System"></a>Comment System</h1><h2 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h2><p>Disqus can allow the anonymous, but it can not use in China.</p>
+<p><a href="https://qiuyiwu.github.io/2019/01/25/Hexo-Comment/" target="_blank" rel="noopener">Add Comments Section to Your Hexo Blog</a></p>
+<p>DisqusJS can help us to go through the whole world<br><a href="https://theme-next.org/docs/third-party-services/comments" target="_blank" rel="noopener">https://theme-next.org/docs/third-party-services/comments</a></p>
+<h2 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h2><p>This is good enough to approach it.</p>
+<p><a href="https://juejin.im/post/5d790e706fb9a06af8250665" target="_blank" rel="noopener">https://juejin.im/post/5d790e706fb9a06af8250665</a></p>
+<p><strong>delete the comment on valine</strong></p>
+<p>登录Leancloud<code>&gt;选择你创建的</code>应用<code>&gt;</code>存储<code>&gt;选择Class</code>Comment</p>
+<h1 id="Hexo-Editor-Typora"><a href="#Hexo-Editor-Typora" class="headerlink" title="Hexo Editor - Typora"></a>Hexo Editor - Typora</h1><p>Typora is a what you see is what you get system.</p>
+<p><em>Here is my another tutorial</em><br><a href="https://leonvision.online/technology/wysiwyg-markdown-editor-typora/">https://leonvision.online/technology/wysiwyg-markdown-editor-typora/</a></p>
+<p>or use evernote for China to edit the markdown</p>
+<h1 id="Global-Avatar"><a href="#Global-Avatar" class="headerlink" title="Global Avatar"></a>Global Avatar</h1><p>Add the url into the Avatar section in the _config<br>Refer to the link as below:<br><a href="https://en.gravatar.com/emails/" target="_blank" rel="noopener">https://en.gravatar.com/emails/</a></p>
+<h1 id="Search"><a href="#Search" class="headerlink" title="Search"></a>Search</h1><p><strong>Enable the local serach in the _config.yml of theme-next</strong></p>
+<pre><code>local_search:
+  enable: true</code></pre><h1 id="Google-Analysis"><a href="#Google-Analysis" class="headerlink" title="Google Analysis"></a>Google Analysis</h1><p>Enable in {theme/to/next}/_config.yml</p>
+<pre><code>google_analytics:
+  tracking_id: UA-number
+  localhost_ignored: false</code></pre><p>and also using the google tag manager to integrate the google analysis is better choice.</p>
+<h1 id="RSS-Feed"><a href="#RSS-Feed" class="headerlink" title="RSS Feed"></a>RSS Feed</h1><p><strong>Installation</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<p><strong>Configuration</strong><br>In {ROOT}/themes/theme_next/_config.yml</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">RSS:</span> <span class="string">/atom.xml</span> <span class="string">||</span> <span class="string">rss</span></span><br></pre></td></tr></table></figure>
+
+
+<p>​      </p>
+<h1 id="Categories-amp-Tags"><a href="#Categories-amp-Tags" class="headerlink" title="Categories &amp; Tags"></a>Categories &amp; Tags</h1><p>Only posts support the use of categories and tags. Categories apply to posts in order, resulting in a hierarchy of classifications and sub-classifications. Tags are all defined on the same hierarchical level so the order in which they appear is not important.</p>
+<p><strong>Example</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Sports</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Baseball</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Injury</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Fight</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Shocking</span></span><br></pre></td></tr></table></figure>
+
+<p>The classification records in the front-matter of the the source of markdown file<br><a href="https://raw.githubusercontent.com/qzi/qzi.github.io/hexo/source/_posts/technology/hexo-go.md" target="_blank" rel="noopener">https://raw.githubusercontent.com/qzi/qzi.github.io/hexo/source/_posts/technology/hexo-go.md</a></p>
+<p>Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes when written in YAML or three semicolons when written in JSON.<br><a href="https://hexo.io/docs/front-matter.html" target="_blank" rel="noopener">https://hexo.io/docs/front-matter.html</a></p>
+<p><strong>Configuration</strong></p>
+<p>Configuration in the [hexo_project]/[themes]/[next]/_config.yml</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># External url should start with http:// or https://</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">home</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">archive</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="Enhance-Image-Reference"><a href="#Enhance-Image-Reference" class="headerlink" title="Enhance Image Reference"></a>Enhance Image Reference</h1><p><strong>Installation</strong><br>    $ npm i –save hexo-asset-link</p>
+<p><strong>Markdown Syntax</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Rest Client</span>](<span class="link">./my-favorite-extensions-for-visual-studio-code/rest-client.jpg</span>)</span><br><span class="line">![<span class="string">Rest Client</span>](<span class="link">my-favorite-extensions-for-visual-studio-code/rest-client.jpg</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>Reference</strong><br><em>Image to Hexo</em><br><a href="https://liolok.github.io/zh-CN/How-to-Add-Image-to-Hexo-Blog-Post/" target="_blank" rel="noopener">https://liolok.github.io/zh-CN/How-to-Add-Image-to-Hexo-Blog-Post/</a></p>
+<h1 id="Post-Excerpt"><a href="#Post-Excerpt" class="headerlink" title="Post Excerpt"></a>Post Excerpt</h1><p>Manually add more <code>excerpt</code> in the front-matter of the markdown file  </p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">中文等宽字体（Monospace</span> <span class="string">Chinese</span> <span class="string">Font</span> <span class="string">Family）</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="number">-12</span><span class="number">-26</span> <span class="number">00</span><span class="string">:52:18</span></span><br><span class="line"><span class="attr">excerpt:</span> <span class="string">' 中文等宽字体，一个中文字符等宽两个英文字符，Mac下很多字体（ Menlo, Monaco, Courier New, Source Code Pro ）没有严格遵循或者说达不到这个标准, 它们不包括CJK的字库，有的时候用一些 markdown table formatter 会导致不整齐，其实并不是排列不整齐，而是字体的宽度不同 '</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>Configuration</strong> </p>
+<p>Configuration in the [hexo_project]/[themes]/[next]/_config.yml</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span></span><br><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read more button</span></span><br><span class="line"><span class="comment"># If true, the read more button will be displayed in excerpt section.</span></span><br><span class="line"><span class="attr">read_more_btn:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>Refer to <a href="https://hexo.io/docs/tag-plugins#Post-Excerpt" target="_blank" rel="noopener">https://hexo.io/docs/tag-plugins#Post-Excerpt</a></p>
+<h1 id="Mermaid-Surpport-for-Diagram"><a href="#Mermaid-Surpport-for-Diagram" class="headerlink" title="Mermaid Surpport for Diagram"></a>Mermaid Surpport for Diagram</h1><p>Hexo Next already supported the mermaid nested.<br><a href="https://github.com/theme-next/theme-next.org/blob/source/source/docs/tag-plugins/mermaid.md" target="_blank" rel="noopener">https://github.com/theme-next/theme-next.org/blob/source/source/docs/tag-plugins/mermaid.md</a></p>
+<p>Next use its own tag system to convert the diagram. so we need to fixed it aligning the common markdown practice.</p>
+<p><code>npm install hexo-filter-mermaid-diagrams save</code></p>
+<p>This filter will convert the indicator <code>&#39;&#39;&#39;mermaid</code>  to <code>&lt;pre class=&quot;mermaid&quot;&gt;</code>, and then mermaid.js will filter  the elememet and redender them.</p>
+<h1 id="Embed-Video"><a href="#Embed-Video" class="headerlink" title="Embed Video"></a>Embed Video</h1><p>Just copy the code of the html in YouTube and add YouTube video in Hexo-markdown</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"560"</span> <span class="attr">height</span>=<span class="string">"315"</span> <span class="attr">src</span>=<span class="string">"https://www.youtube-nocookie.com/embed/E46_veB0DPU"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">allow</span>=<span class="string">"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="Force-to-Refresh-the-Browser"><a href="#Force-to-Refresh-the-Browser" class="headerlink" title="Force to Refresh the Browser"></a>Force to Refresh the Browser</h1><p>Presss <code>Shift + Command + R</code> to force to refresh the browser(Chrome) to test the result in Mac </p>
+<p>Presss <code>Option + Command + R</code> to force to refresh the browser(Safari) to test the result in Mac </p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h1><p><em>Hexo backup</em><br><a href="https://blog.itswincer.com/posts/7efd2818/" target="_blank" rel="noopener">https://blog.itswincer.com/posts/7efd2818/</a></p>
+<p><em>Add google adsense</em><br><a href="https://juejin.im/post/5c95d230e51d45124e35cef6" target="_blank" rel="noopener">https://juejin.im/post/5c95d230e51d45124e35cef6</a></p>
+<p><em>Third party for theme next</em><br><a href="https://theme-next.iissnan.com/third-party-services.html" target="_blank" rel="noopener">https://theme-next.iissnan.com/third-party-services.html</a></p>
+<p><em>Wirit the post</em><br><a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/writing.html</a></p>
+<p><em>Front-matter</em><br><a href="https://hexo.io/docs/front-matter.html" target="_blank" rel="noopener">https://hexo.io/docs/front-matter.html</a></p>
+<p><em>asset folder</em><br><a href="https://hexo.io/docs/asset-folders" target="_blank" rel="noopener">https://hexo.io/docs/asset-folders</a></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpeg" alt="Leon Qiu WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Leon Qiu
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://leonvision.online/technology/hexo-go/" title="Hexo With NexT on Github Page">https://leonvision.online/technology/hexo-go/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/blog/" rel="tag"># blog</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/license-on-creative-common/" rel="next" title="License on the Creative Common">
+      License on the Creative Common <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
+            <li class="tab"><a href="#comment-valine">valine</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane disqusjs" id="comment-disqusjs">
+              
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+            </div>
+            <div class="tab-pane valine" id="comment-valine">
+              <div class="comments" id="valine-comments"></div>
+            </div>
+        </div>
+      </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-Init"><span class="nav-number">1.</span> <span class="nav-text">Hexo Init</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Custom-Domain-Name"><span class="nav-number">2.</span> <span class="nav-text">Custom Domain Name</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Custom-Theme"><span class="nav-number">3.</span> <span class="nav-text">Custom Theme</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Google-Adsense"><span class="nav-number">4.</span> <span class="nav-text">Google Adsense</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Comment-System"><span class="nav-number">5.</span> <span class="nav-text">Comment System</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Disqus"><span class="nav-number">5.1.</span> <span class="nav-text">Disqus</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Valine"><span class="nav-number">5.2.</span> <span class="nav-text">Valine</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-Editor-Typora"><span class="nav-number">6.</span> <span class="nav-text">Hexo Editor - Typora</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Global-Avatar"><span class="nav-number">7.</span> <span class="nav-text">Global Avatar</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Search"><span class="nav-number">8.</span> <span class="nav-text">Search</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Google-Analysis"><span class="nav-number">9.</span> <span class="nav-text">Google Analysis</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#RSS-Feed"><span class="nav-number">10.</span> <span class="nav-text">RSS Feed</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Categories-amp-Tags"><span class="nav-number">11.</span> <span class="nav-text">Categories &amp; Tags</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Enhance-Image-Reference"><span class="nav-number">12.</span> <span class="nav-text">Enhance Image Reference</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Post-Excerpt"><span class="nav-number">13.</span> <span class="nav-text">Post Excerpt</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mermaid-Surpport-for-Diagram"><span class="nav-number">14.</span> <span class="nav-text">Mermaid Surpport for Diagram</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Embed-Video"><span class="nav-number">15.</span> <span class="nav-text">Embed Video</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Force-to-Refresh-the-Browser"><span class="nav-number">16.</span> <span class="nav-text">Force to Refresh the Browser</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">17.</span> <span class="nav-text">Reference:</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leon Qiu"
+      src="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+  <p class="site-author-name" itemprop="name">Leon Qiu</p>
+  <div class="site-description" itemprop="description">Technology, Finance, Photograhpy</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:i@leonvision.online" title="Email → mailto:i@leonvision.online"><i class="fa fa-fw fa-envelope"></i>Email</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/leon_qiu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;leon_qiu" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/iLeonVision" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;iLeonVision" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leon Qiu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.0
+  </div>
+
+
+  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  
+
+  <script>
+
+    jQuery.getExternalScript =  function(url, callback, condition) {
+      if (condition) {
+        callback();
+      } else {
+        var script = document.createElement('script');
+        script.onload = script.onreadystatechange = function(_, isAbort) {
+          if (isAbort || !script.readyState || /loaded|complete/.test(script.readyState)) {
+            script.onload = script.onreadystatechange = null;
+            script = undefined;
+            if (!isAbort && callback) setTimeout(callback, 0);
+          }
+        };
+        script.src = url;
+        document.head.appendChild(script);
+      }
+    };
+
+    jQuery.cachedScript = function( url, options ) {
+      // Allow user to set any option except for dataType, cache, and url
+      options = $.extend( options || {}, {
+        dataType: "script",
+        cache: true,
+        url: url,
+        type: 'GET'
+      });
+    
+      // Use $.ajax() since it is more flexible than $.getScript
+      // Return the jqXHR object so we can chain callbacks
+      return jQuery.ajax( options );
+      
+    };
+
+  if (document.querySelectorAll('pre.mermaid').length) {
+
+    $.cachedScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js')
+    .done(() => {
+      console.log("start to load the mermaid script");
+      mermaid.initialize({
+            theme: 'neutral',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+            gantt: { axisFormat: '%m/%d/%Y' },
+            sequence: { actorMargin: 50 }
+      });
+    });
+  }
+
+  // if (document.querySelectorAll('pre.mermaid').length) {
+
+  //   $.getExternalScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js', () => {
+  //     console.log("start to load the mermaid script");
+  //     mermaid.initialize({
+  //           theme: 'forest',
+  //           logLevel: 3,
+  //           flowchart: { curve: 'basis' },
+  //           gantt: { axisFormat: '%m/%d/%Y' },
+  //           sequence: { actorMargin: 50 }
+  //     });
+  //   }, window.mermaid);
+  // }
+  
+  </script>
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6391042540548664"
+     data-ad-slot="7494260686"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api: 'https://disqus-api-proxy.herokuapp.com/disqus/' || 'https://disqus.com/api/',
+      apikey: 'uAXdAL5fpzUZEe5PnLvCTvN5Y4iCHEfnUDjOMKJRNSk9nnypHzS7D7Ddya2DiCAq',
+      shortname: 'leonvision',
+      url: "https://leonvision.online/technology/hexo-go/",
+      identifier: "technology/hexo-go/",
+      title: "Hexo With NexT on Github Page",
+    });
+  }, window.DisqusJS);
+});
+</script>
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: 'BnlxSmDeyGYvxfkTqGcQTdAa-MdYXbMMI',
+      appKey: 'DxggU2hzw6wWyv8tetFybuSM',
+      placeholder: "Just go go",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: '' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

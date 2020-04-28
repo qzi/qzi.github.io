@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en,zh-cn,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://leonvision.online').hostname,
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
+    comments: {"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="Tesla 进行了股票增发，一般公司当期价值不变，增发股票会稀释每股价值，也就是说股票有下跌倾向，本文主要就是来聊聊怎么自己看和确认细节">
+<meta property="og:type" content="article">
+<meta property="og:title" content="  从 Tesla 增发 $2B 学习怎么看 424(b) Filing of Prospectuses ">
+<meta property="og:url" content="https://leonvision.online/finance/424-b-filing-of-prospectuses/index.html">
+<meta property="og:site_name" content="Leon Vision">
+<meta property="og:description" content="Tesla 进行了股票增发，一般公司当期价值不变，增发股票会稀释每股价值，也就是说股票有下跌倾向，本文主要就是来聊聊怎么自己看和确认细节">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://leonvision.online/finance/424-b-filing-of-prospectuses/image-20200214050015793.png">
+<meta property="article:published_time" content="2020-02-13T20:37:44.000Z">
+<meta property="article:modified_time" content="2020-04-28T22:09:27.319Z">
+<meta property="article:author" content="Leon Qiu">
+<meta property="article:tag" content="sec-filing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://leonvision.online/finance/424-b-filing-of-prospectuses/image-20200214050015793.png">
+
+<link rel="canonical" href="https://leonvision.online/finance/424-b-filing-of-prospectuses/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXJKBD7');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+
+
+  <title>  从 Tesla 增发 $2B 学习怎么看 424(b) Filing of Prospectuses  | Leon Vision</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b895fbd10c58879b3aba226792894088";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Leon Vision" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Leon Vision</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Keep simple, keep hungry</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-timeline">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Timeline</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJKBD7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="https://leonvision.online/finance/424-b-filing-of-prospectuses/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+      <meta itemprop="name" content="Leon Qiu">
+      <meta itemprop="description" content="Technology, Finance, Photograhpy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Leon Vision">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            从 Tesla 增发 $2B 学习怎么看 424(b) Filing of Prospectuses 
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-02-14 04:37:44" itemprop="dateCreated datePublished" datetime="2020-02-14T04:37:44+08:00">2020-02-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-29 06:09:27" itemprop="dateModified" datetime="2020-04-29T06:09:27+08:00">2020-04-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/finance/" itemprop="url" rel="index">
+                    <span itemprop="name">finance</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/finance/424-b-filing-of-prospectuses/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/finance/424-b-filing-of-prospectuses/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>2020年2月13日，Tesla 向 SEC 披露它准备以每股 767.29 的价格增发 2,650,000 股票，其中 Musk 准备认购  13,032 股，它的好友兼董事会成员 Ellison 准备认购 1,303 股。</p>
+<p>一般公司当期价值不变，增发股票会稀释每股价值，也就是说股票有下跌倾向，本文主要就是来聊聊怎么自己看和确认细节，在 SEC Edgar Search TSLA 后找到 Tesla 在 2月13日 提交的 Form 424b5，直接打开就可以看到以下</p>
+<p><img data-src="/finance/424-b-filing-of-prospectuses/image-20200214050015793.png" alt="image-20200214050015793"></p>
+<p>Origin from : <a href="https://www.sec.gov/Archives/edgar/data/1318605/000119312520034289/d861752d424b5.htm#supptoc861752_5" target="_blank" rel="noopener">424B5 1 d861752d424b5.htm 424B5
+</a></p>
+<p>一切不言自明，Tesla 增发2,650,000 股票，总计2,033,318,500（2,650,000 * 767.29） 美元的发行规模，其中 Elon Musk 准备认购  9,999,323.28（13,032 * 767.29）美金，它的好友兼董事会成员 Lawrence J Ellison 认购 999,778.87（1,303 * 767.29）美元。</p>
+<h2 id="SEC-Form-424-b-Prospectuses"><a href="#SEC-Form-424-b-Prospectuses" class="headerlink" title="SEC Form 424(b)(#)  Prospectuses"></a>SEC Form 424(b)(#)  Prospectuses</h2><p>Prospectuses 用来补充披露公司之前递交的招股说明书中的遗漏的部分信息或者构成实质性变更的部分信息</p>
+<p>相应的说明在以下的法律文件有具体定义：</p>
+<p>17 CFR § 230.424 - Filing of prospectuses, number of copies.<br><a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">https://www.law.cornell.edu/cfr/text/17/230.424</a></p>
+<h2 id="SEC-Form-424-b-5"><a href="#SEC-Form-424-b-5" class="headerlink" title="SEC Form 424(b)(5)"></a>SEC Form 424(b)(5)</h2><p>424(b)(5) 也就是本文 Tesla 补充更新之前披露的424(B)(2) 和 424(b)(3)文件，记录它的股票增发信息</p>
+<blockquote>
+<p>SEC Form 424B5 is the prospectus form that companies must file to disclose information<br>referred to in forms 424B2 (filed in connection with a primary offering of securities) and<br>424B3 (filed if major changes have occurred to the prospectus). SEC Form 424B5<br>outlines updated prospectus information, facts or events from previously-filed forms.</p>
+<p>Origin from : <a href="https://www.investopedia.com/terms/s/sec-form-424b5.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/s/sec-form-424b5.asp</a></p>
+</blockquote>
+<p>primary offering is also known as “IPO”.</p>
+<blockquote>
+<p><strong>(5)</strong> A form of prospectus that discloses information, facts or events covered in both paragraphs (b) (2) and (3) shall be filed with the Commission no later than the second business day following the earlier of the date of the determination of the offering price or the date it is first used after effectiveness in connection with a public offering or sales, or transmitted by a means reasonably calculated to result in filing with the Commission by that date.</p>
+<p>Origin from : <a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">https://www.law.cornell.edu/cfr/text/17/230.424</a></p>
+</blockquote>
+<h2 id="SEC-Form-424-b-2"><a href="#SEC-Form-424-b-2" class="headerlink" title="SEC Form 424(b)(2)"></a>SEC Form 424(b)(2)</h2><blockquote>
+<p><strong>(2)</strong> A form of prospectus that is used in connection with a primary offering of securities pursuant to Rule 415(a)(1)(x) (§ 230.415(a)(1)(x)) or a primary offering of securities registered for issuance on a delayed basis pursuant to Rule 415(a)(1)(vii) or (viii) (§ 230.415(a)(1)(vii) or (viii)) and that, in the case of Rule 415(a)(1)(viii) discloses the public offering price, description of securities or similar matters, and in the case of Rule 415(a)(1)(vii) and (x) discloses information previously omitted from the prospectus filed as part of an effective registration statement in reliance on Rule 430B (§ 230.430B), or, in the case of asset-backed securities, Rule 430D (§ 230.430D) shall be filed with the Commission no later than the second business day following the earlier of the date of the determination of the offering price or the date it is first used after effectiveness in connection with a public offering or sales, or transmitted by a means reasonably calculated to result in filing with the Commission by that date.</p>
+<p>Origin from : <a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">https://www.law.cornell.edu/cfr/text/17/230.424</a></p>
+</blockquote>
+<h2 id="SEC-Form-424-b-3"><a href="#SEC-Form-424-b-3" class="headerlink" title="SEC Form 424(b)(3)"></a>SEC Form 424(b)(3)</h2><blockquote>
+<p><strong>(3)</strong> A form of <a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">prospectus</a> that reflects facts or events other than those covered in paragraphs (b) (1), (2) and (6) of this section that constitute a substantive change from or addition to the information set forth in the last form of <a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">prospectus</a> filed with the <a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">Commission</a> under this section or as part of a registration statement under the <a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">Securities Act</a> shall be filed with the <a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">Commission</a> no later than the fifth <a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">business day</a>after the date it is first used after effectiveness in connection with a public offering or sales, or transmitted by a means reasonably calculated to result in filing with the <a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">Commission</a> by that date.</p>
+<p>Origin from : <a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">https://www.law.cornell.edu/cfr/text/17/230.424</a></p>
+</blockquote>
+<p>最后得提一点就是有些增发并不一定是意味着股票下行，那只是一般状况，还要从股票基本面，当前所处的环境和状态，对将来的预期还有 CEO 把握战略节奏的能力去判断</p>
+<p><em>有些往细了看挺头疼的，有空再研究，To be continued</em></p>
+<hr>
+<blockquote>
+<p><strong>学习型的投资者可以加入我的讨论组进行交流讨论</strong>     </p>
+<p>Finance Group in Telegram : <a href="https://t.me/joinchat/JAgU_xVgurGtCieh5GQ56g" target="_blank" rel="noopener"><em>My Financial Telegram Group</em></a><br>Finance Group in Discord : <a href="https://discord.gg/NgWdjb" target="_blank" rel="noopener"><em>My Financial Discord Group</em></a><br>微信讨论群可以关注微信公众号:  iLeonVision 发信息跟我要进群二维码</p>
+</blockquote>
+<hr>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><em>17 CFR § 230.424 - Filing of prospectuses, number of copies.</em><br><a href="https://www.law.cornell.edu/cfr/text/17/230.424" target="_blank" rel="noopener">https://www.law.cornell.edu/cfr/text/17/230.424</a></p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpeg" alt="Leon Qiu WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Leon Qiu
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://leonvision.online/finance/424-b-filing-of-prospectuses/" title="  从 Tesla 增发 $2B 学习怎么看 424(b) Filing of Prospectuses ">https://leonvision.online/finance/424-b-filing-of-prospectuses/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/sec-filing/" rel="tag"># sec-filing</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/finance/the-summary-of-schedule-13d-g-a/" rel="prev" title=" 从 腾讯集团 增持 哔哩哔哩 股权开始学习 Schedule 13D/G/A ">
+      <i class="fa fa-chevron-left"></i>  从 腾讯集团 增持 哔哩哔哩 股权开始学习 Schedule 13D/G/A 
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/finance/the-brief-of-stock-exchange-and-indicator/" rel="next" title="The Brief of Stock Exchange and Indicator">
+      The Brief of Stock Exchange and Indicator <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
+            <li class="tab"><a href="#comment-valine">valine</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane disqusjs" id="comment-disqusjs">
+              
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+            </div>
+            <div class="tab-pane valine" id="comment-valine">
+              <div class="comments" id="valine-comments"></div>
+            </div>
+        </div>
+      </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#SEC-Form-424-b-Prospectuses"><span class="nav-number">1.</span> <span class="nav-text">SEC Form 424(b)(#)  Prospectuses</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SEC-Form-424-b-5"><span class="nav-number">2.</span> <span class="nav-text">SEC Form 424(b)(5)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SEC-Form-424-b-2"><span class="nav-number">3.</span> <span class="nav-text">SEC Form 424(b)(2)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SEC-Form-424-b-3"><span class="nav-number">4.</span> <span class="nav-text">SEC Form 424(b)(3)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">5.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leon Qiu"
+      src="https://s.gravatar.com/avatar/e3028f230bbdebd4329ecb81dfa1985d?s=80">
+  <p class="site-author-name" itemprop="name">Leon Qiu</p>
+  <div class="site-description" itemprop="description">Technology, Finance, Photograhpy</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:i@leonvision.online" title="Email → mailto:i@leonvision.online"><i class="fa fa-fw fa-envelope"></i>Email</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/leon_qiu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;leon_qiu" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/iLeonVision" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;iLeonVision" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leon Qiu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.0
+  </div>
+
+
+  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  
+
+  <script>
+
+    jQuery.getExternalScript =  function(url, callback, condition) {
+      if (condition) {
+        callback();
+      } else {
+        var script = document.createElement('script');
+        script.onload = script.onreadystatechange = function(_, isAbort) {
+          if (isAbort || !script.readyState || /loaded|complete/.test(script.readyState)) {
+            script.onload = script.onreadystatechange = null;
+            script = undefined;
+            if (!isAbort && callback) setTimeout(callback, 0);
+          }
+        };
+        script.src = url;
+        document.head.appendChild(script);
+      }
+    };
+
+    jQuery.cachedScript = function( url, options ) {
+      // Allow user to set any option except for dataType, cache, and url
+      options = $.extend( options || {}, {
+        dataType: "script",
+        cache: true,
+        url: url,
+        type: 'GET'
+      });
+    
+      // Use $.ajax() since it is more flexible than $.getScript
+      // Return the jqXHR object so we can chain callbacks
+      return jQuery.ajax( options );
+      
+    };
+
+  if (document.querySelectorAll('pre.mermaid').length) {
+
+    $.cachedScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js')
+    .done(() => {
+      console.log("start to load the mermaid script");
+      mermaid.initialize({
+            theme: 'neutral',
+            logLevel: 3,
+            flowchart: { curve: 'basis' },
+            gantt: { axisFormat: '%m/%d/%Y' },
+            sequence: { actorMargin: 50 }
+      });
+    });
+  }
+
+  // if (document.querySelectorAll('pre.mermaid').length) {
+
+  //   $.getExternalScript('//cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js', () => {
+  //     console.log("start to load the mermaid script");
+  //     mermaid.initialize({
+  //           theme: 'forest',
+  //           logLevel: 3,
+  //           flowchart: { curve: 'basis' },
+  //           gantt: { axisFormat: '%m/%d/%Y' },
+  //           sequence: { actorMargin: 50 }
+  //     });
+  //   }, window.mermaid);
+  // }
+  
+  </script>
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6391042540548664"
+     data-ad-slot="7494260686"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api: 'https://disqus-api-proxy.herokuapp.com/disqus/' || 'https://disqus.com/api/',
+      apikey: 'uAXdAL5fpzUZEe5PnLvCTvN5Y4iCHEfnUDjOMKJRNSk9nnypHzS7D7Ddya2DiCAq',
+      shortname: 'leonvision',
+      url: "https://leonvision.online/finance/424-b-filing-of-prospectuses/",
+      identifier: "finance/424-b-filing-of-prospectuses/",
+      title: "  从 Tesla 增发 $2B 学习怎么看 424(b) Filing of Prospectuses ",
+    });
+  }, window.DisqusJS);
+});
+</script>
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: true,
+      notify: true,
+      appId: 'BnlxSmDeyGYvxfkTqGcQTdAa-MdYXbMMI',
+      appKey: 'DxggU2hzw6wWyv8tetFybuSM',
+      placeholder: "Just go go",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: '' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
