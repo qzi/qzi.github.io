@@ -13,7 +13,7 @@ excerpt: '使用Git这种强大的版本管理工具，时刻要记得一句名�
 
 
 
-## 	Git Phases
+## 	Git Process Flow
 
 Git 最重要的三个 Phases 的理解对了解当前文件处于哪个工作区十分关键
 
@@ -37,20 +37,20 @@ B --> | git commit | C[ Repo - commited ];
 ```bash
 $git add [files]
 ```
-### Commited Files
+### Commited files
 ```bash
 $git commit [files]
 ```
-### Review the log
-
-```bash
-$git log -p
-```
-
 ### Show  status
 
 ```bash
 $git status
+```
+
+### Review the log
+
+```bash
+$git log -p
 ```
 
 ### Show differences in unstaged area
@@ -107,23 +107,97 @@ index 6302830..61c0c54 100644
 ```
 
 
-
-### Unstaged the files
+### Unstaged files
 
 ```bash
 $git restore [files]
 ```
+
+### Uncommited files    
+
+```bash
+$git reset –hard
+```
+
+
+
+## Basic Branch Mangement
+
 ### List branches
+
 ```bash
-$git branch
+❯ git branch
+  feature-v1.1.0
+* master
+
 ```
+### Switch to the specific branch
+
+```bash
+❯ git checkout master
+Switched to branch 'master'
+```
+
+### Create a new branch
+
+```bash
+❯ git branch feature-v2.0.0
+❯ git branch
+  feature-v2.0.0
+* master
+
+```
+
 ### Checkout and Create a new branch
+
 ```bash
-$git checkout -b [branch name]
+❯ git checkout -b [branch name]
 ```
-### Switch branch
+### Merge the branch
+
 ```bash
-$git checkout [branch name]
+❯ git checkout master
+Switched to branch 'master'
+❯ git branch
+  feature-v2.0.0
+* master
+❯ git merge feature-v2.0.0
+Updating 9d87f34..7e66e0c
+Fast-forward
+ .gitignore  | 1 +
+ test_branch | 3 +++
+ 2 files changed, 4 insertions(+)
+ create mode 100644 .gitignore
+```
+
+
+
+## .gitignore
+
+```bash
+❯ touch .gitignore
+```
+
+Add `.idea/` into .gitignore, then it can filter the files and folders under .idea/
+
+​     
+
+ ## HEAD
+
+```bash
+HEAD 说明：
+HEAD 表示当前版本
+HEAD^ 上一个版本
+HEAD^^ 上上一个版本
+HEAD^^^ 上上上一个版本
+以此类推...
+
+可以使用 ～数字表示
+HEAD~0 表示当前版本
+HEAD~1 上一个版本
+HEAD^2 上上一个版本
+HEAD^3 上上上一个版本
+以此类推...
 ```
 
 
@@ -135,7 +209,7 @@ $git checkout [branch name]
 ```bash
 $git config --global core.editor "code --wait"
 ```
-**Install the Gitlens to view the commit message**
+**Install the Gitlens to view the committed message**
 
 Press`Shift + Command + P`, then type `Install extentions`enter to find the `Gitlens`
 
@@ -161,3 +235,9 @@ _To Be Continue ..._
 
 _用 diff 来检查改动_
 https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/diffs
+
+_About Mermaid_
+https://mermaid-js.github.io/mermaid/#/
+
+_git reset 命令_
+https://www.runoob.com/git/git-reset.html
