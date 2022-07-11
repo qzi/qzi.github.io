@@ -170,6 +170,35 @@ Fast-forward
  create mode 100644 .gitignore
 ```
 
+### Delete the branch
+
+```bash
+❯ git branch
+* master
+❯ git branch feature-v3.0.0
+❯ git branch
+  feature-v3.0.0
+* master
+❯ git branch -d feature-v3.0.0
+Deleted branch feature-v3.0.0 (was fc84191).
+    ~/hugo/agilelog.org  on   master !1                                                                                       at 18:16:36  
+❯ git branch
+* master
+```
+
+```mermaid
+    gitGraph
+       commit
+       commit
+       branch feature-v1.0.0
+       commit
+       commit
+       commit
+       checkout master
+       commit
+       commit
+```
+
 
 
 ## .gitignore
