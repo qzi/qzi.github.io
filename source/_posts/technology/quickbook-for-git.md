@@ -187,16 +187,16 @@ Deleted branch feature-v3.0.0 (was fc84191).
 ```
 
 ```mermaid
-    gitGraph
-       commit
-       commit
-       branch feature-v1.0.0
-       commit
-       commit
-       commit
-       checkout master
-       commit
-       commit
+gitGraph
+  commit
+  commit
+  branch feature-v1.0.0
+  commit
+  commit
+  commit
+  checkout main
+  commit
+  commit
 ```
 
 
