@@ -187,16 +187,28 @@ Deleted branch feature-v3.0.0 (was fc84191).
 ```
 
 ```mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'neutral' } }%%
 gitGraph
   commit
   commit
+
+  branch develop
+  checkout develop
+  commit
+  commit
+
   branch feature-v1.0.0
   commit
   commit
+  checkout feature-v1.0.0
   commit
+  commit
+  checkout develop
+  merge feature-v1.0.0
   checkout main
+  merge develop
   commit
-  commit
+
 ```
 
 
