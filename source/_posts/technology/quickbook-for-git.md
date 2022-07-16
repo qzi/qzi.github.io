@@ -53,7 +53,39 @@ $git status
 $git log -p
 ```
 
-### Show differences in unstaged area
+### Git diff in the specific commit
+
+```bash
+❯ git log
+commit 222a62a03a46a676019ef58fdacbaf6ab5677c20
+Author: Leon Qiu <i@leonvision.online>
+Date:   Wed Jul 13 21:04:48 2022 +0800
+
+     test diff
+     
+❯ git diff 222a62a03a46a676019ef58fdacbaf6ab5677c20
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..9f11b75
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++.idea/
+diff --git a/testGit b/testGit
+index c67ed73..6c4b8c7 100644
+--- a/testGit
++++ b/testGit
+@@ -1 +1,5 @@
+ test git diff
++test git diff 3
++test git diff 2
++
++test branch
+```
+
+
+
+### Show differences between woirking area and the staging area
 
 ```bash
 $git diff
@@ -86,6 +118,8 @@ leon:qzi.github.io leon$
 `+`通常代表那行是增加的或者进行了更改后的内容
 
 如果是全新创建的文件，没有diff
+
+​     
 
 ### Show differences in staged area
 
@@ -122,6 +156,33 @@ $git reset –hard
 
 
 ## Basic Branch Mangement
+
+### Git graph based on mermaid
+```mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'neutral' } }%%
+gitGraph
+  commit
+  commit
+
+  branch develop
+  checkout develop
+  commit
+  commit
+
+  branch feature-v1.0.0
+  commit
+  commit
+  checkout feature-v1.0.0
+  commit
+  commit
+  checkout develop
+  merge feature-v1.0.0
+  checkout main
+  merge develop
+  commit
+
+```
+
 
 ### List branches
 
@@ -181,35 +242,10 @@ Fast-forward
 * master
 ❯ git branch -d feature-v3.0.0
 Deleted branch feature-v3.0.0 (was fc84191).
-    ~/hugo/agilelog.org  on   master !1                                                                                       at 18:16:36  
 ❯ git branch
 * master
 ```
 
-```mermaid
-%%{init: { 'logLevel': 'debug', 'theme': 'neutral' } }%%
-gitGraph
-  commit
-  commit
-
-  branch develop
-  checkout develop
-  commit
-  commit
-
-  branch feature-v1.0.0
-  commit
-  commit
-  checkout feature-v1.0.0
-  commit
-  commit
-  checkout develop
-  merge feature-v1.0.0
-  checkout main
-  merge develop
-  commit
-
-```
 
 
 
@@ -264,7 +300,7 @@ _Git History_: https://marketplace.visualstudio.com/items?itemName=donjayamanne.
 
 
 
-
+Test
 
 _其实我只是想实验 Mermaid 的 flowchart 才写的这篇 つ﹏⊂_
 

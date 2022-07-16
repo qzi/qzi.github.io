@@ -9,7 +9,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "4.2.0"
+    "version": "6.2.0"
   },
   "dependencies": {
     "disqusjs": "^1.2.6",
@@ -31,6 +31,6 @@
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "hexo-util": "git+https://github.com/hexojs/hexo-util.git",
-    "mermaid": "^8.4.4"
+    "mermaid": "~9.1"
   }
 }
