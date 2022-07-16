@@ -121,7 +121,7 @@ leon:qzi.github.io leon$
 
 ​     
 
-### Show differences in Staging Area and Head
+### Show differences in Staging Area and HEAD
 
 ```bash
 $git diff --staged
@@ -140,6 +140,27 @@ index 6302830..61c0c54 100644
 +| 外出进门前注意鞋底在外可能踩踏吐痰等等中介传播物的路面的情况 |
 ```
 
+ ## HEAD
+
+`HEAD` – is a reference to a specific commit (normally to the the last commit in a local repository).
+
+```bash
+HEAD 说明：
+HEAD 表示当前版本
+HEAD^ 上一个版本
+HEAD^^ 上上一个版本
+HEAD^^^ 上上上一个版本
+以此类推...
+
+可以使用 ～数字表示
+HEAD~0 表示当前版本
+HEAD~1 上一个版本
+HEAD^2 上上一个版本
+HEAD^3 上上上一个版本
+以此类推...
+```
+
+
 
 ### Unstaged files
 
@@ -153,7 +174,30 @@ $git restore [files]
 $git reset –hard
 ```
 
+### Untrack files
 
+```bash
+❯ git rm -r -n --cached package-lock.json
+rm 'package-lock.json'
+
+❯ git rm -r --cached package-lock.json 
+rm 'package-lock.json'
+
+❯ git status                             
+On branch hexo
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    package-lock.json
+	
+❯ git commit 
+[hexo 2a02d23] git rm --cached package-lock.json
+ 1 file changed, 9318 deletions(-)
+ delete mode 100644 package-lock.json
+```
+
+-r 表示递归，-n 表示先不删除，只是列出文件。
+
+   
 
 ## Basic Branch Mangement
 
@@ -258,24 +302,6 @@ Deleted branch feature-v3.0.0 (was fc84191).
 Add `.idea/` into .gitignore, then it can filter the files and folders under .idea/
 
 ​     
-
- ## HEAD
-
-```bash
-HEAD 说明：
-HEAD 表示当前版本
-HEAD^ 上一个版本
-HEAD^^ 上上一个版本
-HEAD^^^ 上上上一个版本
-以此类推...
-
-可以使用 ～数字表示
-HEAD~0 表示当前版本
-HEAD~1 上一个版本
-HEAD^2 上上一个版本
-HEAD^3 上上上一个版本
-以此类推...
-```
 
 
 
