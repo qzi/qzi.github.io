@@ -316,7 +316,7 @@ Receiving objects: 100% (50/50), 10.82 KiB | 15.00 KiB/s, done.
 Resolving deltas: 100% (23/23), done.
 ```
 
-### Git Push
+### Git push
 
 Push the local repo to remote repo
 
@@ -331,6 +331,15 @@ Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 To https://github.com/qzi/qzi.github.io.git
    c936aa8..fe09403  hexo -> hexo
+```
+
+
+
+## Git diff.tool && merge.tool
+
+```bash
+❯ git config --global merge.tool vimdiff
+❯ git config --global diff.tool vimdiff
 ```
 
 
