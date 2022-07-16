@@ -9,11 +9,11 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "6.2.0"
+    "version": "6.1.0"
   },
   "dependencies": {
     "disqusjs": "^1.2.6",
-    "hexo": "~6.2.0",
+    "hexo": "6.1.0",
     "hexo-asset-link": "^2.0.1",
     "hexo-deployer-git": "^2.1.0",
     "hexo-filter-mermaid-diagrams": "^1.0.5",
