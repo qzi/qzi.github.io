@@ -301,7 +301,37 @@ Deleted branch feature-v3.0.0 (was fc84191).
 
 Add `.idea/` into .gitignore, then it can filter the files and folders under .idea/
 
-​     
+## Basic Operation of Github
+
+### Git clone
+
+Clone from remote repo to local repo
+
+```bash
+❯ git clone https://github.com/theme-next/hexo-next-share.git
+Cloning into 'hexo-next-share'...
+remote: Enumerating objects: 50, done.
+remote: Total 50 (delta 0), reused 0 (delta 0), pack-reused 50
+Receiving objects: 100% (50/50), 10.82 KiB | 15.00 KiB/s, done.
+Resolving deltas: 100% (23/23), done.
+```
+
+### Git Push
+
+Push the local repo to remote repo
+
+```bash
+❯ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 27.55 KiB | 3.94 MiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/qzi/qzi.github.io.git
+   c936aa8..fe09403  hexo -> hexo
+```
 
 
 
