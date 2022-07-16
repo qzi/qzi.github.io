@@ -201,7 +201,7 @@ Changes to be committed:
 
 ## Basic Branch Mangement
 
-### Git graph based on mermaid
+Git graph based on mermaid
 ```mermaid
 %%{init: { 'logLevel': 'debug', 'theme': 'neutral' } }%%
 gitGraph
