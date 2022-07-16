@@ -85,7 +85,7 @@ index c67ed73..6c4b8c7 100644
 
 
 
-### Show differences between woirking area and the staging area
+### Show differences between Woirking Directory and the Staging Area
 
 ```bash
 $git diff
@@ -121,7 +121,7 @@ leon:qzi.github.io leon$
 
 ​     
 
-### Show differences in staged area
+### Show differences in Staging Area and Head
 
 ```bash
 $git diff --staged

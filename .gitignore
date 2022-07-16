@@ -7,3 +7,5 @@ public/
 .deploy*/
 .firebase/
 .vscode/
+yarn.lock
+package-lock.json
