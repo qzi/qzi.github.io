@@ -2890,10 +2890,10 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hexo-asset-link@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/hexo-asset-link/-/hexo-asset-link-2.0.1.tgz"
-  integrity sha512-0O6sdoLceh9KVG0e8PwK5PLokzGlTl7q8b2QgGaAECIbCjZRDv1pPEMaizHbD4jRXhC+i/U6x04kgQZoTHHClw==
+hexo-asset-link@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/hexo-asset-link/-/hexo-asset-link-2.2.1.tgz#2665141a9324f02d20c4612df3b913d6c2cb2159"
+  integrity sha512-YQxqkX+fUmzAjgbiExr1paMtfBuWuMTzhUTma+eruIybdvi9mL90Hz0sYEI8dfTl1JoJbl9Jjp5hrC5/saZwUw==
 
 hexo-bunyan@^1.0.0:
   version "1.0.0"

@@ -14,7 +14,7 @@
   "dependencies": {
     "disqusjs": "^1.2.6",
     "hexo": "~6",
-    "hexo-asset-link": "^2.0.1",
+    "hexo-asset-link": "^2.2.1",
     "hexo-deployer-git": "^2.1.0",
     "hexo-filter-mermaid-diagrams": "^1.0.5",
     "hexo-generator-archive": "^1.0.0",
